@@ -60,9 +60,9 @@ Azure SQL Database is a fully managed platform as a service (PaaS) database engi
 Le saas met à disposition des applications "pretes à l'emploi" (exemple: Gmail).
 
 
-### Résumé
+### Iaas, Paas, Saas
 
-runtime = moteur SQL par exemple, le serveur Apache, l’interpréteur PHP.
+#### Components
 
 Par exemple, si tu veux faire un site comme lafibre.info il y a 4 composants:
 
@@ -76,11 +76,26 @@ Tu peux vouloir que déléguer la base SQL et pas le serveur web par exemple.
 
 En mode SaaS, le prestataire va tout gérer y compris l'installation de SMF, t'aura plus qu'a t'en servir.
 
-
-Donc entre le code source du forum (SMF) et l'OS il y a bien une "plateforme", un runtime. il y en a 3 en fait: PHP sur Apache et
- a coté , en parallèle, SQL.
-
 source: https://lafibre.info/datacenter/paas-cest-quoi/
+
+#### Details
+
+##### Middleware
+
+L'intergiciel gère les services communs et les utilitaires tels que la messagerie, la gestion des API, le flux de données et l'authentification.
+
+English : Middleware handles the common services and utilities like messaging, API management, data streaming, and authentication.
+
+Middleware : API, RPC, Messaging
+
+##### Runtime environment
+
+L'environnement d'exécution fournit des facilités communes au système d'exploitation pour que les applications conçues dans un langage de programmation particulier fonctionnent sans heurts.
+
+Runtime Env : JRE (Java Runtime Environment), Node
+
+https://www.mongodb.com/cloud-explained/paas-platform-as-a-service
+
 
 ### Credits
 
