@@ -58,6 +58,30 @@ Azure SQL Database is a fully managed platform as a service (PaaS) database engi
 ### Saas
 
 Le saas met à disposition des applications "pretes à l'emploi" (exemple: Gmail).
+
+
+### Résumé
+
+runtime = moteur SQL par exemple, le serveur Apache, l’interpréteur PHP.
+
+Par exemple, si tu veux faire un site comme lafibre.info il y a 4 composants:
+
+L'OS puis au dessus tourne un serveur web (Apache) qui appelle un interpréteur Php (qui exécute des pages php donc ce qui produit des pages html envoyés par le serveur Apache aux clients). Le code Php fait des appels a une base SQL pour lire/stocker les données (messages du forums) de façon à  avoir une persistance (stockage). La base SQL n'est pas forcement sur le meme serveur physique et il peut même y avoir plusieurs serveurs Apache (pour les gros sites notamment). Le code php est fournit pas SMF (Simple Machines Forum).
+
+En mode IaaS, c'est a toi de gérer tout sauf le matériel.
+
+En mode PaaS, un prestataire peut s'occuper pour toi de l'OS, d'Apache+PhP et de la base SQL. TU n'a qu'a founir le code php et gérer la conf du serveur Apache et de la base SQL. le prestataire s'occupe des installations, mises jour, déplacement si matériel en panne, backup, etc
+
+Tu peux vouloir que déléguer la base SQL et pas le serveur web par exemple.
+
+En mode SaaS, le prestataire va tout gérer y compris l'installation de SMF, t'aura plus qu'a t'en servir.
+
+
+Donc entre le code source du forum (SMF) et l'OS il y a bien une "plateforme", un runtime. il y en a 3 en fait: PHP sur Apache et
+ a coté , en parallèle, SQL.
+
+source: https://lafibre.info/datacenter/paas-cest-quoi/
+
 ### Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
