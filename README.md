@@ -43,6 +43,7 @@ Les clients doivent :
 
 ### Paas
 
+PaaS, ou Platform-as-a-Service, est un modèle de  cloud computing  qui fournit aux clients une plateforme  cloud  complète (matériel, logiciel et infrastructure) pour développer, exécuter et gérer des applications, et permet d'éviter les coûts, la complexité et la rigidité liés à la création et à la maintenance de cette plateforme  sur site.
 
 ### Faas
 
