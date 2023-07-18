@@ -51,8 +51,7 @@ PaaS, ou Platform-as-a-Service, est un modèle de  cloud computing  qui fournit 
 
 ### Saas
 
-// TODO
-
+Le saas met à disposition des applications pretes à l'emploi.
 ### Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
