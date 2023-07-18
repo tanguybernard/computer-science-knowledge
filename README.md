@@ -41,28 +41,16 @@ Les clients doivent :
 - gérer leurs applications
 
 
-### Caas vs Paas
-
- Les composants essentiels d'un CaaS comprennent des services de conteneurs de base, un catalogue d'images appelé "registry", un logiciel de gestion de clusters 
- et un ensemble d'outils et d'API pour les développeurs. 
-
-Il manque certains éléments dans le caas qui amenerai plus de flexibilité. Et c'est là qu'intervient le Paas.
-
-Un PaaS comprends des fonctionnalités telles que la haute disponibilité, la mise à l'échelle automatique, le routage du trafic, la journalisation, la sécurité, la gestion du cycle de vie des applications, l'automatisation de l'infrastructure et bien d'autres.
-
-Toutefois avec le Paas il y a des inconvénients :
-
-- moins de contrôle sur les opérations et l'infrastructure globale
-- personnalisations plus limitées
+### Paas
 
 
 ### Faas
 
-//TODO
+// TODO
 
 ### Saas
 
-//TODO
+// TODO
 
 ### Credits
 
