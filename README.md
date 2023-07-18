@@ -26,6 +26,8 @@ Le client (vous) est responsables :
 - des machines virtuelles
 - de toutes les applications ou données
 
+Exemple: AWS (EC2), Microsoft Azure (VM) 
+
 ### Caas
 
 Le CaaS (Containers as a Service) fournit et gère toutes les ressources matérielles et logicielles permettant de développer et de déployer des applications à l'aide de conteneurs.
@@ -43,7 +45,11 @@ Les clients doivent :
 
 ### Paas
 
-PaaS, ou Platform-as-a-Service, est un modèle de  cloud computing  qui fournit aux clients une plateforme  cloud  complète (matériel, logiciel et infrastructure) pour développer, exécuter et gérer des applications, et permet d'éviter les coûts, la complexité et la rigidité liés à la création et à la maintenance de cette plateforme  sur site.
+La plateforme en tant que service (PaaS) implique que des tiers fournissent une plateforme combinée, comprenant à la fois du matériel et des logiciels. Le modèle PaaS permet aux utilisateurs finaux de développer, de gérer et d'exécuter leurs propres applications, tandis que le fournisseur de la plateforme gère l'infrastructure. Outre le stockage et d'autres ressources informatiques, les fournisseurs proposent généralement un ensemble d'outils pour le développement, le test et le déploiement des applications.
+
+Exemple:
+
+Azure SQL Database is a fully managed platform as a service (PaaS) database engine that handles most of the database management functions such as upgrading, patching, backups, and monitoring without user involvement.
 
 ### Faas
 
@@ -51,7 +57,7 @@ PaaS, ou Platform-as-a-Service, est un modèle de  cloud computing  qui fournit 
 
 ### Saas
 
-Le saas met à disposition des applications "pretes à l'emploi" (exemple: Google drive).
+Le saas met à disposition des applications "pretes à l'emploi" (exemple: Gmail).
 ### Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
