@@ -2,6 +2,12 @@
 
 ## Intro
 
+## Event loop
+
+Philip Roberts: Boucle d’événement, que diable est ce au fait?
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
 
 ## Class (a class is a Function)
 
