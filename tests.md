@@ -15,6 +15,21 @@ Une technique de développement qui se concentre sur la satisfaction des besoins
 
 Une technique de développement qui s'articule autour du comportement attendu.
 
+
+## ATDD vs BDD
+
+ATDD
+
+- Un apprenant veut s'inscrire à une formation, il complète le formulaire et est inscrit, il reçoit une confirmation.
+
+BDD (Example mapping)
+
+- Un apprenant s'inscrit à la formation, la salle pre-reserver est trop petite, on reserver une salle plus grande.
+- Un apprenant s'inscrit à la formation, le formateur est absent, si la formation se déroule dans plus de 5 jours, un mail est envoyé pour trouver un autre formateur.
+- Un apprenant s'inscrit à la formation, le formateur est absent, si la formation se déroule dans moins de 5 jours, un mail est envoyé aux apprenants pour annuler la session.
+
+//TODO verifier cette definition
+
 ## TDD (Test driven development)
 
 # WORK IN PROGRESS
