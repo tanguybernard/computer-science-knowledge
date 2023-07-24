@@ -20,13 +20,13 @@ Une technique de développement qui s'articule autour du comportement attendu.
 
 ATDD
 
-- Un apprenant veut s'inscrire à une formation, il complète le formulaire et est inscrit, il reçoit une confirmation.
+- Un(e) apprenant(e) veut s'inscrire à une formation, iel complète le formulaire et est inscrit(e), iel reçoit une confirmation.
 
 BDD (Example mapping)
 
-- Un apprenant s'inscrit à la formation, la salle pre-reserver est trop petite, on reserver une salle plus grande.
-- Un apprenant s'inscrit à la formation, le formateur est absent, si la formation se déroule dans plus de 5 jours, un mail est envoyé pour trouver un autre formateur.
-- Un apprenant s'inscrit à la formation, le formateur est absent, si la formation se déroule dans moins de 5 jours, un mail est envoyé aux apprenants pour annuler la session.
+- Un apprenant s'inscrit à la formation, la salle pre-reserver est trop petite, une salle plus grande est alors selectionée.
+- Un apprenant s'inscrit à la formation, le(la) formateur(rice) est absent, si la formation se déroule dans plus de 5 jours, un mail est envoyé pour trouver un(e) autre formateur(rice).
+- Un(e) apprenant(e) s'inscrit à la formation, le(la) formateur(rice) est absent, si la formation se déroule dans moins de 5 jours, un mail est envoyé aux apprenant(e)s pour annuler la session.
 
 //TODO verifier cette definition
 
