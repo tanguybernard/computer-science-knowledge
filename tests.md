@@ -9,6 +9,12 @@ Les tests d’acceptation sont des tests fait par des utilisateurs ou leurs repr
 
 L’Acceptance Test-Driven Development – ATDD – rassemble des intervenants d’horizons différents, utilisateurs, développeurs et testeurs (3 amigos), afin qu’ils collaborent pour écrire les tests d’acceptation avant même le développement de la fonctionnalité correspondante. 
 
+Une technique de développement qui se concentre sur la satisfaction des besoins de l'utilisateur.
+
+## BDD
+
+Une technique de développement qui s'articule autour du comportement attendu.
+
 ## TDD (Test driven development)
 
 # WORK IN PROGRESS
