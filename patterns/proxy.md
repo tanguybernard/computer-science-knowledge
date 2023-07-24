@@ -71,6 +71,8 @@ source: https://www.geeksforgeeks.org/proxy-design-pattern/
 
 ## Virtual Proxy  
 
+Le modèle de Virtual Proxy  est une technique d'économie de mémoire qui recommande de différer la création d'un objet jusqu'à ce qu'il soit nécessaire ;
+
 
     public interface Image {
     
@@ -169,6 +171,8 @@ public class ImageViewer {
     }
 
 source: https://www.oodesign.com/proxy-pattern
+
+## Remote proxy
 
 
 
