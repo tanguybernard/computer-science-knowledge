@@ -10,7 +10,13 @@ Exemple: Envoi de mail, on peut monter plusieurs seveur mail pour envoyer les me
 
 ## Pub/Sub
 
+
+L'architecture Pub-Sub est utilisée lorsque l'on veut quelque chose comme une diffusion. L'échange Pub-Sub peut consister en plusieurs services de production et plusieurs services de consommation. L'échange ou le courtier (broker) en messages garantit qu'au moins une copie de chaque message publié par le producteur est reçue par chaque abonné. En d'autres termes, dans l'architecture pub-sub, chaque message envoyé par le producteur est délivré à chaque abonné, abonné à un topic spécifique. Ainsi, contrairement à la file d'attente des messages (message queue), dans Pub-Sub, chaque abonné dispose de sa propre file d'attente, alors que dans la file d'attente des messages, tous les consommateurs partagent la même file d'attente.
+
 Un pub/sub c'est enfaite une multitude de message queue.
+
+Lorsque le producteur envoie un message à un thème, celui-ci le diffuse aux abonnés. Chaque abonné est lié à la file d'attente, de sorte que chaque file d'attente dispose d'un service d'écoute (ou abonné) qui attend le message.
+
 
 
 Exemple: Plusieurs services qui veulent etre notifié qu'un contrat pour un utilisateur a été crée, chacun sera interessé par tout ou partie du details de ce contract. 
@@ -21,3 +27,5 @@ Chaque service voudra etre notifié si l'utilisateur possède un contrat et dans
 ## Credits
 
 https://www.youtube.com/watch?v=hl2BQIW343k&list=PLv7xGPH0RMUQC6eKGeEXO4PzvKdsU7z2j&index=39
+
+https://getkt.com/2023/02/22/message-queue-vs-pub-sub/
