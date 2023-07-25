@@ -11,3 +11,13 @@ Exemple: Envoi de mail, on peut monter plusieurs seveur mail pour envoyer les me
 ## Pub/Sub
 
 Un pub/sub c'est enfaite une multitude de message queue.
+
+
+Exemple: Plusieurs services qui veulent etre notifié qu'un contrat pour un utilisateur a été crée, chacun sera interessé par tout ou partie du details de ce contract. 
+
+Exemple contrat box internet, telphonie, chaines télévision en option, internet, netflix...
+Chaque service voudra etre notifié si l'utilisateur possède un contrat et dans quel modalité, je souscris a une offre box avec netflix, quel abonnement netflix est choisi dedans HD, fullHD, 1 appreil, 4 appareils...
+
+## Credits
+
+https://www.youtube.com/watch?v=hl2BQIW343k&list=PLv7xGPH0RMUQC6eKGeEXO4PzvKdsU7z2j&index=39
