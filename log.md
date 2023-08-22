@@ -1,8 +1,8 @@
 # Log
 
 ## Log Rotation
- 
-As your application generates more logs, managing them properly is essential to avoid filling up disk space and slowing down your system. One way to do this is to use log rotation, which involves periodically archiving and deleting old log files.
+
+La rotation des journaux est le processus de contrôle de la taille des fichiers journaux. Lorsqu'un fichier journal existant atteint un certain seuil - généralement une taille maximale, un âge ou un nombre d'enregistrements - l'application associée le renomme, crée un nouveau fichier avec le nom d'origine et continue d'écrire des événements dans le nouveau fichier.
 
 
 ## Credits
