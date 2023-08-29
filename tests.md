@@ -20,7 +20,7 @@ Une technique de développement qui s'articule autour du comportement attendu.
 
 ATDD
 
-- Un(e) apprenant(e) veut s'inscrire à une formation, iel complète le formulaire et est inscrit(e), iel reçoit une confirmation.
+- Une apprenante veut s'inscrire à une formation, elle complète le formulaire et est inscrite, elle reçoit une confirmation.
 
 BDD (Example mapping)
 
