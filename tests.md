@@ -1,9 +1,16 @@
 # Tests
 
+## Tests d'integration
+
+Interaction avec des composants extenes (ex: vrai base de données)
+
 
 ## Tests d’acceptation
 
 Les tests d’acceptation sont des tests fait par des utilisateurs ou leurs représentants et qui ont pour but de valider que le logiciel correspond au besoin. 
+
+
+La base de données peut etre stubbé.
 
 ## ATDD
 
