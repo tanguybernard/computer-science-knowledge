@@ -30,7 +30,7 @@ Une technique de développement qui se concentre sur la satisfaction des besoins
 
 
 
-## BDD
+## BDD => Example Mapping
 
 Une technique de développement qui s'articule autour du comportement attendu.
 
