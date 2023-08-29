@@ -9,6 +9,14 @@ Interaction avec des composants extenes (ex: vrai base de données)
 
 Les tests d’acceptation sont des tests fait par des utilisateurs ou leurs représentants et qui ont pour but de valider que le logiciel correspond au besoin. 
 
+TLTR, un test d'acceptance:
+
+- Appartient au client
+- Rédigé en collaboration avec le client, le développeur et le testeur
+- Concerne le "quoi" et non le "comment".
+- Exprimé dans le langage du domaine du problème
+- Concis, précis et sans ambiguïté
+
 
 La base de données peut etre stubbé.
 
@@ -18,24 +26,15 @@ L’Acceptance Test-Driven Development – ATDD – rassemble des intervenants d
 
 Une technique de développement qui se concentre sur la satisfaction des besoins de l'utilisateur.
 
+
+
+
+
 ## BDD
 
 Une technique de développement qui s'articule autour du comportement attendu.
 
 
-## ATDD vs BDD
-
-ATDD
-
-- Une apprenante veut s'inscrire à une formation, elle complète le formulaire et est inscrite, elle reçoit une confirmation.
-
-BDD (Example mapping)
-
-- Un apprenant s'inscrit à la formation, la salle pre-reserver est trop petite, une salle plus grande est alors selectionée.
-- Un apprenant s'inscrit à la formation, le(la) formateur(rice) est absent, si la formation se déroule dans plus de 5 jours, un mail est envoyé pour trouver un(e) autre formateur(rice).
-- Un(e) apprenant(e) s'inscrit à la formation, le(la) formateur(rice) est absent, si la formation se déroule dans moins de 5 jours, un mail est envoyé aux apprenant(e)s pour annuler la session.
-
-//TODO verifier cette definition
 
 ## TDD (Test driven development)
 
