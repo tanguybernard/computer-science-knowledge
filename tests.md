@@ -30,11 +30,11 @@ Une technique de développement qui se concentre sur la satisfaction des besoins
 
 
 
-## BDD => Example Mapping
+## BDD
 
 Une technique de développement qui s'articule autour du comportement attendu.
 
-
+S'appuie sur l'example mapping
 
 ## TDD (Test driven development)
 
