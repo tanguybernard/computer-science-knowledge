@@ -27,9 +27,6 @@ L’Acceptance Test-Driven Development – ATDD – rassemble des intervenants d
 Une technique de développement qui se concentre sur la satisfaction des besoins de l'utilisateur.
 
 
-
-
-
 ## BDD
 
 Une technique de développement qui s'articule autour du comportement attendu.
@@ -37,6 +34,11 @@ Une technique de développement qui s'articule autour du comportement attendu.
 S'appuie sur l'example mapping
 
 ## TDD (Test driven development)
+
+
+## Fuzzing
+
+Le fuzz testing ou fuzzing est une méthode automatisée de test de logiciels qui consiste à injecter des données invalides, malformées ou inattendues dans un système afin de révéler les défauts et les vulnérabilités du logiciel. 
 
 # WORK IN PROGRESS
 
