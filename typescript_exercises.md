@@ -67,7 +67,70 @@ Créons un type qui permet de créer un setter pour chaque clé du Device :
     }
 
 
+## Safe optional values, errors represented as data  (WIP)
 
+A partir de cette interface qui represente une donnée provenant d'une api, nous devrons convertir ces données en un objet du domaine.
+
+    interface ElementDto {
+        opacity: number;
+        color: string;
+        label: string | null;
+    }
+
+La couleur de domaine est celle-ci:
+
+  type Color = 'lightcyan' | 'darkorchid';
+
+
+
+    import { Maybe } from 'true-myth';
+    
+    
+    type Element = {
+        opacity: number;
+        color: Color;
+        label: Maybe<string>;
+    }
+    
+    const dtoToDomain: Record<string, Color | undefined> = {
+      clr_light: 'lightcyan',
+      clr_dark: 'darkorchid',
+    };
+    
+    const mapDtoToValues = (dtoColor: string): Color | never => {
+      const domainColor = dtoToDomain[dtoColor];
+    
+      if (typeof domainColor !== 'undefined') {
+        return domainColor!;
+      }
+    
+      throw new Error(`Could not map the value "${dtoColor}" to a domain value of type Color`);
+    };
+    
+    
+    
+    
+    const element: ElementDto = {
+      opacity: 0.5,
+      color: 'clr_light',
+      label: null,
+    };
+    
+    const mapElementDtoToElement = ({ opacity, color, label }: ElementDto): Element => ({
+      opacity,
+      color: mapDtoToValues(color),
+      label: Maybe.of(label),
+    });
+    
+    const mappedElement = mapElementDtoToElement(element);
+    
+    console.log(mappedElement.label.toString());//Nothing
+    
+    console.log(mappedElement.label.mapOr('No label', r => r));//No label
+
+
+
+//https://softwaremill.com/translating-api-responses-into-type-safe-interfaces-with-typescript/
 
   
 ## Credits
