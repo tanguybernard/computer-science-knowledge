@@ -1,5 +1,8 @@
 # Spring
 
+## Project example
+
+https://github.com/spring-petclinic/spring-framework-petclinic
 
 ## Dynamic beans
 
