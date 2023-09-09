@@ -201,6 +201,39 @@ La couleur de domaine est celle-ci:
 
 //https://softwaremill.com/translating-api-responses-into-type-safe-interfaces-with-typescript/
 
+
+## Exercice Type Réponse APi exemple avec Tableau server
+
+
+La reponse Api contient toujours une clé correspondant a la ressource
+
+    type ResourceApi = 'site' | 'user';
+    
+    type ResponseApi<T extends  ResourceApi> = {
+        [key in T]: {
+            id: string;
+            name: string;
+        }
+    }
+
+Ensuite on etend pour le user avec mail
+    
+    type ResponseApiUser<T extends ResourceApi> = ResponseApi<T> & {[key in T]: {email: string}};
+    
+    
+    const responseApiUser: ResponseApiUser<'site'> = {
+      site: {
+        id: '1',
+        name: 'Site',
+        email: '<EMAIL>',
+      },
+    
+    };
+    
+    
+    console.log(responseApiUser.site.email);
+
+https://stackoverflow.com/questions/56419558/typescript-how-to-use-a-generic-parameter-as-object-key
   
 ## Credits
 
