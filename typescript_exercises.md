@@ -202,7 +202,7 @@ La couleur de domaine est celle-ci:
 //https://softwaremill.com/translating-api-responses-into-type-safe-interfaces-with-typescript/
 
 
-## Exercice Type Réponse APi exemple avec Tableau server
+## Exercice Type Réponse APi exemple avec Tableau server (WIP: continue exo avec la requete: body data... et l'erreur, si resposne erreur: {errors: [ {id: 34, message: "lallala"}]} ) donc reponse = ReponseApiUser | ReponseError
 
 
 La reponse Api contient toujours une clé correspondant a la ressource
