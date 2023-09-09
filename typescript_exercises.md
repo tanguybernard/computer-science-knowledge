@@ -73,4 +73,6 @@ Créons un type qui permet de créer un setter pour chaque clé du Device :
 ## Credits
 
 
-  https://blog.logrocket.com/typescript-mapped-types/
+https://blog.logrocket.com/typescript-mapped-types/
+
+https://dev.to/logrocket/mastering-mapped-types-in-typescript-344g
