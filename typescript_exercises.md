@@ -1,5 +1,8 @@
 # Typescript
 
+## Some exercises
+
+https://typescript-exercises.github.io/#exercise=10&file=%2Findex.ts
 
 ## Index signatures in TypeScript
 
