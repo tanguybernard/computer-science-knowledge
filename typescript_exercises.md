@@ -69,6 +69,72 @@ Créons un type qui permet de créer un setter pour chaque clé du Device :
     
     }
 
+## Branding & Flavoring
+
+Exemple du problème auquel nous pouvons faire face.
+
+    type PostId = number;
+    type CommentId = number;
+    
+    const postId: PostId = post.id;
+    const commentId: CommentId = postId; // OK
+
+Branding
+
+Voici notre même exemple utilisant le type branding :
+
+    type PostId = number & { __brand: 'PostId' };
+    type CommentId = number & { __brand: 'CommentId' };
+    
+    const value = 1 as PostId;
+    
+    const postId: PostId = value; // OK
+    const commentId: CommentId = value; // Erreur
+
+De manière générique
+
+    type Brand<T, U> = T & { __brand: U };
+    
+    type PostId = Brand<number, 'PostId'>;
+    type CommentId = Brand<number, 'CommentId'>;
+
+
+Limitations
+Le changement d'un type en un type brandé requiert de le caster manuellement ;
+  
+Il est possible de lire la propriété __brand ;
+  
+Il n'y a pas de conversion implicite possible, par exemple :
+  
+    type Post = Brand<{ author: string; content: string; }, 'Post'>;
+    const createPost = (post: Post) => { ... };
+    createPost({ author: 'matthieu', content: 'Hello world!' }); // Erreur
+
+
+Flavoring
+
+Le flavoring est similaire en tout point au branding, au détail près que la propriété __brand est rendue optionnelle. Cette technique nous permet d'avoir une conversion implicite pour les types et les objets :
+
+    type Flavor<T, U> = T & { __flavor?: U };
+    
+    type Post = Flavor<{ author: string; content: string; }, 'Post'>;
+    type PostComment = Flavor<{ author: string; content: string; }, 'PostComment'>;
+    
+    const createPost = (post: Post) => { ... };
+    createPost({ author: 'matthieu', content: 'Hello world!' }); // OK
+    
+    const comment: PostComment = { author: 'matthieu', content: 'Hello world!' };
+    createPost(comment); // Erreur
+
+S'il est communément admis qu'il est préférable d'utiliser le branding pour les types primitifs, le flavoring peut être préférable pour les objets afin de tirer bénéfice de la conversion implicite. On peut utiliser un type conditionnel pour faire ce travail à notre place :
+
+    type Brand<T, U> = T & { __brand: U };
+    type Flavor<T, U> = T & { __flavor?: U };
+    
+    type Nominal<T, U> = T extends object ? Flavor<T, U> : Brand<T, U>;
+
+
+https://galadrim.fr/blog/type-branding-and-flavoring-rendez-votre-code-typescript-plus-lisible-et-robuste
 
 ## Safe optional values, errors represented as data  (WIP)
 
