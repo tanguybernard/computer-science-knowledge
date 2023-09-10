@@ -234,7 +234,34 @@ Ensuite on etend pour le user avec mail
     console.log(responseApiUser.site.email);
 
 https://stackoverflow.com/questions/56419558/typescript-how-to-use-a-generic-parameter-as-object-key
-  
+
+## Assertions
+
+    //When the base type is too general we can use this pattern (branded type).
+
+    type PositiveNumber = number & { __type: 'PositiveNumber' };
+    
+    type Post = {id: number, author: string}
+    
+    function getPosts(page: PositiveNumber): Post[] {
+      // ...
+      return [];
+    }
+    
+    function assertsPositiveNumber(value: number): asserts value is PositiveNumber {
+      if(value < 0) throw new Error('Value must be a positive number');
+    }
+    
+    
+    const page = -3;
+    
+    assertsPositiveNumber(page);
+    
+    const posts = getPosts(page);
+
+//https://dev.to/andersonjoseph/typescript-tip-safer-functions-with-branded-types-14o4
+
+
 ## Credits
 
 
