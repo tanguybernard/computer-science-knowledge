@@ -7,6 +7,7 @@ Un type fantôme est un type dont la déclaration comporte un paramètre de type
 
 ## Kotlin
 
+L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les opérations illégales au moment de la compilation.
 
     sealed class DoorState
     object Open: DoorState()
