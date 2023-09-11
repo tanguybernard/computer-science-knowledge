@@ -179,3 +179,5 @@ https://www.bussieck.com/typescript-types-with-complex-properties/
 https://stackblitz.com/edit/typescript-isbn-type-constraints?file=index.ts
 
 https://proandroiddev.com/phantom-types-in-kotlin-afd3f59fde10
+
+https://davesquared.net/2019/01/phantom-types.html
