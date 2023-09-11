@@ -32,3 +32,5 @@
 https://medium.com/@reidev275/creating-a-more-descriptive-query-model-with-phantom-types-93d8a5c2d5d9
 
 https://www.bussieck.com/typescript-types-with-complex-properties/
+
+https://stackblitz.com/edit/typescript-isbn-type-constraints?file=index.ts
