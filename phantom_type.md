@@ -1,5 +1,7 @@
 # Phantom Type
 
+## Exemple 1
+
     export interface Query<A> {
         sql: string;
         params?: any;
@@ -25,6 +27,110 @@
     const bazes: Baz[] = execute(getData);
     
     console.log(bazes);
+
+
+## Exemple 2
+
+
+    //Problem
+    
+    function submitCommentAaargh(
+      user: any,
+      comment: string
+    ) {
+      console.log(comment);
+    
+    }
+    function onSubmitAaaargh() {
+    
+      const user = { age: 20, name: 'toto', hasPermission: (p:string) => true };
+    
+      if (!user.hasPermission('writeComment')) {
+        console.log({
+          message: 'Sorry you can\'t post comments!',
+        });
+      }
+      submitCommentAaargh(user, 'My super comment');
+    }
+    onSubmit();
+    
+    //Solution
+    
+    type User = {
+        // this is the only relevant property for our system
+        permissions: number
+        // with any other user-related property
+        // you can think of
+        name: string
+        age: number
+    }
+    
+    
+    declare const phantom: unique symbol;
+    
+    const writeComment = { writeComment: true } as const;
+    type WriteComment = typeof writeComment
+    const readComment = { readComment: true } as const;
+    type ReadComment = typeof readComment
+    type Permissions = WriteComment & ReadComment
+    type SomePermissions = Partial<Permissions> // writeComment | readComment
+    
+    
+    type AuthorizedUser<T extends SomePermissions> = User & {
+        address: string
+        [phantom]: T
+    }
+    
+    
+    type PermissionResult<T extends SomePermissions> =
+        | { type: 'ok', user: AuthorizedUser<T> }
+        | { type: 'fail', reason: string }
+    
+    function authorize<T extends Permissions>(
+      user: User,
+      permission: T
+    ): PermissionResult<T> {
+      if (user.age>18 && permission.writeComment) {
+        return { type: 'ok', user: user as AuthorizedUser<T> };
+      } else {
+        return { type: 'fail', reason: 'User does not stan loona' };
+      }
+    }
+    
+    function hasPermission<T extends SomePermissions>(user: User, p: T): user is AuthorizedUser<T>;
+    function hasPermission<T extends Permissions>(
+      user: User,
+      permission: T
+    ): user is AuthorizedUser<T> {
+      return authorize(user, permission).type === 'ok';
+    }
+    
+    
+    function submitComment(
+      user: AuthorizedUser<WriteComment>,
+      comment: string
+    ) {
+      console.log(comment);
+    
+    }
+    
+    
+    
+    function onSubmit() {
+      //const result = authorize(user, writeComment);
+      //if (result.type === 'fail') {
+      const user: User = { age: 20, name: 'toto', permissions: 0 };
+      //if (!hasPermission(user, {...writeComment, ...readComment})) {
+      if (!hasPermission(user, writeComment)) {
+        // user has type User here
+        console.log('You are not authorized to write comments');
+        return 'You are not authorized to write comments';//comment and see error message
+      }
+      // user has type User here
+      submitComment(user, 'My super comment');
+    }
+    
+    onSubmit();
 
 
 ## Credits
