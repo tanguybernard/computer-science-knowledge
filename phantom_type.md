@@ -1,5 +1,42 @@
 # Phantom Type
 
+
+## C'est quoi ?
+
+Un type fantôme est un type dont la déclaration comporte un paramètre de type qui n'est pas réellement utilisé par les constructeurs ou les champs de ce type.
+
+## Kotlin
+
+
+    sealed class DoorState
+    object Open: DoorState()
+    object Closed: DoorState()
+    
+    class Door(val state: DoorState) {
+        fun open() = Door(Open)
+        fun close() = Door(Closed)
+    
+    }
+    
+    fun open(): Door {
+        val state = Open
+        return if (state == Open) throw IllegalStateException() else Door(Open)
+    }
+    
+    val success1 = Door(Open).open()
+    
+    var failed1 = Door(Closed).open()
+    
+    class DoorPhantom<out T: DoorState>(val state: T)
+    
+    fun DoorPhantom<Closed>.open() = DoorPhantom(Open)
+    fun DoorPhantom<Open>.close() = DoorPhantom(Closed)
+    
+    
+    val success = DoorPhantom(Open).close()
+    
+    var failed = DoorPhantom(Open).open()//error
+
 ## Exemple 1
 
     export interface Query<A> {
@@ -140,3 +177,5 @@ https://medium.com/@reidev275/creating-a-more-descriptive-query-model-with-phant
 https://www.bussieck.com/typescript-types-with-complex-properties/
 
 https://stackblitz.com/edit/typescript-isbn-type-constraints?file=index.ts
+
+https://proandroiddev.com/phantom-types-in-kotlin-afd3f59fde10
