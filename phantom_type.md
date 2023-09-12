@@ -38,6 +38,37 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     
     var failed = DoorPhantom(Open).open()//error
 
+## Typescript (should be improved)
+
+
+    type Open = {_type: 'Open'};
+    type Close = {_type: 'Close'};
+    
+    type DoorState<T, D =never> = {value: never} & T;
+    
+    type InitDoorClosed = (a: string) => DoorState<Close>;
+    type CloseDoor = (a: DoorState<Open>) => DoorState<Close>;
+    type OpenDoor = (a: DoorState<Close>) => DoorState<Open>;
+    
+    
+    const initDoorClosed: InitDoorClosed = value => {
+      return { value } as DoorState<Close>;
+    };
+    export const openReally: OpenDoor = value => {
+      return { value } as DoorState<Open>;
+    };
+    
+    export const closeReally: CloseDoor = value => {
+      return { value } as DoorState<Close>;
+    };
+    
+    const initialData = initDoorClosed('open');
+    
+    const openedDoor = openReally(initialData);
+    const closedDoor = closeReally(openedDoor);//ferme une porte ouverte
+    
+    const closeADoorAlreadyClose = closeReally(closedDoor); //ferme une porte deja ferme BOOM ca pete, normal
+
 ## Exemple 1
 
     export interface Query<A> {
@@ -90,7 +121,6 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
       }
       submitCommentAaargh(user, 'My super comment');
     }
-    onSubmit();
     
     //Solution
     
