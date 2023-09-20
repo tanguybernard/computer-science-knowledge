@@ -200,6 +200,41 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     
     onSubmit();
 
+## Exemple 3 
+
+
+    type Mile = {_type: "Mile"};
+    type Kilometer = {_type: "Kilometer"};
+    
+    type Distance<T, D = never> = {value: never} & T;
+    
+    type DistanceMile = (a: number) => Distance<Mile>;
+    type DistanceKm = (a: number) => Distance<Kilometer>;
+    
+    
+    export const createDistanceMile: DistanceMile = value => {
+        return { value } as Distance<Mile>;
+    };
+    
+    
+    export const createDistanceKm: DistanceKm = value => {
+        return { value } as Distance<Kilometer>;
+    };
+    const tenKm = createDistanceKm(10)
+    const tenMiles = createDistanceMile(10)
+    
+    type addDistance = <T,E, C>( a: Distance<T> )=> ((b:Distance<E>)=> Distance<C>) ;
+    
+    const add = <T> (a: Distance<T>) => b => a.value+b.value as T
+    const addKilometersToMiles  = (a: Distance<Kilometer>) => (b:Distance<Mile>) => a.value + (b.value*0.621371)
+    
+    //const result = add(20)(twentyMiles)//issue car doit etre distance valide
+    const result = addKilometersToMiles(tenKm)(tenMiles);
+    
+    console.log(result)
+
+https://www.stevenleiva.com/posts/phantom_types
+
 
 ## Credits
 
