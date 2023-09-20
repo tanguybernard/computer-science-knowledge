@@ -203,19 +203,20 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
 ## Exemple 3 
 
 
-    type Mile = {_type: "Mile"};
-    type Kilometer = {_type: "Kilometer"};
+
+    declare const phantom: unique symbol;
+    
+    type Mile = {[phantom]: "Mile"};
+    type Kilometer = {[phantom]: "Kilometer"};
     
     type Distance<T, D = never> = {value: never} & T;
     
     type DistanceMile = (a: number) => Distance<Mile>;
     type DistanceKm = (a: number) => Distance<Kilometer>;
     
-    
     export const createDistanceMile: DistanceMile = value => {
         return { value } as Distance<Mile>;
     };
-    
     
     export const createDistanceKm: DistanceKm = value => {
         return { value } as Distance<Kilometer>;
@@ -232,6 +233,7 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     const result = addKilometersToMiles(tenKm)(tenMiles);
     
     console.log(result)
+
 
 https://www.stevenleiva.com/posts/phantom_types
 
