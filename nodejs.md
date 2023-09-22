@@ -8,6 +8,8 @@ L'opération est placé dans la "call stack", la boucle d'évenement vient lire 
 
 https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62
 
+https://www.jsv9000.app/?code=c2V0VGltZW91dChmdW5jdGlvbiBhKCkgeyBjb25zb2xlLmxvZygnTWFjcm8gVGFzaycpIH0sIDApOwoKUHJvbWlzZS5yZXNvbHZlKCkKLnRoZW4oZnVuY3Rpb24gYigpIHsgY29uc29sZS5sb2coJ01pY3JvIHRhc2snKSB9KTsKCmNvbnNvbGUubG9nKCdZbycpOw%3D%3D
+
 
 ## Streaming example
 
