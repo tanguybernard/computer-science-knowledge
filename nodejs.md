@@ -4,7 +4,7 @@
 
 L’event loop permet de lire chaque ligne de code, de l’interpréter, et d’en créer un événement à faire exécuter par le thread. 
 
-L'opération est placé dans la "call stack", la boucle d'évenement vient lire l'opération et l'execute. L'opération si synchrone est executé, le resultat est retourné directement (ex: console.log). Si c'est asynchrone, le pool de thread vient traiter l'evenement est le resultat (le callback) est placé dans un "callback queue" qui sera lu par l'event loop est executé a son tour pour retourner un resultat ou alors traiter de nouveau une opération asynchrone avec un nouveau callback.
+L'opération est placé dans la "call stack", la boucle d'évenement vient lire l'opération et l'execute. L'opération alors executé dans le pool de thread, le resultat (le callback) est alors placé dans la "callback queue" qui sera lu par l'event loop est lu pour retourner un resultat ou alors traiter de nouveau une opération asynchrone avec un nouveau callback.
 
 https://dev.to/nodedoctors/an-animated-guide-to-nodejs-event-loop-3g62
 
