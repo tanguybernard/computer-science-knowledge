@@ -253,3 +253,5 @@ https://proandroiddev.com/phantom-types-in-kotlin-afd3f59fde10
 https://davesquared.net/2019/01/phantom-types.html
 
 https://www.hackingwithswift.com/plus/advanced-swift/how-to-use-phantom-types-in-swift
+
+https://sporto.github.io/elm-patterns/advanced/phantom-types.html
