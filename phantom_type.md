@@ -5,6 +5,8 @@
 
 Un type fantôme est un type dont la déclaration comporte un paramètre de type qui n'est pas réellement utilisé par les constructeurs ou les champs de ce type.
 
+Un type fantôme est un type générique qui n'est jamais utilisé à l'intérieur d'un objet. Pourquoi existe-t-il alors ? Sécurité des types.
+
 ## Kotlin
 
 L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les opérations illégales au moment de la compilation.
