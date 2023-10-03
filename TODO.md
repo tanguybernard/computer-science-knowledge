@@ -16,3 +16,8 @@ https://yoan-thirion.gitbook.io/knowledge-base/xtrem-reading/resources/book-note
  Opaque Type, combinators, Phantom type
 
 https://sporto.github.io/elm-patterns/advanced/phantom-types.html
+
+
+Flow Phantom Type
+
+https://medium.com/@gcanti/phantom-types-with-flow-828aff73232b
