@@ -240,6 +240,65 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
 https://www.stevenleiva.com/posts/phantom_types
 
 
+## Exemple Groupe Sanguin
+
+    declare const phantom: unique symbol;
+    
+    //Phantom declaration
+    type OPositive = {[phantom]: 'O+'}
+    type ONegative = {[phantom]: 'O-'}
+    type APositive = {[phantom]: 'A+'}
+    type BPositive = {[phantom]: 'B+'}
+    type ABPositive = {[phantom]: 'AB+'}
+        
+    //Sang, une valeur et un Phantom Type
+    type Blood<Type> = {value: never} & Type
+    // Signature pour créer un donneur OPositif
+    type BloodOPositive = (value: string) => Blood<OPositive>
+    type BloodAPositive = (value: string) => Blood<APositive>
+    type BloodABPositive = (value: string) => Blood<ABPositive>
+    type BloodONeg = (value: string) => Blood<ONegative>
+
+    //Implémentation
+    const createOPositive : BloodOPositive = (value) =>  {
+      return {value} as Blood<OPositive>;
+    };
+    
+    const createAPositive : BloodAPositive = (value) =>  {
+      return {value} as Blood<APositive>;
+    };
+    
+    const createABPositive : BloodABPositive = (value) =>  {
+      return {value} as Blood<ABPositive>;
+    };
+    const createONegative : BloodONeg = (value) =>  {
+      return {value} as Blood<ONegative>;
+    };
+
+    //Type de receveur De OPositve
+    type ROP = (ABPositive|APositive|BPositive|OPositive)
+    //TODO Tous enfin presque, il manque Les negatif
+    type ALL = (APositive|BPositive|ABPositive|OPositive|ONegative)
+
+    //Les combinaison
+    function GiveBlood( a: Blood<ABPositive> ,b:Blood<ABPositive>) : string ;
+    function GiveBlood( a: Blood<APositive> ,b:Blood<APositive|ABPositive>) : string ;
+    function GiveBlood( a: Blood<OPositive> ,b:Blood<ROP>) : string ;
+    
+    function GiveBlood(a: Blood<ALL>, b:Blood<ALL>) {
+      return a.value+' '+b.value;
+    }
+    
+    const userOPositive = createOPositive('O Rh');
+    const userOnegative = createONegative('O');
+    const userAPositive = createAPositive('A Rh');
+    const userAbPositive =createABPositive('AB Rh');
+    
+    
+    
+    const a = GiveBlood(userOPositive, userAPositive);
+    console.log(a);
+
 ## Credits
 
 https://medium.com/@reidev275/creating-a-more-descriptive-query-model-with-phantom-types-93d8a5c2d5d9
