@@ -299,6 +299,29 @@ https://www.stevenleiva.com/posts/phantom_types
     const a = GiveBlood(userOPositive, userAPositive);
     console.log(a);
 
+## Kotlin
+
+    data class BloodSample<T>(val value: String) {
+        
+         operator fun plus(other: BloodSample<T>): BloodSample<T> =
+                BloodSample(value + other.value)
+       
+    }
+    
+    
+    object OP
+    object ON
+    
+    
+    fun main() {
+        
+        var t = BloodSample<OP>("toto")
+        var i = BloodSample<ON>("toto")
+        
+        print(t + i)//Error
+        
+    }
+
 ## Credits
 
 https://medium.com/@reidev275/creating-a-more-descriptive-query-model-with-phantom-types-93d8a5c2d5d9
