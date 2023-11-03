@@ -5,6 +5,8 @@ Data Mesh
 
 https://www.youtube.com/watch?v=TSBxFTPHmr0
 
+https://www.groupeonepoint.com/fr/nos-publications/les-concepts-cles-du-data-mesh/
+
 Polarity Management
 
 
