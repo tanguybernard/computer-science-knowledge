@@ -9,6 +9,8 @@ https://www.groupeonepoint.com/fr/nos-publications/les-concepts-cles-du-data-mes
 
 Polarity Management
 
+polarité: exemple le gaz a effet de serre, en quantité suffisante, c'est bien, garde la chaleur, en trop grande quantité : rechauffement climatique, pas bien.
+
 
 Team Topologies
 
