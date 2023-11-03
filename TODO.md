@@ -11,6 +11,12 @@ Polarity Management
 
 polarité: exemple le gaz a effet de serre, en quantité suffisante, c'est bien, garde la chaleur, en trop grande quantité : rechauffement climatique, pas bien.
 
+Une polarité
+Exmple: est-ce qu’il faut qu’on prévoie tout pour nos travaux au boulon près dans un tableau Excel ou bien laisser de la place à l’imprévu, au flow, à la spontanéité ?
+
+https://oyomy.fr/2020/04/polarity-management-pour-plus-dempathie-dans-la-resolution-de-problemes-complexes/
+
+https://interpole.xyz/?ConflictualiteLaNotionDePolarite
 
 Team Topologies
 
