@@ -31,3 +31,7 @@ https://sporto.github.io/elm-patterns/advanced/phantom-types.html
 Flow Phantom Type
 
 https://medium.com/@gcanti/phantom-types-with-flow-828aff73232b
+
+Modular monolith
+
+https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design
