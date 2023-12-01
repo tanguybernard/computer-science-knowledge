@@ -94,6 +94,10 @@ Runtime Env : JRE (Java Runtime Environment), Node
 https://www.mongodb.com/cloud-explained/paas-platform-as-a-service
 
 
+## VPS :serveur privé virtuel
+
+Un serveur privé virtuel est un environnement isolé, créé sur un serveur physique à partir d’une technologie de virtualisation.
+
 ## Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
