@@ -35,3 +35,10 @@ https://medium.com/@gcanti/phantom-types-with-flow-828aff73232b
 Modular monolith
 
 https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design
+
+
+Archi
+
+https://www.developertoarchitect.com/lessons/
+
+https://nealford.com/katas/list.html
