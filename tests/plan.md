@@ -5,7 +5,7 @@
 Le plan de test est une destination, alors la stratégie de test QA est une carte pour atteindre cette destination.
 
 Le plan traite :
-- de lacouverture des tests
+- de la couverture des tests
 - de la planification
 - des fonctionnalités à tester
 - des fonctionnalités à ne pas tester
