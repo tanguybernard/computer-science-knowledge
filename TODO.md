@@ -42,3 +42,8 @@ Archi
 https://www.developertoarchitect.com/lessons/
 
 https://nealford.com/katas/list.html
+
+
+Integration TEst
+
+https://www.softwaretestingmaterial.com/integration-testing/
