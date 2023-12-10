@@ -3,7 +3,7 @@
 ## Definition
 
 
-## 4
+## Les 4 types
 
 ### Big-Bang Integration
 
