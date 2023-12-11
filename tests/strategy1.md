@@ -13,7 +13,7 @@ Définir le processus de test, le niveau de test, les rôles et les responsabili
 
 #### Types
 
-##### Unitaire
+##### Unitaire / Composant
 
 Les tests unitaires sont des tests effectués pour déterminer si les composants individuels du programme fonctionnent conformément aux spécifications de conception.
 
