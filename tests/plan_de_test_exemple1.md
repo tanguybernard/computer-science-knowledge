@@ -50,16 +50,17 @@ Ces fonctionnalités ne sont pas testées car elles ne sont pas incluses dans le
 
 Sur chaque US un exemple de test sera écrit. Le développeur implementera le test et le jouera.
 
-Le PO devra tester l'US et le marqué comme Validé, Ignoré ou Echoué.
+Le PO devra tester l'US et le marquer comme Validé, Ignoré ou Echoué.
 
 Lorsque les tests sont marqués comme étant en échec, des rapports de bogues seront automatiquement créés dans Jira.
 
 ## 8. Critères de réussite/échec
 
+Toutes les fonctionnalités de base des systèmes doivent fonctionner comme prévu et comme indiqué dans les différents cas de test. Aucun défaut critique ne doit être détecté et l'utilisateur final doit être en mesure d'accéder au portail.
 
 ## 9. Produits livrables du test
 
-Un rapport de couverture de test sera produit.
+Un rapport de test devra être mis à disposition.
 
 ## 10. Tâches de test
 
@@ -93,7 +94,6 @@ Avant chaque mise en prod, le PO devra effectuer les tests des nouvelles US sur 
 
 - Risque sur l'OS, ne testant que sur Windows, quid de mac ?
 - Risque sur les mobiles, responsive non testé
-- 
 
 
 ## 16. Approbations
