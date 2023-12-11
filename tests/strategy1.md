@@ -9,7 +9,8 @@ Ce document défini la stratégie global de l'entreprise/ du pole Web et Mobile.
 
 ### Test approach
 
-#### Testing levels
+Définir le processus de test, le niveau de test, les rôles et les responsabilités de chaque membre de l'équipe.
+
 
 
 
@@ -33,13 +34,20 @@ Notes :
 
 ### Release control
 
+Les tickets doivent passer au statut "Terminé" et être marqués d'un numéro de release avant de pouvoir être publiées.
 
 ### Risk Analysis
 
+Les risques potentiels sont les suivants :
 
+- les retards dans le développement
+- changements dans les exigences
+- les problèmes de compatibilité des navigateurs
 
 ## Credits
 
 https://www.softwaretestinghelp.com/writing-test-strategy-document-template/
 
 https://katalon.com/resources-center/blog/test-strategy
+
+https://blog.testlodge.com/wp-content/uploads/2022/06/test-strategy-example-pdf.pdf
