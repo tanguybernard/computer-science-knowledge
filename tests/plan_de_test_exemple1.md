@@ -7,14 +7,13 @@ Norme IEEE 829
 Historique
 
 |Version            | Auteur          | Description              | Date         |
-| :---------------: |:---------------:|: -----------------------:|: -----------:|
+|:-----------------:|:---------------:|:-----------------------:|:-------------:|
 | v1.0.0            |  Tanguy Bernard |  Initialisation document | 11 dec. 2023 |
-|                   |                 |                          |              |
 
 
 ## 2. Les références
 
--- Ici Bibliographie
+Ici Bibliographie
 
 ## 3. Introduction
 
