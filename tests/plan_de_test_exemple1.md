@@ -106,3 +106,5 @@ Le chef de projet et le PO doivent se mettre  d'accord sur l'achèvement du proj
 https://commentouvrir.com/definitions/une-vue-densemble-de-lieee-829/
 
 https://docs.google.com/document/d/1F1TUX5BkviRbw8auI2Xq2K2wyGTS-Ag14DRymiELmzc/edit
+
+https://ittestgroup.com/conseils-actualites/plan-de-test-vs-strategie-de-test/
