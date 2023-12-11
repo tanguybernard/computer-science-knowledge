@@ -23,7 +23,7 @@ Ce document défini la stratégie global de l'entreprise/ du pole Web et Mobile.
 
 Notes :
 
-- Gardian dispose d'un environnement de recette, qui est utilisé pour le développement, les tests, et les environnements de recette.
+- L'Identity providers dispose d'un environnement de recette, qui est utilisé pour le développement, les tests, et les environnements de recette.
 
 ### Testing tools
 
