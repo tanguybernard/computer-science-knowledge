@@ -3,7 +3,7 @@
 
 ### Introduction
 
-Ce document défini la stratégie global de l'entreprise/ du pole Web et Mobile.
+Document de haut niveau définissant, pour un programme, les niveaux de tests à exécuter et les tests dans chacun de ces niveaux (pour un ou plusieurs projets)
 
 ###  Scope And Overview
 
