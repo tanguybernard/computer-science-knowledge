@@ -21,6 +21,9 @@ LA stratégie traite :
 - de l'analyse des risques
 
 
+
+La gouvernance ? Qui fait quoi ?
+
 ## Credits
 
 https://www.guru99.com/fr/how-to-create-test-strategy-document.html
