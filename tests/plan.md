@@ -14,7 +14,7 @@ Le plan traite :
 
 LA stratégie traite :
 - de l'objectif du test
-- de l'environnement de test
+- de l'environnement de test  (Tout les tests sur tout les envs ?)
 - de l'approche de test
 - des outils
 - de la stratégie d'automatisation
