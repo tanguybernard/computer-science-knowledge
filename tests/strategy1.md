@@ -11,8 +11,24 @@ Ce document défini la stratégie global de l'entreprise/ du pole Web et Mobile.
 
 Définir le processus de test, le niveau de test, les rôles et les responsabilités de chaque membre de l'équipe.
 
+#### Types
+
+##### Unitaire
+
+Les tests unitaires sont des tests effectués pour déterminer si les composants individuels du programme fonctionnent conformément aux spécifications de conception.
+
+- Propriétaires: Développeurs principaux correspondants
+- Approche de la mise en œuvre: A la discrétion du développeur
+- Outils/Techniques: Tests automatisés
+
+##### Integration
 
 
+Les tests d'integration sont conçus pour tester un groupe de composants.
+
+- Propriétaires: Développeurs principaux correspondants
+- Approche de la mise en œuvre: A la discrétion du développeur
+- Outils/Techniques: Tests manuels
 
 
 ### Test Environment
