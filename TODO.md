@@ -47,3 +47,9 @@ https://nealford.com/katas/list.html
 Integration TEst
 
 https://www.softwaretestingmaterial.com/integration-testing/
+
+Blockchain
+
+https://ethereum.stackexchange.com/questions/72284/store-data-on-blockchain-via-backend-app
+
+https://catchtheblock.com/store-tasmota-sensor-data-to-the-blockchain-ethereum/
