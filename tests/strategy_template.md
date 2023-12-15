@@ -4,12 +4,14 @@
 
 La stratégie de test est le document de haut niveau définissant, pour un programme, les niveaux de tests à exécuter et les tests dans chacun de ces niveaux (pour un ou plusieurs projets).
 
-### Introduction
+## Chapters
+
+### Objectif et contexte du document
 
 
-###  Scope And Overview
+###  Le contexte général 
 
-### Test approach
+### La définition des tests effectués et leur but
 
 Définir le processus de test, le niveau de test, les rôles et les responsabilités de chaque membre de l'équipe.
 
