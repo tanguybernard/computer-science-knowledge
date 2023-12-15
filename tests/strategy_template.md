@@ -1,5 +1,8 @@
 # Strategy
 
+## ISTQB Definition
+
+La stratégie de test est le document de haut niveau définissant, pour un programme, les niveaux de tests à exécuter et les tests dans chacun de ces niveaux (pour un ou plusieurs projets).
 
 ### Introduction
 
