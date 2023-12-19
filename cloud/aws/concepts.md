@@ -103,7 +103,7 @@ __Security group as Source for a rule in another Security Group:__
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
 
-### Networking
+### Internet connectivity
 
 An internet gateway is a VPC component that allows communication between your VPC and the internet.
 
