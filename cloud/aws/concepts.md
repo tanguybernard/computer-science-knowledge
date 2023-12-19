@@ -112,3 +112,14 @@ An internet gateway is a VPC component that allows communication between your VP
 A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
 
 VPC Peering supports peering between multiple accounts
+
+
+
+### Configuration
+
+1. Add VPC Peering
+2. VPC Peering > Actions > Accept Request
+1. ec2 Instance > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Finance) from VPC on Destination (ex: 172.31.0.0/16) AND Peering Conection (pcx- ...)
+1. ec2 Instance > update security (Copy CIDR 192.168.0.0/20)
+2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
+
