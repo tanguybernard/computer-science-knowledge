@@ -74,3 +74,6 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 ## AWS VPC
 
+Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
+
+
