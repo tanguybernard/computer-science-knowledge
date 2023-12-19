@@ -44,6 +44,11 @@ How To Connect ?
 - Session Manager (a capability of AWS Systems Manager)
 - ssh client
 
+
+Burstable
+
+Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
+
 ## Amazon Elastic File System (EFS)
 
 ## Amazon Elastic Block Store (EBS)
