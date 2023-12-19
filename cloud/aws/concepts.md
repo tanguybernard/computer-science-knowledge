@@ -103,7 +103,12 @@ __Security group as Source for a rule in another Security Group:__
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
 
-#### Networking
+### Networking
 
 An internet gateway is a VPC component that allows communication between your VPC and the internet.
 
+## VPC Peering
+
+A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
+
+VPC Peering supports peering between multiple accounts
