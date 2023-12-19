@@ -93,7 +93,7 @@ Subnet * -- 1 NACL
 
 By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
-Security Group => Stateful
+Security Group are Stateful
 
 
 
