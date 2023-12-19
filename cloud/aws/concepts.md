@@ -95,7 +95,7 @@ By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
 Security Group are Stateful
 
+#### Networking
 
-
-
+An internet gateway is a VPC component that allows communication between your VPC and the internet.
 
