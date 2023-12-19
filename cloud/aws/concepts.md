@@ -82,6 +82,7 @@ A __subnet__ is a range of IP addresses in your VPC. You can create AWS resource
 ### Security
 
 #### NACL 
+
 Network Access Control List == Firewall at the subnet boundary
 
 You can dispose of multiple subnets to a NACL but only one NACL per subnet
@@ -90,7 +91,9 @@ Subnet * -- 1 NACL
 
 #### Seurity Group (Virtual Firewall at Instance Level)
 
-By DEfault Denies all Inbound Trafic and Allows all Outbound Trafic
+By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
+
+Security Group => Stateful
 
 
 
