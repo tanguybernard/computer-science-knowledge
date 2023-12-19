@@ -130,3 +130,11 @@ VPC Peering supports peering between multiple accounts
 1. ec2 Instance Finance (Accepter) > update security > ADD ICMP - IPv4 (Copy CIDR 192.168.0.0/20) 
 2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
 
+
+## Amazon Relational Database Service (RDS)
+
+Using multiple AZ's means : high availability and disaster recovery, not increased performance
+
+Doing read-intensive workloads ? Solution : A read replica
+
+
