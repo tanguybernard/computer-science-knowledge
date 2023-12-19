@@ -78,6 +78,12 @@ Control Virtual Network Environment (Ip Adress range, subnets, route tables, Net
 
 A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
 
+### Internet Gateway vs NAT Gateway
+
+- Internet Gateway (IGW) allows instances with public IPs to access the internet.
+- NAT Gateway (NGW) allows instances with no public IPs to access the internet.
+
+https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6
 
 ### Security
 
