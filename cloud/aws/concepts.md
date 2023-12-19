@@ -76,4 +76,5 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
 
+A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
 
