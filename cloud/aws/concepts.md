@@ -78,3 +78,15 @@ Control Virtual Network Environment (Ip Adress range, subnets, route tables, Net
 
 A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
 
+
+### Security
+
+Network Access Control List == Firewall at the subnet boundary
+
+You can dispose of multiple subnets to a NACL but only one NACL per subnet
+
+Subnet * -- 1 NACL
+
+
+
+
