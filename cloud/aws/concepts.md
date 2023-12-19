@@ -121,6 +121,6 @@ VPC Peering supports peering between multiple accounts
 2. VPC Peering > Actions > Accept Request
 1. ec2 Instance (Requester)  > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Finance) from VPC on Destination (ex: 172.31.0.0/16) AND Peering Conection (pcx- ...)
 2. ec2 Instance (Accepter) > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Marketing) from VPC on Destination (ex: 192.168.0.0/20) AND Peering Conection (pcx- ...)
-1. ec2 Instance Finance (Accepter) > update security (Copy CIDR 192.168.0.0/20)
+1. ec2 Instance Finance (Accepter) > update security > ADD ICMP - IPv4 (Copy CIDR 192.168.0.0/20) 
 2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
 
