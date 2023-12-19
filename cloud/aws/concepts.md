@@ -95,6 +95,14 @@ By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
 Security Group are Stateful
 
+
+__Security group as Source for a rule in another Security Group:__
+
+"When you specify a security group as the source for a rule, traffic is allowed from the network interfaces that are associated with the source security group for the specified protocol and port. Incoming traffic is allowed based on the private IP addresses of the network interfaces that are associated with the source security group (and not the public IP or Elastic IP addresses). Adding a security group as a source does not add rules from the source security group."
+
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
+
 #### Networking
 
 An internet gateway is a VPC component that allows communication between your VPC and the internet.
