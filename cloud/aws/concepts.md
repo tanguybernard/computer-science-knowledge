@@ -49,6 +49,14 @@ Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file 
 
 On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 
+
+##### Configuration EC2 <> EFS
+
+1. Create a security group
+2.  Choose VPC that receive NFS files (EC2 instances are)
+3.  Add Inbound Type NFS And Source : Security Group WebServers
+4.  
+
 #### Amazon Elastic Block Store (EBS)
 
 Designed for use with and Only Amazon EC2 Not Lambda.
