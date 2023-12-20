@@ -142,4 +142,12 @@ Using multiple AZ's means : high availability and disaster recovery, not increas
 
 Doing read-intensive workloads ? Solution : A read replica
 
+## AWS CloudFormation
 
+AWS CloudFormation is a service that helps you model and set up your AWS resources
+
+## AWS CloudFront (CDN)
+
+## AWS CloudTrail
+
+AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
