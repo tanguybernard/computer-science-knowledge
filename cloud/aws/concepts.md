@@ -156,6 +156,12 @@ __AWS Shield Standard__ is included automatically and transparently to Amazon Cl
 - Active Traffic Monitoring with Network flow monitoring and Automatic always-on detection.
 - Attack Mitigations with Protection from common DDoS attacks
 
+Note :
+
+__Edge locations__ are AWS data centers designed to deliver services with the lowest latency possible.
+
+CloudFront, which uses edge locations to cache copies of the content that it serves, so the content is closer to users and can be delivered to them faster.
+
 ## AWS CloudTrail
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
