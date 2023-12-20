@@ -47,6 +47,8 @@ Can be used with EC2 or Lambda
 
 Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file storage so that you can share file data without provisioning or managing storage capacity and performance. 
 
+On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
+
 #### Amazon Elastic Block Store (EBS)
 
 Designed for use with and Only Amazon EC2 Not Lambda.
