@@ -67,6 +67,17 @@ EBS Volume Types:
 - SSD - Solid-State Drive
 - HDD - Hard Disk Drive
 
+### DynamoDB
+
+DynamoDB supports key/value and document data models.
+
+Read/Write Capacity Mode
+- Provisioned (Set capacity Read and write)
+- On Demand
+
+Feature: You can implement Trigger , which for example trigger AWS Lambda and Lambda can for example send notification in response !
+
+Feature: PITR (Point-in-time-recovery) , provide Backup
 
 ### Amazon EC2 - Amazon Elastic Compute Cloud
 
