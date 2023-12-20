@@ -15,7 +15,25 @@ AZ : Logical Data center
 
 Partition: A partition is a grouping of Regions. 
 
-## Amazon S3 - Amazon Simple Storage Service 
+## AWS Migration strategy (approach)
+
+A migration strategy is the approach used to migrate a workload into the AWS Cloud. There are seven migration strategies for moving applications to the cloud, known as the 7 Rs:
+
+- Retire
+- Retain
+- Rehost
+- Relocate
+- Repurchase
+- Replatform
+- Refactor or re-architect
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html
+
+## AWS Services
+
+### Storage
+
+#### Amazon S3 - Amazon Simple Storage Service 
 
 A bucket is a container for objects. An object is a file and any metadata that describes that file. To store an object in Amazon S3, you create a bucket and then upload the object to the bucket.
 
@@ -23,7 +41,24 @@ File Example:  photos/puppy.jpeg
 
 Main use: Storing large amounts of static data and ideal for data backups.
 
-## Amazon EC2 - Amazon Elastic Compute Cloud
+Can be used with EC2 or Lambda
+
+#### Amazon Elastic File System (EFS)
+
+Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file storage so that you can share file data without provisioning or managing storage capacity and performance. 
+
+#### Amazon Elastic Block Store (EBS)
+
+Designed for use with and Only Amazon EC2 Not Lambda.
+
+Only one EBS on EC2 instance at the same time
+
+EBS Volume Types:
+- SSD - Solid-State Drive
+- HDD - Hard Disk Drive
+
+
+### Amazon EC2 - Amazon Elastic Compute Cloud
 
 Instance -> Virtual Server
 
@@ -49,50 +84,29 @@ Burstable
 
 Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
 
-## Amazon Elastic File System (EFS)
 
-## Amazon Elastic Block Store (EBS)
+### AWS Systems Manager
 
-Designed for use with Amazon EC2.
+AWS Systems Manager provides configuration management, which helps you maintain consistent configuration of your Amazon EC2 or on-premises instances. With Systems Manager, you can control configuration details such as server configurations, anti-virus definitions, firewall settings, and more.
 
-Only once EBS on EC2 instance at the same time
 
-EBS Volume Types:
-- SSD - Solid-State Drive
-- HDD - Hard Disk Drive
 
-## AWS Systems Manager
-
-## AWS Migration strategy
-
-A migration strategy is the approach used to migrate a workload into the AWS Cloud. There are seven migration strategies for moving applications to the cloud, known as the 7 Rs:
-
-- Retire
-- Retain
-- Rehost
-- Relocate
-- Repurchase
-- Replatform
-- Refactor or re-architect
-
-https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html
-
-## AWS VPC
+### AWS VPC
 
 Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
 
 A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
 
-### Internet Gateway vs NAT Gateway
+#### Internet Gateway vs NAT Gateway
 
 - Internet Gateway (IGW) allows instances with public IPs to access the internet.
 - NAT Gateway (NGW) allows instances with no public IPs to access the internet.
 
 https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6
 
-### Security
+#### Security
 
-#### NACL 
+##### NACL 
 
 Network Access Control List == Firewall at the subnet boundary
 
@@ -100,7 +114,7 @@ You can dispose of multiple subnets to a NACL but only one NACL per subnet
 
 Subnet * -- 1 NACL
 
-#### Seurity Group (Virtual Firewall at Instance Level)
+##### Seurity Group (Virtual Firewall at Instance Level)
 
 By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
@@ -114,11 +128,11 @@ __Security group as Source for a rule in another Security Group:__
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
 
-### Internet connectivity
+#### Internet connectivity
 
 An internet gateway is a VPC component that allows communication between your VPC and the internet.
 
-## VPC Peering
+### VPC Peering
 
 A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
 
@@ -126,7 +140,7 @@ VPC Peering supports peering between multiple accounts
 
 
 
-### Configuration
+#### Configuration
 
 1. Add VPC Peering
 2. VPC Peering > Actions > Accept Request
@@ -136,17 +150,17 @@ VPC Peering supports peering between multiple accounts
 2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
 
 
-## Amazon Relational Database Service (RDS)
+### Amazon Relational Database Service (RDS)
 
 Using multiple AZ's means : high availability and disaster recovery, not increased performance
 
 Doing read-intensive workloads ? Solution : A read replica
 
-## AWS CloudFormation
+### AWS CloudFormation
 
 AWS CloudFormation is a service that helps you model and set up your AWS resources
 
-## AWS CloudFront (CDN)
+### AWS CloudFront (CDN)
 
 Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
 
@@ -162,10 +176,16 @@ __Edge locations__ are AWS data centers designed to deliver services with the lo
 
 CloudFront, which uses edge locations to cache copies of the content that it serves, so the content is closer to users and can be delivered to them faster.
 
-## AWS CloudTrail
+### AWS CloudTrail
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
 
+
+### AWS IAM
+
+Manage access to AWS Resources
+
+Free Service
 
 
 
