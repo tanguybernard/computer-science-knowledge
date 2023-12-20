@@ -148,6 +148,14 @@ AWS CloudFormation is a service that helps you model and set up your AWS resourc
 
 ## AWS CloudFront (CDN)
 
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
+
+Note : 
+
+__AWS Shield Standard__ is included automatically and transparently to Amazon CloudFront distributions providing:
+- Active Traffic Monitoring with Network flow monitoring and Automatic always-on detection.
+- Attack Mitigations with Protection from common DDoS attacks
+
 ## AWS CloudTrail
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
