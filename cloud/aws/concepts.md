@@ -165,3 +165,10 @@ CloudFront, which uses edge locations to cache copies of the content that it ser
 ## AWS CloudTrail
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
+
+
+
+
+## Credits
+
+https://cloudtips.dev/2022/12/17/what-is-region-availability-zone-edge-locations-pop-in-aws/
