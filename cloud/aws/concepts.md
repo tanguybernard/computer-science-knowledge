@@ -67,6 +67,10 @@ EBS Volume Types:
 - SSD - Solid-State Drive
 - HDD - Hard Disk Drive
 
+Notes :
+
+__EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos données et peuvent être utilisés pour permettre la reprise après sinistre, migrer les données entre les régions et les comptes, et améliorer la conformité des sauvegardes.
+
 ### DynamoDB
 
 DynamoDB supports key/value and document data models.
