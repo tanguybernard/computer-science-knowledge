@@ -246,6 +246,29 @@ CloudFront, which uses edge locations to cache copies of the content that it ser
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
 
+### AWS CloudWatch
+
+Monitoring and observability service.
+
+Monitor resources. Track metrics CPU, RAM, Network...
+
+Collect metrics on AWS Services and On-Premises
+
+### Amazon Simple Notification Service (SNS)
+
+A web service that coordinates and manages message delivery from publishers to subscribers.
+
+### AWS Elasctic Load Balancing (ELB)
+
+Distributes incoming traffic.
+
+To do that, we must create Listener, that define rules.
+
+Load Balancer Types (for High Availability, Automatic Scaling, Robust Security, Fault Tolerance) :
+- Application LB (Layer 7 - App, http, https, gRPC)
+- Network LB (Layer 4 - Connetion, TCP, UDP, TLS)
+- Gateway LB (Layer 4 And Layer 3 - Gateway, IP)
+- Classic LB (Layer 4 - Layer 7, TCP, SSL, TLS, HTTP, HTTPS)
 
 ### AWS IAM
 
@@ -264,6 +287,23 @@ Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs 
 When you subscribe to an Enterprise plan or qualified Reseller Support plan, your Amazon Web Services Concierge will be assigned to your account. The global customer service team is available to assist you 24/7, 365 days a year.
 
 https://www.watsonmedia.net/question/what-is-aws-concierge/
+
+## Highly Available Web Application
+
+- Minimize service interruptions
+- Enable resources to be available when they are needed
+
+Principles for architecting High Availability:
+
+- Design For Failure (solution ex: Services spread over multiple regions and AZs)
+- Embrace elasticity and Automation (solution ex: CloudWatch and Auto Scaling Groups)
+- Loosely couple components (solution ex: Elastic Load Balancer, Amazon SQS (Queue))
+- Become Stateless (Amazon Elasticache, DynamoDB)
+- Use Parallelism (ex: Use microservices)
+- Security as forethought (ex: Encryption, Principle Of Least Privileges)
+
+
+
 
 ## Credits
 
