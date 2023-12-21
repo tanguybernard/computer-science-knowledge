@@ -212,7 +212,11 @@ Manage access to AWS Resources
 
 Free Service
 
+## Pricing
 
+### Savings Plans
+
+Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande en échange d'un engagement d'utilisation donné (mesuré en USD/heure) sur une période de un ou trois ans. 
 
 ## Credits
 
