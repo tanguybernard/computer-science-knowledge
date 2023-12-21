@@ -55,7 +55,7 @@ On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 1. Create a security group
 2.  Choose VPC that receive NFS files (EC2 instances are)
 3.  Add Inbound Type NFS And Source : Security Group WebServers
-4.  
+4.  ...
 
 #### Amazon Elastic Block Store (EBS)
 
