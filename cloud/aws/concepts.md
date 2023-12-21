@@ -145,6 +145,12 @@ With scheduled scaling, you can set up automatic scaling for your application ba
 
 For example with Load Balancer to Replace or Rebalance.
 
+
+
+### AWS Lambda
+
+AWS Lambda is serverless compute service for running code without having to provision or manage servers.
+
 ### AWS Systems Manager
 
 AWS Systems Manager provides configuration management, which helps you maintain consistent configuration of your Amazon EC2 or on-premises instances. With Systems Manager, you can control configuration details such as server configurations, anti-virus definitions, firewall settings, and more.
@@ -252,6 +258,12 @@ Free Service
 ### Savings Plans
 
 Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande en échange d'un engagement d'utilisation donné (mesuré en USD/heure) sur une période de un ou trois ans. 
+
+### AWS concierge 
+
+When you subscribe to an Enterprise plan or qualified Reseller Support plan, your Amazon Web Services Concierge will be assigned to your account. The global customer service team is available to assist you 24/7, 365 days a year.
+
+https://www.watsonmedia.net/question/what-is-aws-concierge/
 
 ## Credits
 
