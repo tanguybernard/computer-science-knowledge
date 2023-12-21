@@ -110,6 +110,41 @@ Burstable
 Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
 
 
+### AWS EC2 Auto Scaling and Healing
+
+
+#### Auto Scaling group
+
+An Auto Scaling group contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. 
+
+##### How Configure ?
+
+You can capture the content of an instance and its volume into AMI :
+
+1. Click to an Instance
+2. Actions
+3. Image and template
+4. Create Image
+
+By default, an AMI that you create is available only within the AWS Region of creation.
+
+
+Create a Launch Template
+
+For example, a launch template can contain the AMI ID, instance type (ex: t2.nano), and network settings that you typically use to launch instances.
+
+Finally Create an Auto Scaling Group
+
+You can create a __Scheduled scaling__ : 
+
+With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes by creating scheduled actions that increase or decrease your group's desired capacity at specific times.
+
+#### Scaling
+
+#### Healing
+
+For example with Load Balancer to Replace or Rebalance.
+
 ### AWS Systems Manager
 
 AWS Systems Manager provides configuration management, which helps you maintain consistent configuration of your Amazon EC2 or on-premises instances. With Systems Manager, you can control configuration details such as server configurations, anti-virus definitions, firewall settings, and more.
