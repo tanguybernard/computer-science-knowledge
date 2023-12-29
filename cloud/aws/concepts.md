@@ -61,6 +61,17 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 ### Amazon EC2 - Amazon Elastic Compute Cloud
 
+
+#### Family
+
+- General Purpose: Balanced ressources - Ideal for Web Services, backend servers for enterprise applications...
+- Compute optimized: high-performance processors - Ideal for Web, gaming servers...
+- Memory optimized
+- Accelerated computing
+- Storage optimized: High performance to
+
+#### Intro
+
 Instance -> Virtual Server
 
 There are different types of instance (ex: t2) and different size.
