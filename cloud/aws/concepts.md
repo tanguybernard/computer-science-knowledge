@@ -1,5 +1,25 @@
 # Notes
 
+## Cloud Computing
+
+Definition: On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+
+3 Models:
+- Cloud Based
+- On-Premise
+- Hybrid
+
+__Upfront expense__ refers to data centers, physical servers, and other resources that you would need to invest in before using them.
+
+__Variable expense__ means you only pay for computing resources you consume.
+
+
+## AWS Well-Architected 
+
+AWS Well-Architected  helps cloud architects and developers build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.
+
+https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
+
 
 ## Cloud Concepts
 
