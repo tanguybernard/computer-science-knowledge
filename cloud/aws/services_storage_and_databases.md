@@ -57,3 +57,7 @@ As a pay-as-you-use model, on-demand capacity is typically suitable for applicat
 Feature: You can implement Trigger , which for example trigger AWS Lambda and Lambda can for example send notification in response !
 
 Feature: PITR (Point-in-time-recovery) , provide Backup
+
+## Amazon Redshift
+
+Power data driven decisions with the best price-performance cloud data warehouse.
