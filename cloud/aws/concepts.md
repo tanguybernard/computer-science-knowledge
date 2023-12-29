@@ -14,6 +14,10 @@ __Upfront expense__ refers to data centers, physical servers, and other resource
 __Variable expense__ means you only pay for computing resources you consume.
 
 
+__How does the scale of cloud computing help you to save costs?__
+The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
+
+
 ## AWS Well-Architected 
 
 AWS Well-Architected  helps cloud architects and developers build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.
