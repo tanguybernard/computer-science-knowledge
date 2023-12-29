@@ -7,6 +7,9 @@ https://coderjony.com/blogs/cloud-computing-concepts-high-availability-scalabili
 
 ## AWS General Info
 
+
+Key concept : You only pay for what you use !
+
 AWS 22 Regions (Separate Geographic area), and inside there are multiple Availability Zones (AZ), at least 2 per region. Each AZ is fully isolated.
 
 Each AZ have one or more physical data centers.
