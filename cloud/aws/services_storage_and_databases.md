@@ -45,9 +45,14 @@ __EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos donn
 
 DynamoDB supports key/value and document data models.
 
-Read/Write Capacity Mode
-- Provisioned (Set capacity Read and write)
-- On Demand
+__Read/Write Capacity Modes:__
+
+__Provisioned capacity__ allows you to specify the number of read/write operations your application requires per second, ahead of time.
+This mode is typically suitable for use cases with predictable traffic patterns or if an organization plans to increase traffic gradually.
+
+__On Demand Capacity__, DynamoDB resources scale automatically when the workloads fluctuate.
+As a pay-as-you-use model, on-demand capacity is typically suitable for applications with unpredictable traffic or unknown workloads. 
+
 
 Feature: You can implement Trigger , which for example trigger AWS Lambda and Lambda can for example send notification in response !
 
