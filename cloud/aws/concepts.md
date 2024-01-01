@@ -1,5 +1,9 @@
 # Notes
 
+##  Certification
+
+https://stormacq.com/2020/08/31/bien-demarrer.html
+
 ## Cloud Computing
 
 Definition: On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
