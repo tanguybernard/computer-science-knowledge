@@ -86,7 +86,9 @@ Notes:
 
 EC2 Instance Savings Plans reduce your EC2 instance costs when you make an hourly spend commitment to an instance family and Region for a 1-year or 3-year term.
 
+__What is the difference between EC2 Savings Plan and Reserved Instances (RIs)?__
 
+__Reserved instances__ provide a discount when you reserve a certain amount of __computing power__ (measured per hour) for a one- or three-year period while __Savings Plans__ provide a discount when you commit to spending a __certain amount__ (measured in dollars per hour) for a one-or three-year period.
 
 #### Intro
 
