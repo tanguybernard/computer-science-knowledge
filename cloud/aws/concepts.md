@@ -76,6 +76,16 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 #### Amazon EC2 pricing
 
+- On Demand
+- Savings Plans
+- Reserved Instances (predictable )
+- Spot Instances (can be reclaim, can be interrupted)
+- Dedicated hosts (physical servers with Amazon EC2 instance capacity that is fully dedicated to your use)
+
+Notes:
+
+EC2 Instance Savings Plans reduce your EC2 instance costs when you make an hourly spend commitment to an instance family and Region for a 1-year or 3-year term.
+
 
 
 #### Intro
