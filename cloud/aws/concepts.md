@@ -66,9 +66,13 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 - General Purpose: Balanced ressources - Ideal for Web Services, backend servers for enterprise applications...
 - Compute optimized: high-performance processors - Ideal for Web, gaming servers...
-- Memory optimized
-- Accelerated computing
-- Storage optimized: High performance to
+- Memory optimized: fast performance for workloads that process large datasets in memory (ex: high-performance databases)
+- Accelerated computing: use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs
+- Storage optimized: high performance for locally stored data. (ex: data warehousing applications)
+
+#### Amazon EC2 pricing
+
+
 
 #### Intro
 
