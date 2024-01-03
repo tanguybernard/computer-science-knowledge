@@ -119,12 +119,24 @@ Traditional Amazon EC2 instance types provide fixed CPU resources, while burstab
 
 ### AWS EC2 Auto Scaling and Healing
 
+#### Scaling
 
-#### Auto Scaling group
+Two approaches:
+
+- Dynamic scaling responds to changing demand. 
+- Predictive scaling automatically schedules the right number of Amazon EC2 instances based on predicted demand.
+
+
+##### Auto Scaling group
 
 An Auto Scaling group contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. 
 
-##### How Configure ?
+You can set:
+- minimum capacity (number of Amazon EC2 instances that launch immediately after you have created the Auto Scaling group)
+- desired capacity
+- maximum capacity
+
+###### How Configure ?
 
 You can capture the content of an instance and its volume into AMI :
 
@@ -146,12 +158,16 @@ You can create a __Scheduled scaling__ :
 
 With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes by creating scheduled actions that increase or decrease your group's desired capacity at specific times.
 
-#### Scaling
+
 
 #### Healing
 
 For example with Load Balancer to Replace or Rebalance.
 
+
+### AWS Elastic Load Balancing (ELB)
+
+Service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.
 
 
 ### AWS Lambda
