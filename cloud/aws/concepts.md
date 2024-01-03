@@ -65,6 +65,29 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/m
 
 ### Amazon EC2 - Amazon Elastic Compute Cloud
 
+Instance -> Virtual Server
+
+There are different types of instance (ex: t2) and different size.
+
+AMI : Amazon Machine Image = Information To Launch one or many instances.
+
+AMI is composed of: OS, Applications and App Server
+
+EC2 Storage Possibility:
+- EBS (Persistant)
+- EFS
+- Instant Storre (Temporary)
+
+How To Connect ?
+
+- EC2 Instant Connect
+- Session Manager (a capability of AWS Systems Manager)
+- ssh client
+
+Burstable:
+
+Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
+
 
 #### Family
 
@@ -89,32 +112,6 @@ EC2 Instance Savings Plans reduce your EC2 instance costs when you make an hourl
 __What is the difference between EC2 Savings Plan and Reserved Instances (RIs)?__
 
 __Reserved instances__ provide a discount when you reserve a certain amount of __computing power__ (measured per hour) for a one- or three-year period while __Savings Plans__ provide a discount when you commit to spending a __certain amount__ (measured in dollars per hour) for a one-or three-year period.
-
-#### Intro
-
-Instance -> Virtual Server
-
-There are different types of instance (ex: t2) and different size.
-
-AMI : Amazon Machine Image = Information To Launch one or many instances.
-
-AMI is composed of: OS, Applications and App Server
-
-EC2 Storage Possibility:
-- EBS (Persistant)
-- EFS
-- Instant Storre (Temporary)
-
-How To Connect ?
-
-- EC2 Instant Connect
-- Session Manager (a capability of AWS Systems Manager)
-- ssh client
-
-
-Burstable
-
-Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
 
 
 ### AWS EC2 Auto Scaling and Healing
@@ -169,10 +166,23 @@ For example with Load Balancer to Replace or Rebalance.
 
 Service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.
 
+### Amazon Simple Queue Service (SQS)
 
-### AWS Lambda
+Message queuing service. 
+
+In Amazon SQS, an application sends messages into a queue.
+
+### Amazon Simple Notification Service (SNS)
+
+Pub Sub service.
+
+Using Amazon SNS topics, a publisher publishes messages to subscribers.
+
+### AWS Lambda (Serverless Compute)
 
 AWS Lambda is serverless compute service for running code without having to provision or manage servers.
+
+ AWS Lambda has a configurable maximum execution time limit of up to 15 minutes.
 
 ### AWS Systems Manager
 
