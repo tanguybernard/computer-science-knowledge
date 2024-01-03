@@ -88,6 +88,10 @@ Burstable:
 
 Traditional Amazon EC2 instance types provide fixed CPU resources, while burstable performance instances provide a baseline level of CPU utilization with the ability to burst CPU utilization above the baseline level. 
 
+Use :
+
+If you want host traditional application and a full access to the OS, use EC2.
+
 
 #### Family
 
@@ -155,8 +159,6 @@ You can create a __Scheduled scaling__ :
 
 With scheduled scaling, you can set up automatic scaling for your application based on predictable load changes by creating scheduled actions that increase or decrease your group's desired capacity at specific times.
 
-
-
 #### Healing
 
 For example with Load Balancer to Replace or Rebalance.
@@ -176,6 +178,8 @@ In Amazon SQS, an application sends messages into a queue.
 
 Pub Sub service.
 
+A web service that coordinates and manages message delivery from publishers to subscribers.
+
 Using Amazon SNS topics, a publisher publishes messages to subscribers.
 
 ### AWS Lambda (Serverless Compute)
@@ -183,6 +187,20 @@ Using Amazon SNS topics, a publisher publishes messages to subscribers.
 AWS Lambda is serverless compute service for running code without having to provision or manage servers.
 
  AWS Lambda has a configurable maximum execution time limit of up to 15 minutes.
+
+
+### AWS Elastic Container Service (ECS)
+
+### AWS Elastic Kubernetes Service (EKS)
+
+### AWS Fargate
+
+### Notes: Compute choice
+
+If you want host traditional application and a full access to the OS, use EC2.
+
+If you run docker container, choose a tool, ECS or EKS. Next choose a plateform, EC2 that you manage or serverless env like AWS Fargate managed for you.
+
 
 ### AWS Systems Manager
 
@@ -287,9 +305,6 @@ Monitor resources. Track metrics CPU, RAM, Network...
 
 Collect metrics on AWS Services and On-Premises
 
-### Amazon Simple Notification Service (SNS)
-
-A web service that coordinates and manages message delivery from publishers to subscribers.
 
 ### AWS Elasctic Load Balancing (ELB)
 
