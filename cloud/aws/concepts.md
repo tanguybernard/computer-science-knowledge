@@ -101,6 +101,14 @@ If you want host traditional application and a full access to the OS, use EC2.
 - Accelerated computing: use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs
 - Storage optimized: high performance for locally stored data. (ex: data warehousing applications)
 
+Notes :
+
+Q: You want to use an Amazon EC2 instance for a batch processing workload. What would be the best Amazon EC2 instance type to use? 
+
+A: Compute optimized
+
+
+
 #### Amazon EC2 pricing
 
 - On Demand
@@ -112,6 +120,8 @@ If you want host traditional application and a full access to the OS, use EC2.
 Notes:
 
 EC2 Instance Savings Plans reduce your EC2 instance costs when you make an hourly spend commitment to an instance family and Region for a 1-year or 3-year term.
+
+Reserved Instances require a commitment of either 1 year or 3 years. The 3-year option offers a larger discount.
 
 __What is the difference between EC2 Savings Plan and Reserved Instances (RIs)?__
 
@@ -163,6 +173,11 @@ With scheduled scaling, you can set up automatic scaling for your application ba
 
 For example with Load Balancer to Replace or Rebalance.
 
+#### Customer Responsability of EC2:
+
+- Provision instances (virtual servers).
+- Upload your code.
+- Continue to manage the instances while your application is running.
 
 ### AWS Elastic Load Balancing (ELB)
 
@@ -186,14 +201,20 @@ Using Amazon SNS topics, a publisher publishes messages to subscribers.
 
 AWS Lambda is serverless compute service for running code without having to provision or manage servers.
 
- AWS Lambda has a configurable maximum execution time limit of up to 15 minutes.
+AWS Lambda has a configurable maximum execution time limit of up to 15 minutes.
 
 
 ### AWS Elastic Container Service (ECS)
 
+Amazon Elastic Container Service (Amazon ECS)(opens in a new tab) is a highly scalable, high-performance container management system that enables you to run and scale containerized applications on AWS. 
+
 ### AWS Elastic Kubernetes Service (EKS)
 
+Amazon Elastic Kubernetes Service (Amazon EKS)(opens in a new tab) is a fully managed service that you can use to run Kubernetes on AWS. 
+
 ### AWS Fargate
+
+AWS Fargate(opens in a new tab) is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
 
 ### Notes: Compute choice
 
@@ -356,3 +377,9 @@ Principles for architecting High Availability:
 ## Credits
 
 https://cloudtips.dev/2022/12/17/what-is-region-availability-zone-edge-locations-pop-in-aws/
+
+
+## Need information
+
+AWs WAF
+AWS Well architecture
