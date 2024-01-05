@@ -107,8 +107,6 @@ Q: You want to use an Amazon EC2 instance for a batch processing workload. What 
 
 A: Compute optimized
 
-
-
 #### Amazon EC2 pricing
 
 - On Demand
@@ -219,6 +217,8 @@ AWS Fargate(opens in a new tab) is a serverless compute engine for containers. I
 ### Notes: Compute choice
 
 If you want host traditional application and a full access to the OS, use EC2.
+
+If you want host short running function, service oriented applications or event driven applications with no provisioning and managing servers, you can use AWS Lambda.
 
 If you run docker container, choose a tool, ECS or EKS. Next choose a plateform, EC2 that you manage or serverless env like AWS Fargate managed for you.
 
