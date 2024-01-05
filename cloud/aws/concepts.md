@@ -222,6 +222,9 @@ If you want host short running function, service oriented applications or event 
 
 If you run docker container, choose a tool, ECS or EKS. Next choose a plateform, EC2 that you manage or serverless env like AWS Fargate managed for you.
 
+### AWS ECR
+
+
 
 ### AWS Systems Manager
 
