@@ -32,8 +32,17 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 
 ## AWS Global Infrastructure
 
+__A Region__ is a geographical area that contains AWS resources.
+
+An __Availability Zone__ is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
+
+An __edge location__ is a __data center__ that an AWS service uses to perform service-specific operations. 
+
+__AWS Outposts__ is a __service__ that you can use to run AWS infrastructure, services, and tools in your own __on-premises__ data center in a hybrid approach.
 
 AWS 22 Regions (Separate Geographic area), and inside there are multiple Availability Zones (AZ), at least 2 per region. Each AZ is fully isolated.
+
+
 
 Each AZ have one or more physical data centers.
 
