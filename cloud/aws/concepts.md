@@ -33,8 +33,6 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 ## AWS Global Infrastructure
 
 
-
-
 AWS 22 Regions (Separate Geographic area), and inside there are multiple Availability Zones (AZ), at least 2 per region. Each AZ is fully isolated.
 
 Each AZ have one or more physical data centers.
@@ -42,6 +40,13 @@ Each AZ have one or more physical data centers.
 AZ : Logical Data center
 
 Partition: A partition is a grouping of Regions. 
+
+
+Choosin a region (reason):
+- Compliance
+- Proximity
+- Feature availability
+- Pricing
 
 ## Cloud Concepts
 
