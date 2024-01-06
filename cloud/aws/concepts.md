@@ -43,9 +43,9 @@ Partition: A partition is a grouping of Regions.
 
 
 Choosin a region (reason):
-- Compliance
-- Proximity
-- Feature availability
+- Compliance (with data governance and legal requirements)
+- Proximity (to your customers)
+- Feature availability (Available services within a Region)
 - Pricing
 
 ## Cloud Concepts
