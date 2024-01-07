@@ -34,7 +34,11 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 
 __A Region__ is a geographical isolated area that contains AWS resources.
 
-An __Availability Zone__ is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
+An __Availability Zone__ (Logical Data center) is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
+
+A Region consists of three or more Availability Zones.
+
+Each AZ have one or more physical data centers.
 
 An __edge location__ is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
 
@@ -51,12 +55,6 @@ A user from Europe who attempts to access your website will be redirected to a E
 __AWS Outposts__ is a __service__ that you can use to run AWS infrastructure, services, and tools in your own __on-premises__ data center in a hybrid approach.
 
 AWS 22 Regions (Separate Geographic area), and inside there are multiple Availability Zones (AZ), at least 2 per region. Each AZ is fully isolated.
-
-
-
-Each AZ have one or more physical data centers.
-
-AZ : Logical Data center
 
 Partition: A partition is a grouping of Regions. 
 
