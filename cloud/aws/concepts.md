@@ -353,19 +353,7 @@ When you subscribe to an Enterprise plan or qualified Reseller Support plan, you
 
 https://www.watsonmedia.net/question/what-is-aws-concierge/
 
-## Highly Available Web Application
 
-- Minimize service interruptions
-- Enable resources to be available when they are needed
-
-Principles for architecting High Availability:
-
-- Design For Failure (solution ex: Services spread over multiple regions and AZs)
-- Embrace elasticity and Automation (solution ex: CloudWatch and Auto Scaling Groups)
-- Loosely couple components (solution ex: Elastic Load Balancer, Amazon SQS (Queue))
-- Become Stateless (Amazon Elasticache, DynamoDB)
-- Use Parallelism (ex: Use microservices)
-- Security as forethought (ex: Encryption, Principle Of Least Privileges)
 
 
 ## Networking
@@ -440,7 +428,7 @@ You can dispose of multiple subnets to a NACL but only one NACL per subnet
 
 Subnet * -- 1 NACL
 
-#### Seurity Group (Virtual Firewall at Instance Level)
+#### Security Group (Virtual Firewall at Instance Level)
 
 By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
@@ -453,6 +441,21 @@ __Security group as Source for a rule in another Security Group:__
 
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
+
+
+### Highly Available Web Application
+
+- Minimize service interruptions
+- Enable resources to be available when they are needed
+
+Principles for architecting High Availability:
+
+- Design For Failure (solution ex: Services spread over multiple regions and AZs)
+- Embrace elasticity and Automation (solution ex: CloudWatch and Auto Scaling Groups)
+- Loosely couple components (solution ex: Elastic Load Balancer, Amazon SQS (Queue))
+- Become Stateless (Amazon Elasticache, DynamoDB)
+- Use Parallelism (ex: Use microservices)
+- Security as forethought (ex: Encryption, Principle Of Least Privileges)
 
 ## Credits
 
