@@ -282,63 +282,6 @@ AWS Systems Manager provides configuration management, which helps you maintain 
 
 
 
-### AWS VPC
-
-Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
-
-A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
-
-#### Internet Gateway vs NAT Gateway
-
-- Internet Gateway (IGW) allows instances with public IPs to access the internet.
-- NAT Gateway (NGW) allows instances with no public IPs to access the internet.
-
-https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6
-
-#### Security
-
-##### NACL 
-
-Network Access Control List == Firewall at the subnet boundary
-
-You can dispose of multiple subnets to a NACL but only one NACL per subnet
-
-Subnet * -- 1 NACL
-
-##### Seurity Group (Virtual Firewall at Instance Level)
-
-By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
-
-Security Group are Stateful
-
-
-__Security group as Source for a rule in another Security Group:__
-
-"When you specify a security group as the source for a rule, traffic is allowed from the network interfaces that are associated with the source security group for the specified protocol and port. Incoming traffic is allowed based on the private IP addresses of the network interfaces that are associated with the source security group (and not the public IP or Elastic IP addresses). Adding a security group as a source does not add rules from the source security group."
-
-
-https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
-
-#### Internet connectivity
-
-An internet gateway is a VPC component that allows communication between your VPC and the internet.
-
-### VPC Peering
-
-A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
-
-VPC Peering supports peering between multiple accounts
-
-
-
-#### Configuration
-
-1. Add VPC Peering
-2. VPC Peering > Actions > Accept Request
-1. ec2 Instance (Requester)  > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Finance) from VPC on Destination (ex: 172.31.0.0/16) AND Peering Conection (pcx- ...)
-2. ec2 Instance (Accepter) > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Marketing) from VPC on Destination (ex: 192.168.0.0/20) AND Peering Conection (pcx- ...)
-1. ec2 Instance Finance (Accepter) > update security > ADD ICMP - IPv4 (Copy CIDR 192.168.0.0/20) 
-2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
 
 
 ### Amazon Relational Database Service (RDS)
@@ -427,6 +370,89 @@ Principles for architecting High Availability:
 
 ## Networking
 
+### Connectivity
+
+#### AWS VPC (Virtual Private Cloud)
+
+Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
+
+- Public ressources : Exposition to the Internet
+- Private resources: No exposition to  the internet
+
+Public or private grouping resources is a __subnet__.
+
+A __subnet__ is a range of IP addresses in your VPC. You can create AWS resources, such as EC2 instances, in specific subnets.
+
+A subnet is a section of a VPC that can contain resources such as Amazon EC2 instances.
+
+For example:
+
+A cashier can be a public subnet. Customers order their coffee from the cashier. And barista who prepare coffee can be in private subnet.
+
+#### Internet Gateway
+
+To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.
+
+#### Virtual private gateway
+
+A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+
+The virtual private gateway is the component that allows protected internet traffic to enter into the VPC. Even though your connection to the coffee shop has extra protection, traffic jams (embouteillages) are possible because you’re using the same road as other customers. 
+
+#### AWS Direct Connect
+
+AWS Direct Connect is a service that lets you to establish a dedicated private connection between your data center and a VPC.  
+
+#### Internet Gateway vs NAT Gateway
+
+
+- Internet Gateway (IGW) allows instances with public IPs to access the internet.
+- NAT Gateway (NGW) allows instances with no public IPs to access the internet.
+
+https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6
+
+
+#### VPC Peering
+
+A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
+
+VPC Peering supports peering between multiple accounts
+
+
+##### Configuration
+
+1. Add VPC Peering
+2. VPC Peering > Actions > Accept Request
+1. ec2 Instance (Requester)  > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Finance) from VPC on Destination (ex: 172.31.0.0/16) AND Peering Conection (pcx- ...)
+2. ec2 Instance (Accepter) > Subnet > Route table > Route > Edit Routes > Add route > Copy CIDR (Marketing) from VPC on Destination (ex: 192.168.0.0/20) AND Peering Conection (pcx- ...)
+1. ec2 Instance Finance (Accepter) > update security > ADD ICMP - IPv4 (Copy CIDR 192.168.0.0/20) 
+2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
+
+
+
+### Security
+
+#### NACL 
+
+Network Access Control List == Firewall at the subnet boundary
+
+You can dispose of multiple subnets to a NACL but only one NACL per subnet
+
+Subnet * -- 1 NACL
+
+#### Seurity Group (Virtual Firewall at Instance Level)
+
+By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
+
+Security Group are Stateful
+
+
+__Security group as Source for a rule in another Security Group:__
+
+"When you specify a security group as the source for a rule, traffic is allowed from the network interfaces that are associated with the source security group for the specified protocol and port. Incoming traffic is allowed based on the private IP addresses of the network interfaces that are associated with the source security group (and not the public IP or Elastic IP addresses). Adding a security group as a source does not add rules from the source security group."
+
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
 
 ## Credits
 
