@@ -32,6 +32,8 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 
 ## AWS Global Infrastructure
 
+### Region, AZ, Edge Location
+
 __A Region__ is a geographical isolated area that contains AWS resources.
 
 An __Availability Zone__ (Logical Data center) is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
@@ -65,7 +67,7 @@ Choosin a region (reason):
 - Feature availability (Available services within a Region)
 - Pricing
 
-## How to Provision AWS Resources
+### How to Provision AWS Resources
 
 - The AWS Management Console is a web-based interface for accessing and managing AWS services.
 - AWS CLI enables you to control multiple AWS services directly from the command line within one tool.
@@ -423,6 +425,7 @@ Principles for architecting High Availability:
 - Security as forethought (ex: Encryption, Principle Of Least Privileges)
 
 
+## Networking
 
 
 ## Credits
