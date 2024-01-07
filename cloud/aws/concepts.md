@@ -67,6 +67,27 @@ Choosin a region (reason):
 - Feature availability (Available services within a Region)
 - Pricing
 
+## How to Provision AWS Resources
+
+- The AWS Management Console is a web-based interface for accessing and managing AWS services.
+- AWS CLI enables you to control multiple AWS services directly from the command line within one tool.
+- SDKs make it easier for you to use AWS services through an API designed for your programming language or platform.
+
+  You can also use :
+
+__AWS Elastic Beanstalk__
+
+With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+
+- Adjust capacity
+- Load balancing
+- Automatic scaling
+- Application health monitoring
+
+__AWS CloudFormation__
+
+Infrastructure as code tool used to define a wide variety of AWS resources. Using json or yaml.
+
 ## Cloud Concepts
 
 https://coderjony.com/blogs/cloud-computing-concepts-high-availability-scalability-elasticity-agility-fault-tolerance-and-disaster-recovery
