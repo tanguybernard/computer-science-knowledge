@@ -71,6 +71,9 @@ Choosin a region (reason):
 - AWS CLI enables you to control multiple AWS services directly from the command line within one tool.
 - SDKs make it easier for you to use AWS services through an API designed for your programming language or platform.
 
+
+The AWS Management Console includes wizards (FR: des assistants) and workflows that you can use to complete tasks in AWS services.
+
   You can also use :
 
 __AWS Elastic Beanstalk__
