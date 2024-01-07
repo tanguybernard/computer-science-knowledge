@@ -4,6 +4,8 @@ Key concept : You only pay for what you use !
 
 ##  Certification
 
+https://www.youtube.com/watch?v=JsmhEgIV1mQ
+
 https://stormacq.com/2020/08/31/bien-demarrer.html
 
 ## Cloud Computing
