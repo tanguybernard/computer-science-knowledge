@@ -32,11 +32,21 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 
 ## AWS Global Infrastructure
 
-__A Region__ is a geographical area that contains AWS resources.
+__A Region__ is a geographical isolated area that contains AWS resources.
 
 An __Availability Zone__ is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
 
-An __edge location__ is a __data center__ that an AWS service uses to perform service-specific operations. 
+An __edge location__ is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
+
+Edge Location can run CloudFront (CDN) and Amazon Route 53 (DNS)
+
+
+Example "Edge Location":
+
+Suppose you have your website hosted in S3 and EC2 instances within a Region in the US with an associated configured CloudFront distribution.
+
+A user from Europe who attempts to access your website will be redirected to a European Edge Location that’s nearest to them. From that Edge Location, the cache data will be read on your website, considerably reducing latency.
+
 
 __AWS Outposts__ is a __service__ that you can use to run AWS infrastructure, services, and tools in your own __on-premises__ data center in a hybrid approach.
 
