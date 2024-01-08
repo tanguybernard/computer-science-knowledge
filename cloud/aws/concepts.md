@@ -500,4 +500,7 @@ https://cloudtips.dev/2022/12/17/what-is-region-availability-zone-edge-locations
 ## Need information
 
 AWs WAF
+
 AWS Well architecture
+
+aws cognito
