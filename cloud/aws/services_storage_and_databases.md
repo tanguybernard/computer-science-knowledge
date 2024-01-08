@@ -59,6 +59,12 @@ On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 3.  Add Inbound Type NFS And Source : Security Group WebServers
 4.  ...
 
+### Amazon Relational Database Service (RDS)
+
+Using multiple AZ's means : high availability and disaster recovery, not increased performance
+
+Doing read-intensive workloads ? Solution : A read replica
+
 
 ## DynamoDB
 
