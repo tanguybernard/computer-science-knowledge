@@ -2,18 +2,36 @@
 
 ## Amazon Elastic Block Store (EBS)
 
+It's like a place to store files. It's like hardrive.
+
+You can define Size, Type and configuration of EBS you want.
+
 Designed for use with and Only Amazon EC2 Not Lambda.
 
-Only one EBS on EC2 instance at the same time
+Only one EBS on EC2 instance at the same time.
 
 EBS Volume Types:
 - SSD - Solid-State Drive
 - HDD - Hard Disk Drive
 
+Characteristics of the Amazon EBS service:
+- Best for data that requires retention
+- Separate drives from the host computer of an EC2 instance
+
 Notes :
 
 __EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos données et peuvent être utilisés pour permettre la reprise après sinistre, migrer les données entre les régions et les comptes, et améliorer la conformité des sauvegardes.
 
+An EBS snapshot is an incremental backup. Incremental backups back up only the changed data since the last backup activity — a full or incremental backup.
+
+Full backups comprise entire data backup sets, regardless of already existing backups or data change circumstances.
+
+
+When you launch ec2 Instance, an instance store is physically attached.
+
+An instance store provides temporary block-level storage for an Amazon EC2 instance.
+
+When the instance is terminated, you lose any data in the instance store.
 
 ## Amazon S3 - Amazon Simple Storage Service 
 
