@@ -287,11 +287,7 @@ AWS Systems Manager provides configuration management, which helps you maintain 
 
 
 
-### Amazon Relational Database Service (RDS)
 
-Using multiple AZ's means : high availability and disaster recovery, not increased performance
-
-Doing read-intensive workloads ? Solution : A read replica
 
 ### AWS CloudFormation
 
