@@ -1,5 +1,9 @@
 # Tests
 
+## Tests unitaire
+
+Un test unitaire c'est un test qui a une raison d'échouer.
+
 ## Tests d'integration
 
 Interaction avec des composants extenes (ex: vrai base de données)
