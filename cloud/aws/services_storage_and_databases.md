@@ -1,5 +1,19 @@
 # Storage and Databases
 
+## Amazon Elastic Block Store (EBS)
+
+Designed for use with and Only Amazon EC2 Not Lambda.
+
+Only one EBS on EC2 instance at the same time
+
+EBS Volume Types:
+- SSD - Solid-State Drive
+- HDD - Hard Disk Drive
+
+Notes :
+
+__EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos données et peuvent être utilisés pour permettre la reprise après sinistre, migrer les données entre les régions et les comptes, et améliorer la conformité des sauvegardes.
+
 
 ## Amazon S3 - Amazon Simple Storage Service 
 
@@ -27,19 +41,6 @@ On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 3.  Add Inbound Type NFS And Source : Security Group WebServers
 4.  ...
 
-## Amazon Elastic Block Store (EBS)
-
-Designed for use with and Only Amazon EC2 Not Lambda.
-
-Only one EBS on EC2 instance at the same time
-
-EBS Volume Types:
-- SSD - Solid-State Drive
-- HDD - Hard Disk Drive
-
-Notes :
-
-__EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos données et peuvent être utilisés pour permettre la reprise après sinistre, migrer les données entre les régions et les comptes, et améliorer la conformité des sauvegardes.
 
 ## DynamoDB
 
