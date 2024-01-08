@@ -420,11 +420,14 @@ VPC Peering supports peering between multiple accounts
 
 
 
-### Security
+### Network Security
 
-#### NACL 
+#### NACL (Firewall at the Subnet boundary)
 
-Network Access Control List == Firewall at the subnet boundary
+Network Access Control List == Firewall at the __subnet__ boundary
+
+Network ACLs are __stateless__: This means any changes applied to an incoming rule will not be applied to the outgoing rule. e.g. If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.
+
 
 You can dispose of multiple subnets to a NACL but only one NACL per subnet
 
@@ -434,7 +437,7 @@ Subnet * -- 1 NACL
 
 By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
-Security Group are Stateful
+Security groups are __stateful__ in nature. As a result, any changes applicable to an incoming rule will also be automatically applied to the outgoing rule in the same way. For example, allowing an incoming port 80 will automatically open the outgoing port 80 – without you having to explicitly direct traffic in the opposite direction.
 
 
 __Security group as Source for a rule in another Security Group:__
