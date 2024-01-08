@@ -351,6 +351,8 @@ https://www.watsonmedia.net/question/what-is-aws-concierge/
 
 #### AWS VPC (Virtual Private Cloud)
 
+Amazon Virtual Private Cloud (Amazon VPC) is a service that enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define.
+
 Control Virtual Network Environment (Ip Adress range, subnets, route tables, Network Gateways)
 
 - Public ressources : Exposition to the Internet
@@ -435,7 +437,7 @@ By default, your account’s default network ACL allows all inbound and outbound
 
 #### Security Group (Virtual Firewall at Instance Level)
 
-By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
+By Dfault Denies all Inbound Traffic and Allows all Outbound Traffic
 
 You can add custom rules to configure which traffic should be allowed; any other traffic would then be denied.
 
@@ -460,7 +462,11 @@ DNS Resolution: Translating a domain name to an IP address
 
 #### Amazon CloudFront (CDN) 
 
+Content Delivery Network: A Network that delivers edge content to users based on their geographic location
+
 Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
+
+(From AWS Cloud Practitioner Essentials Course) An edge location is a site that Amazon CloudFront uses to store cached copies of your content for faster delivery to customers.
 
 Note : 
 
@@ -475,7 +481,6 @@ __Edge locations__ are AWS data centers designed to deliver services with the lo
 CloudFront, which uses edge locations to cache copies of the content that it serves, so the content is closer to users and can be delivered to them faster.
 
 
-Content Delivery Network: A Network that delivers edge content to users based on their geographic location
 
 ## Highly Available Web Application
 
