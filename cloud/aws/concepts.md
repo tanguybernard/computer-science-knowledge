@@ -276,6 +276,7 @@ If you run docker container, choose a tool, ECS or EKS. Next choose a plateform,
 
 ### AWS ECR
 
+Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image registry service that is secure, scalable, and reliable.
 
 
 ### AWS Systems Manager
@@ -296,21 +297,7 @@ Doing read-intensive workloads ? Solution : A read replica
 
 AWS CloudFormation is a service that helps you model and set up your AWS resources
 
-### AWS CloudFront (CDN)
 
-Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
-
-Note : 
-
-__AWS Shield Standard__ is included automatically and transparently to Amazon CloudFront distributions providing:
-- Active Traffic Monitoring with Network flow monitoring and Automatic always-on detection.
-- Attack Mitigations with Protection from common DDoS attacks
-
-Note :
-
-__Edge locations__ are AWS data centers designed to deliver services with the lowest latency possible.
-
-CloudFront, which uses edge locations to cache copies of the content that it serves, so the content is closer to users and can be delivered to them faster.
 
 ### AWS CloudTrail
 
@@ -462,8 +449,35 @@ __Security group as Source for a rule in another Security Group:__
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html#SecurityGroupRules
 
+### Global Networking
 
-### Highly Available Web Application
+#### Amazon Route 53 (DNS)
+
+- You can register new domain names directly in Route 53.
+- You can transfer DNS records for existing domain names managed by other domain registrars.
+
+DNS Resolution: Translating a domain name to an IP address
+
+#### Amazon CloudFront (CDN) 
+
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. 
+
+Note : 
+
+__AWS Shield Standard__ is included automatically and transparently to Amazon CloudFront distributions providing:
+- Active Traffic Monitoring with Network flow monitoring and Automatic always-on detection.
+- Attack Mitigations with Protection from common DDoS attacks
+
+Note :
+
+__Edge locations__ are AWS data centers designed to deliver services with the lowest latency possible.
+
+CloudFront, which uses edge locations to cache copies of the content that it serves, so the content is closer to users and can be delivered to them faster.
+
+
+Content Delivery Network: A Network that delivers edge content to users based on their geographic location
+
+## Highly Available Web Application
 
 - Minimize service interruptions
 - Enable resources to be available when they are needed
