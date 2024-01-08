@@ -379,6 +379,11 @@ For example:
 
 A cashier can be a public subnet. Customers order their coffee from the cashier. And barista who prepare coffee can be in private subnet.
 
+
+__Public subnets__ contain resources that need to be accessible by the public, such as an online store’s website.
+
+__Private subnets__ contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories. 
+
 #### Internet Gateway
 
 To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.
@@ -422,7 +427,7 @@ VPC Peering supports peering between multiple accounts
 
 ### Network Security
 
-#### NACL (Firewall at the Subnet boundary)
+#### Network ACLs - NACL (Firewall at the Subnet boundary)
 
 Network Access Control List == Firewall at the __subnet__ boundary
 
@@ -433,9 +438,19 @@ You can dispose of multiple subnets to a NACL but only one NACL per subnet
 
 Subnet * -- 1 NACL
 
+NACL control inbound and outbound traffic. It's like a passport control officer.
+
+The passport control officer checks travelers’ credentials when they are both entering and exiting out of the country.
+
+Notes:
+
+By default, your account’s default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules. For custom network ACLs, all inbound and outbound traffic is denied until you add rules to specify which traffic to allow.
+
 #### Security Group (Virtual Firewall at Instance Level)
 
 By DEfault Denies all Inbound Traffic and Allows all Outbound Traffic
+
+You can add custom rules to configure which traffic should be allowed; any other traffic would then be denied.
 
 Security groups are __stateful__ in nature. As a result, any changes applicable to an incoming rule will also be automatically applied to the outgoing rule in the same way. For example, allowing an incoming port 80 will automatically open the outgoing port 80 – without you having to explicitly direct traffic in the opposite direction.
 
