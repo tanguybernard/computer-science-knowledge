@@ -35,15 +35,68 @@ When the instance is terminated, you lose any data in the instance store.
 
 ## Amazon S3 - Amazon Simple Storage Service 
 
+Store and retrieve unlimited amount of data.
+
+- Store data as objects (like file sitting on your hard drive).
+- Store objects in buckets (like file directory).
+- Upload a maximum object size of 5 TB.
+- Verison objects.
+- Create multiple buckets.
+- Create permissions.
+
 A bucket is a container for objects. An object is a file and any metadata that describes that file. To store an object in Amazon S3, you create a bucket and then upload the object to the bucket.
+
+In object storage, each object consists of data, metadata, and a key.
+
+The data might be an image, video, text document, or any other type of file. Metadata contains information about what the data is, how it is used, the object size, and so on. An object’s key is its unique identifier.
 
 File Example:  photos/puppy.jpeg
 
 Main use: Storing large amounts of static data and ideal for data backups.
 
-Can be used with EC2 or Lambda
+Can be used with EC2 or Lambda.
 
+### Amazon S3 storage classes
 
+Write Once, Read Many Technique.
+
+#### Amazon S3 Standard
+- Designed for frequently accessed data
+- Stores data in a minimum of three Availability Zones
+
+#### Amazon S3 static website hosting
+#### Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
+
+Less frequently, long term storage like backup
+
+Amazon S3 Standard-IA is ideal for data infrequently accessed but requires high availability when needed. 
+ 
+#### S3 One Zone-Infrequent Access (S3 One Zone-IA)
+
+Stores data in a single Availability Zone
+
+#### S3 Glacier Instant Retrieval
+
+- Works well for archived data that requires immediate access
+- Can retrieve objects within a few milliseconds
+- 
+#### Amazon S3 Glacier Flexible Retrieval
+- Low-cost storage designed for data archiving
+- Able to retrieve objects within a few minutes to hours
+
+#### S3 Glacier Deep Archive
+- Lowest-cost object storage class ideal for archiving
+- Able to retrieve objects within 12 hours
+
+#### S3 Outposts
+– Creates S3 buckets on Amazon S3 Outposts
+- Makes it easier to retrieve, store, and access data on AWS Outposts
+
+Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment.
+
+### Notes
+
+Amazon S3 Lifecycle management: Move data automatically between tiers
 
 ## Amazon Elastic File System (EFS)
 
