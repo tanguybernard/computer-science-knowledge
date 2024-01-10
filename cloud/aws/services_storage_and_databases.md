@@ -33,6 +33,9 @@ An instance store provides temporary block-level storage for an Amazon EC2 insta
 
 When the instance is terminated, you lose any data in the instance store.
 
+- Volumes do not automatically scales
+- Need to be in same AZ to attach EC2 instances
+
 ## Amazon S3 - Amazon Simple Storage Service 
 
 Store and retrieve unlimited amount of data.
@@ -103,6 +106,11 @@ Amazon S3 Lifecycle management: Move data automatically between tiers
 Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file storage so that you can share file data without provisioning or managing storage capacity and performance. 
 
 On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
+
+- Multiple instances reading and wrinting simultaneous
+- Linux file system
+- Regional resource
+- Automatically scales
 
 
 ### Configuration EC2 <> EFS
