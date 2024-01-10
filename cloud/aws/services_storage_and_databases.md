@@ -120,12 +120,48 @@ On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 3.  Add Inbound Type NFS And Source : Security Group WebServers
 4.  ...
 
+
 ### Amazon Relational Database Service (RDS)
+
+Amazon RDS is a service that enables you to run relational databases in the AWS Cloud.
+
+Amazon RDS is a managed service that automates tasks such as hardware provisioning, database setup, patching, and backups. 
+
+
+Amazon RDS database engines:
+- Amazon Aurora
+- Mysql
+- PostgresSQL
+- Oracle
+- Microsoft SQL Server
+- And many more...
+
+Characteristics :
+
+- Automated patching
+- Backups
+- Redundancy
+- Failover (basculement)
+- Disaster recovery
 
 Using multiple AZ's means : high availability and disaster recovery, not increased performance
 
 Doing read-intensive workloads ? Solution : A read replica
 
+
+#### Aurora
+
+Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL.
+
+Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
+- MySQL
+- Postgres
+- Data Replication
+- 1/10th the cost of commercial databases
+- Up to 15 read replicas
+- Continuous Backup to S3
+- Point in time recovery
 
 ## DynamoDB
 
