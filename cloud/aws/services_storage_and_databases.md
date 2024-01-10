@@ -167,6 +167,10 @@ Consider Amazon Aurora if your workloads require high availability. It replicate
 
 DynamoDB supports key/value and document data models.
 
+DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers. 
+
+Scaling up to 10 trillion requests per day
+
 __Read/Write Capacity Modes:__
 
 __Provisioned capacity__ allows you to specify the number of read/write operations your application requires per second, ahead of time.
@@ -182,4 +186,8 @@ Feature: PITR (Point-in-time-recovery) , provide Backup
 
 ## Amazon Redshift
 
+Amazon Redshift is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
+
 Power data driven decisions with the best price-performance cloud data warehouse.
+
+
