@@ -32,3 +32,5 @@ AWS manages the security of the cloud, specifically the physical infrastructure 
 - Virtualization infrastructure
 
 ## User Permissions and Access
+
+
