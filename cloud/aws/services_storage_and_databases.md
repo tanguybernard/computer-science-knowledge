@@ -190,4 +190,15 @@ Amazon Redshift is a data warehousing service that you can use for big data anal
 
 Power data driven decisions with the best price-performance cloud data warehouse.
 
+## Amazon Database Migration Service (DMS)
 
+
+AWS Database Migration Service (AWS DMS)(opens in a new tab) enables you to migrate relational databases, nonrelational databases, and other types of data stores.
+
+Use cases
+
+- Development and test database migrations: Enabling developers to test applications against production data without affecting production users
+- Database consolidation: Combining several databases into a single database
+- Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration
+
+## Additional Database Services
