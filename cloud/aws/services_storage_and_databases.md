@@ -218,7 +218,6 @@ Amazon Neptuneis a graph database service.
 ### Amazon Managed Blockchain
 
 Amazon Managed Blockchain is a service that you can use to create and manage blockchain networks with open-source frameworks. 
-
 Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
 
 Example: A supply chain, that you have to track with assurances that nothing is lost.
