@@ -22,19 +22,21 @@ Notes :
 
 __EBS Snapshots__ : Les instantanés EBS sont une copie instantanée de vos données et peuvent être utilisés pour permettre la reprise après sinistre, migrer les données entre les régions et les comptes, et améliorer la conformité des sauvegardes.
 
-An EBS snapshot is an incremental backup. Incremental backups back up only the changed data since the last backup activity — a full or incremental backup.
+An EBS snapshot is an __incremental backup__. Incremental backups back up only the changed data since the last backup activity — a full or incremental backup.
 
 Full backups comprise entire data backup sets, regardless of already existing backups or data change circumstances.
 
 
 When you launch ec2 Instance, an instance store is physically attached.
 
-An instance store provides temporary block-level storage for an Amazon EC2 instance.
+An instance store provides __temporary block-level__ storage for an Amazon EC2 instance.
 
 When the instance is terminated, you lose any data in the instance store.
 
 - Volumes do not automatically scales
 - Need to be in same AZ to attach EC2 instances
+
+An EBS volume must be located in the same Availability Zone as the Amazon EC2 instance to which it is attached.
 
 ## Amazon S3 - Amazon Simple Storage Service 
 
@@ -223,7 +225,7 @@ Example: A supply chain, that you have to track with assurances that nothing is 
 
 ### Amazon Quantum Ledger Database (Amazon QLDB)
 
-Amazon QLDB is a ledger database service. 
+Amazon QLDB is a ledger (FR: registre) database service. 
 
 An immutable system of record where any entry can never be removed from the audits. 
 
