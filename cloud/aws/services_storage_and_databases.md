@@ -202,3 +202,41 @@ Use cases
 - Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration
 
 ## Additional Database Services
+
+### Amazon DocumentDB
+
+Amazon DocumentDBis a document database service that supports MongoDB workloads. 
+
+(MongoDB is a document database program.)
+
+### Amazon Neptune
+
+Amazon Neptuneis a graph database service. 
+
+### Amazon Managed Blockchain
+
+Amazon Managed Blockchain is a service that you can use to create and manage blockchain networks with open-source frameworks. 
+
+Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
+
+Example: A supply chain, that you have to track with assurances that nothing is lost.
+
+### Amazon Quantum Ledger Database (Amazon QLDB)
+
+Amazon QLDB is a ledger database service. 
+
+An immutable system of record where any entry can never be removed from the audits. 
+
+You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.
+
+### Amazon ElastiCache
+
+Amazon ElastiCache is a service that adds caching layers on top of your databases to help improve the read times of common requests. 
+
+It supports two types of data stores: Redis and Memcached.
+
+### Amazon DynamoDB Accelerator (DAX)
+
+DAX is an in-memory cache for DynamoDB. 
+
+It helps improve response times from single-digit milliseconds to microseconds.
