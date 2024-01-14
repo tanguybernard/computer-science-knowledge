@@ -34,6 +34,17 @@ AWS manages the security of the cloud, specifically the physical infrastructure 
 ## User Permissions and Access
 
 
+### Account
+
+Think of an account as just a container. A container containing your resources, users and account settings.
+
+You can create multiple of these containers. In fact, it is best practice to separate your different workloads (for example test and production) into different accounts.
+
+The root user is the master of your account.
+
+Credits: https://blog.jannikwempe.com/aws-accounts-iam-users-root-user
+
+
 ### AWS Identity and access management (AWS IAM)
 
 AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely.   
@@ -92,3 +103,26 @@ This grants the employee access to the inventory system and also revokes their a
 In IAM, multi-factor authentication (MFA) provides an extra layer of security for your AWS account.
 
 ## AWS organizations
+
+
+
+Suppose that your company has multiple AWS accounts. You can use AWS Organizations(opens in a new tab) to consolidate and manage multiple AWS accounts within a central location.
+
+When you create an organization, AWS Organizations automatically creates a __root__, which is the parent container for all the accounts in your organization. 
+
+In AWS Organizations, you can centrally control permissions for the accounts in your organization by using __service control policies (SCPs)__. SCPs enable you to place __restrictions__ on the AWS services, resources, and individual API actions that users and roles in each account can access.
+
+In AWS Organizations, you can __apply__ service control policies __(SCPs)__ to the __organization root__, an __individual member account__, or an __OU__. An SCP affects all IAM users, groups, and roles within an account, including the AWS account root user.
+
+You can __apply__ IAM __policies__ to IAM __users, groups, or roles__. You __cannot__ apply an IAM policy to the AWS account __root__ user.
+
+Note: Consolidated billing is another feature of AWS Organizations.
+
+### Organizational units (OU)
+
+In AWS Organizations, you can __group accounts__ into organizational units (OUs) to make it easier to manage accounts with similar business or security requirements. When you apply a policy to an OU, all the accounts in the OU automatically inherit the permissions specified in the policy. 
+
+By organizing separate accounts into OUs, you can more easily isolate workloads or applications that have specific security requirements.
+
+## Compliance
+
