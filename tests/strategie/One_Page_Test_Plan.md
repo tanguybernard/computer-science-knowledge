@@ -96,6 +96,10 @@ Mentionnez toutes les tâches que vous prévoyez d'effectuer dans le cadre de vo
 
 _Ex:_
 
+Préparation
+- Identifier le scénario de test à executer
+- Identifier les données de tests nécessaires
+
 Développeur
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
