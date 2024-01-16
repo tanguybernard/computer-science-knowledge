@@ -93,7 +93,7 @@ Ex:
 
 Mentionnez toutes les tâches que vous prévoyez d'effectuer dans le cadre de vos efforts de test. Mentionnez les types de tests.
 
-_Ex: En suivant la pyramide de tests:_
+_Ex:_
 
 Développeur
 
