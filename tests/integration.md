@@ -2,6 +2,8 @@
 
 ## Definition
 
+Le test d'intégration est un type de test de logiciel dans lequel les composants du logiciel sont progressivement intégrés et ensuite testés en tant que groupe unifié.
+
 
 ## Les 4 types
 
