@@ -6,6 +6,8 @@ https://www.infometis.ch/blog/one-page-test-plan
 
 https://metroretro.io/templates/one-page-test-plan
 
+https://www.guru99.com/test-plan-for-project.html?utm_campaign=click&utm_medium=referral&utm_source=relatedarticles#13
+
 ## Introduction
 
 Introduction/contexte/objectifs : Décrivez le contexte de vos activités de test, le produit, ou les principaux objectifs de votre projet de test.
@@ -53,6 +55,15 @@ _Ex: Les tests seront effectués sur les environnements de Staging et de preprod
 Outils : Dans cette section, vous pouvez lister les outils essentiels que vous utilisez dans les processus centraux de votre projet de test.
 
 _Ex: Les outils utilisés sont: Cypress, Jest, Junit, TestContainers, Robot Framework_
+
+## Roles and Responsabilities
+
+Description détaillée des rôles et responsabilités des différents membres de l'équipe, par exemple:
+
+- QA Analyst
+- Test Manager
+- Developers
+
 
 ## Risks & Issues
 
