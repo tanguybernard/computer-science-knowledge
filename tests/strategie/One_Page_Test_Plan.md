@@ -79,13 +79,14 @@ Description détaillée des rôles et responsabilités des différents membres d
 Documenter les risques et les problèmes
 
 Ex:
-- des délais stricts
-- des estimations budgétaires insuffisantes ou inexactes
-- une mauvaise gestion
-- des problèmes avec le code
+- Des délais stricts
+- Des estimations budgétaires insuffisantes ou inexactes
+- Une mauvaise gestion
+- Des problèmes avec le code
 - Changements dans l'environnement de l'entreprise
 - Ressources limitées pour les tests
 - Retards imprévus pendant les tests
+- La machine de Staging n'est pas iso Prod
 
 
 
