@@ -8,6 +8,8 @@ https://metroretro.io/templates/one-page-test-plan
 
 https://www.guru99.com/test-plan-for-project.html?utm_campaign=click&utm_medium=referral&utm_source=relatedarticles#13
 
+https://www.javatpoint.com/test-plan
+
 ## Introduction
 
 Introduction/contexte/objectifs : Décrivez le contexte de vos activités de test, le produit, ou les principaux objectifs de votre projet de test.
@@ -19,6 +21,13 @@ _Ex: MyAdmin est une application web qui permet de suivre la saisie du CRA de se
 Stratégie : Quelle stratégie de test sera principalement appliquée ?
 
 _Ex: Nous allons suivre la pyramide des tests_
+
+
+Note: Il peut etre bon de rappeler la definition des types de tests.
+
+Ex: Test unitaire: test qui a une raison d'échouer.
+
+Ex: Test d'intégration : des modules individuels sont combinés et testés en tant que groupe
 
 ## In Scope
 
@@ -77,5 +86,35 @@ Ex:
 - Changements dans l'environnement de l'entreprise
 - Ressources limitées pour les tests
 - Retards imprévus pendant les tests
+
+
+
+## Bonus: Testing Tasks
+
+Mentionnez toutes les tâches que vous prévoyez d'effectuer dans le cadre de vos efforts de test. Mentionnez les types de tests.
+
+_Ex: En suivant la pyramide de tests:_
+
+Développeur
+
+- Développement d'un test e2e avec Cypress (Front + Back + Base de données)
+- Developpement de tests d'integration front (Composant front)
+- Developpement de tests d'integrations back (controller + useCase + vrai Db)
+- Developpement de tests unitaires (useCase + In Memory Db)
+- Generation d'un rapports de couvertures
+
+Testeurs
+
+- Developpement de scénario avec Robot Framework
+- Generation d'un rapport
+
+PO
+
+- Sur la Preprod, test manuels du PO
+- Validation de l'US
+
+
+
+
 
 
