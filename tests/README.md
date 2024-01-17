@@ -56,6 +56,10 @@ Outside in
 
 https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 
+## System vs e2e
+
+https://www.softwaretestinghelp.com/system-vs-end-to-end-testing/
+
 ## Credits
 
 https://blog.ippon.fr/2023/01/18/mon-apprentissage-du-tdd/
