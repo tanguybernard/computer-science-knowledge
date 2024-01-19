@@ -126,3 +126,26 @@ By organizing separate accounts into OUs, you can more easily isolate workloads 
 
 ## Compliance
 
+### AWS Artifact
+
+AWS Artifact is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections: AWS Artifact Agreements and AWS Artifact Reports.
+
+AWS Artifact provides access to AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI) reports, and Service Organization Control (SOC) reports.
+
+#### AWS Artifact Agreements
+
+In AWS Artifact Agreements, you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).
+
+#### AWS Artifact Reports
+
+AWS Artifact Reports provide compliance reports from third-party auditors. 
+
+### Customer Compliance Center
+
+The Customer Compliance Center(opens in a new tab) contains resources to help you learn more about AWS compliance. 
+
+In the Customer Compliance Center, you can read customer compliance stories to discover how companies in regulated industries have solved various compliance, governance, and audit challenges.
+
+Additionally, the Customer Compliance Center includes __an auditor learning path__.
+
+## Denial-of-Service Attacks
