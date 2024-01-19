@@ -176,3 +176,25 @@ It also integrates with other services such as Amazon CloudFront, Amazon Route 5
 
 
 ## Additional Security Services
+
+### AWS Key Management Service (AWS KMS)
+
+AWS Key Management Service (AWS KMS)(opens in a new tab) enables you to perform encryption operations through the use of cryptographic keys. 
+
+You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
+
+### Amazon WAF
+
+AWS WAF is a web application firewall that lets you monitor network requests that come into your web applications. 
+
+AWS WAF works together with Amazon CloudFront and an Application Load Balancer. Recall the network access control lists that you learned about in an earlier module. AWS WAF works in a similar way to block or allow traffic. However, it does this by using a web access control list (ACL) to protect your AWS resources. 
+
+### Amazon Inspector
+
+Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions. 
+
+### Amazon GuardDuty
+
+Amazon GuardDuty(opens in a new tab) is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
+
+
