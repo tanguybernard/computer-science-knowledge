@@ -8,6 +8,11 @@ https://www.youtube.com/watch?v=JsmhEgIV1mQ
 
 https://stormacq.com/2020/08/31/bien-demarrer.html
 
+
+TODO: https://aws.amazon.com/fr/getting-started/cloud-essentials/?ref=gs&id=m1
+
+https://aws.amazon.com/fr/getting-started/?sc_icontent=awssm-evergreen-getting_started&sc_iplace=2up&trk=ha_awssm-evergreen-getting_started&sc_ichannel=ha&sc_icampaign=evergreen-getting_started
+
 ## Cloud Computing
 
 Definition: On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
