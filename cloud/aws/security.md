@@ -70,6 +70,8 @@ An IAM policy is a document that allows or denies permissions to AWS services an
 
 __Policies__ describe permissions that you can attach to users or groups.
 
+IAM policies provide you with the flexibility to customize users’ levels of access to resources. For instance, you can allow users to access all the Amazon S3 buckets in your AWS account or only a specific bucket.
+
 ### IAM groups
 
 An IAM group is a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted permissions specified by the policy.
@@ -117,6 +119,11 @@ In AWS Organizations, you can __apply__ service control policies __(SCPs)__ to t
 You can __apply__ IAM __policies__ to IAM __users, groups, or roles__. You __cannot__ apply an IAM policy to the AWS account __root__ user.
 
 Note: Consolidated billing is another feature of AWS Organizations.
+
+
+### SCPs
+
+Service control policies (SCPs) enable you to centrally control permissions for the accounts in your organization.
 
 ### Organizational units (OU)
 
@@ -195,6 +202,6 @@ Amazon Inspector helps to improve the security and compliance of applications by
 
 ### Amazon GuardDuty
 
-Amazon GuardDuty(opens in a new tab) is a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
+Amazon GuardDutyis a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
 
 
