@@ -45,6 +45,8 @@ For example, CloudTrail Insights might detect that a higher number of Amazon EC2
 
 AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
 
+The inspection includes security checks, such as Amazon S3 buckets with open access permissions.
+
 Trusted Advisor compares its findings to AWS best practices in five categories:
 
 - cost optimization
