@@ -119,4 +119,66 @@ AWS Cost Explorer is a tool that lets you visualize, understand, and manage your
 
 AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services.
 
+## AWS Support Plans
+
+### Basic
+
+Every customer automatically gets AWS Basic Support, no cost at all. Any customer can access support functions like 24/7 access to customer service, documentation, whitepapers, support forums, AWS Trusted Advisor, and the AWS Personal Health Dashboard.
+
+### Developer Support
+
+- Basic Support
+- Email customer support directly with a 24-hour response time on any questions you have. And responses of less than 12 hours in case your systems are impaired (défaillance de vos systèmes).
+
+This is a great plan for businesses that are experimenting with AWS or setting up tests or proofs of concept. 
+
+### Business Support
+
+- Developer Support
+- All AWS Trusted Advisor checks
+- Direct phone access to our support team. They have a 4-hour response time if your production system is impaired, and a 1-hour response time for when you production system is down.
+
+### AWS Enterprise On-Ramp Support
+
+- Business Support
+- A pool of Technical Account Managers to provide proactive guidance and coordinate access to programs and AWS experts
+- A Cost Optimization workshop (one per year)
+- A Concierge support team for billing and account assistance
+- Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+
+A pool of Technical Account Managers fo:
+
+- Consultative review and architecture guidance (one per year)
+- Infrastructure Event Management support (one per year)
+- Support automation workflows
+- 30 minutes or less response time for business-critical issues
+
+
+### Entreprise
+
+- Enterprise On-Ramp Support
+- A designated Technical Account Manager to provide proactive guidance and coordinate access to programs and AWS experts
+- A Concierge support team for billing and account assistance
+- Operations Reviews and tools to monitor health
+- Training and Game Days to drive innovation
+- Tools to monitor costs and performance through Trusted Advisor and Health API/Dashboard
+
+The Enterprise plan also provides full access to proactive services, which are provided by a designated Technical Account Manager:
+
+- Consultative review and architecture guidance
+- Infrastructure Event Management support
+- Cost Optimization Workshop and tools
+- Support automation workflows
+- 15 minutes or less response time for business-critical issues
+
+### Notes 
+
+__Technical Account Manager (TAM)__
+
+The Enterprise On-Ramp and Enterprise Support plans include access to a Technical Account Manager (TAM).
+
+The TAM is your primary point of contact at AWS. If your company subscribes to Enterprise Support or Enterprise On-Ramp, your TAM educates, empowers, and evolves your cloud journey across the full range of AWS services. TAMs provide expert engineering guidance, help you design solutions that efficiently integrate AWS services, assist with cost-effective and resilient architectures, and provide direct access to AWS programs and a broad community of experts.
+
+For example, suppose that you are interested in developing an application that uses several AWS services together. Your TAM could provide insights into how to best use the services together. They achieve this, while aligning with the specific needs that your company is hoping to address through the new application.
+
 
