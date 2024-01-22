@@ -182,3 +182,6 @@ The TAM is your primary point of contact at AWS. If your company subscribes to E
 For example, suppose that you are interested in developing an application that uses several AWS services together. Your TAM could provide insights into how to best use the services together. They achieve this, while aligning with the specific needs that your company is hoping to address through the new application.
 
 
+## AWS Marketplace
+
+AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS. 
