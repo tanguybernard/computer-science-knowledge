@@ -13,3 +13,6 @@ sagemaker
 https://www.journaldunet.fr/intelligence-artificielle/guide-de-l-intelligence-artificielle/1506327-aws-sagemaker-amazon/
 
 https://aws.amazon.com/fr/kinesis/
+
+
+https://www.logicworks.com/blog/2021/01/waf-vs-acl-vs-security-groups/
