@@ -398,6 +398,8 @@ https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and
 
 https://guides.zadarastorage.com/cs-networking-guide/latest/nat-gateways.html
 
+https://spin.atomicobject.com/aws-nat-implicit-dependency/
+
 #### VPC Peering
 
 A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. 
