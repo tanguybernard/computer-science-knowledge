@@ -98,6 +98,10 @@ https://www.mongodb.com/cloud-explained/paas-platform-as-a-service
 
 Un serveur privé virtuel est un environnement isolé, créé sur un serveur physique à partir d’une technologie de virtualisation.
 
+**VPC vs VPS**
+
+Un VPS et un VPC distribuent tous deux des ressources et hébergent des applications, mais un VPS est essentiellement une VM utilisée comme serveur, tandis qu'un VPC est un environnement de nuage privé complet.
+
 ## Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
