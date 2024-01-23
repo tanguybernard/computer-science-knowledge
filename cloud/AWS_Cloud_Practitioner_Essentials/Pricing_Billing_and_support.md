@@ -1,4 +1,4 @@
-# Pricing and Support
+# Pricing, Billing and Support
 
 ## AWS Free Tier
 
@@ -119,6 +119,10 @@ AWS Cost Explorer is a tool that lets you visualize, understand, and manage your
 
 AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services.
 
+## Using AWS cost allocation tags
+
+A tag is a label that you or AWS assigns to an AWS resource. Each tag consists of a key and a value. For each resource, each tag key must be unique, and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level. After you activate cost allocation tags, AWS uses the cost allocation tags to organize your resource costs on your cost allocation report, to make it easier for you to categorize and track your AWS costs. 
+
 ## AWS Support Plans
 
 ### Basic
@@ -185,3 +189,8 @@ For example, suppose that you are interested in developing an application that u
 ## AWS Marketplace
 
 AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS. 
+
+
+## QUESTIONS:
+
+https://www.examtopics.com/discussions/amazon/view/79266-exam-aws-certified-cloud-practitioner-topic-1-question-16/
