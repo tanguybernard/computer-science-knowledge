@@ -396,6 +396,7 @@ AWS Direct Connect is a service that lets you to establish a dedicated private c
 
 https://medium.com/awesome-cloud/aws-vpc-difference-between-internet-gateway-and-nat-gateway-c9177e710af6
 
+https://guides.zadarastorage.com/cs-networking-guide/latest/nat-gateways.html
 
 #### VPC Peering
 
