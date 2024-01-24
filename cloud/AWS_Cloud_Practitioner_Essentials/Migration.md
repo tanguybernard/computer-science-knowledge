@@ -51,3 +51,27 @@ Retiring is the process of removing applications that are no longer needed.
 
 ## AWS Snow Family
 
+The AWS Snow Familyis a collection of physical devices that help to physically transport up to exabytes of data into and out of AWS. 
+
+### AWS Snowcone 
+
+AWS Snowcone is a small, rugged, and secure edge computing and data transfer device. 
+
+### AWS Snowball
+
+Snowball Edge Storage Optimized devices are well suited for large-scale data migrations and recurring transfer workflows, in addition to local computing with higher capacity needs. 
+
+Snowball Edge Storage Optimized is a device that enables you to transfer large amounts of data into and out of AWS. It provides 80 TB of usable HDD storage.
+
+
+Snowball Edge Compute Optimized provides powerful computing resources for use cases such as machine learning, full motion video analysis, analytics, and local computing stacks.
+
+### AWS Snowmobile
+
+AWS Snowmobile is an exabyte-scale data transfer service used to move large amounts of data to AWS. 
+
+You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.
+
+
+
+
