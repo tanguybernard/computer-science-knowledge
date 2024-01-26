@@ -1,4 +1,6 @@
+A voir:
 
+https://aws.amazon.com/fr/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all&awsf.tech-category=*all&awsf.industries=*all&awsf.business-category=*all
 
 AWS Cognito
 
