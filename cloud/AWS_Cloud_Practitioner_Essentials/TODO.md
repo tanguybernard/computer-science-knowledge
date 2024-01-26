@@ -37,6 +37,9 @@ Before selecting your response to a question, eliminate any options that you bel
 
 This strategy helps you to focus on the correct option (or options, for multiple-response questions) and ensure that you have fulfilled all the requirements of the question.
 
+### Questions exmples:
+
+https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf
 
 ### A voir:
 
