@@ -4,9 +4,9 @@ Whitepapers and resources
 
 As part of your preparation for the AWS Certified Cloud Practitioner exam, we recommend that you review the following whitepapers and resources:
 
-[Overview of Amazon Web Services](https://d1.awsstatic.com/whitepapers/aws-overview.pdf)
-[How AWS Pricing Works](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/abstract-and-introduction.html)
-[Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
+- [Overview of Amazon Web Services](https://d1.awsstatic.com/whitepapers/aws-overview.pdf)
+- [How AWS Pricing Works](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/abstract-and-introduction.html)
+- [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
 
 
 A voir:
