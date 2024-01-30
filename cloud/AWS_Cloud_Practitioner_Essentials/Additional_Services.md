@@ -1,0 +1,24 @@
+
+# Additional Services
+
+
+## Amazon SageMaker (Machine Learning)
+
+Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows
+
+## Amazon Macie (Security, Identity & Compliance)
+
+Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks. 
+
+Use Case: *Discover sensitive data across your S3 environment to increase visibility and automated remediation of data security risks.*
+
+## Amazon Cognito (Security, Identity & Compliance)
+
+The service helps you implement customer identity and access management (CIAM) into your web and mobile applications. You can quickly add user authentication and access control to your applications in minutes.
+
+## Amazon QuickSight (Analytics)
+
+Amazon QuickSight powers data-driven organizations with unified business intelligence (BI) at hyperscale. 
+
+With QuickSight, all users can meet varying analytic needs from the same source of truth through modern interactive dashboards, paginated reports, embedded analytics, and natural language queries. With Amazon Q in QuickSight, business analysts and business users can use natural language to build, discover, and share meaningful insights in seconds, turning insights into impact faster. 
+
