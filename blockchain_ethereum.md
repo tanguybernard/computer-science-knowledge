@@ -14,6 +14,8 @@ That is a lot! This makes decentralized blockchains like Ethereum highly secure.
 
 A **node** is any instance of Ethereum client software that is connected to other computers also running Ethereum software, forming a network.
 
+https://validators.energyweb.org/
+
 ## Transaction
 
 There are three common types of transactions on the Ethereum network:
