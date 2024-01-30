@@ -20,3 +20,5 @@ There are three common types of transactions on the Ethereum network:
 - An ordinary transaction, when there is a transfer of ETH/ether from one account to another.
 - A transaction creating a contract is the type of transaction where a smart-contract in deployed on the Ethereum blockchain network.
 - A transaction invoking a contract, this transaction is sent with some data and is used to query/interact with a previously deployed smart-contract.
+
+https://www.quicknode.com/guides/ethereum-development/transactions/how-to-re-send-a-transaction-with-higher-gas-price-using-ethersjs
