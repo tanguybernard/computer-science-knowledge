@@ -102,6 +102,15 @@ Un serveur privé virtuel est un environnement isolé, créé sur un serveur phy
 
 Un VPS et un VPC distribuent tous deux des ressources et hébergent des applications, mais un VPS est essentiellement une VM utilisée comme serveur, tandis qu'un VPC est un environnement de nuage privé complet.
 
+
+## Elasticité vs Agilité
+
+Scale up or down to handle change. Do it quickly and you're agile. Do it automatically and you're elastic.
+
+L'agilité se concentre sur la vitesse et la facilité d'allocation et de désallocation des ressources. Cela permet de provisionner de grandes quantités de ressources informatiques en quelques minutes, ce qui vous permet de répondre plus facilement à l'évolution des besoins de l'entreprise.
+
+L'élasticité, quant à elle, se concentre sur la capacité à faire évoluer automatiquement les ressources en fonction de la demande. Cela vous permet d'optimiser vos ressources et de réduire les coûts, tout en veillant à ce que vos applications disposent des ressources nécessaires à leur bon fonctionnement.
+
 ## Credits
 
 https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-the-cloud
