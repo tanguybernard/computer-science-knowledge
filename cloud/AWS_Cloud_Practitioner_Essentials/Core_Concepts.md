@@ -500,15 +500,14 @@ Principles for architecting High Availability:
 - Use Parallelism (ex: Use microservices)
 - Security as forethought (ex: Encryption, Principle Of Least Privileges)
 
+## Tagging your AWS resources
+
+You can use tags __to control access__ to your AWS resources that support tagging, including IAM resources. You can tag IAM users and roles to control what they can access. 
+
+With most AWS resources, you have the option of adding tags when you create the resource. Examples of resources include an Amazon Elastic Compute Cloud (Amazon EC2) instance, an Amazon Simple Storage Service (Amazon S3) bucket, or a secret in AWS Secrets Manager.
+
+
 ## Credits
 
 https://cloudtips.dev/2022/12/17/what-is-region-availability-zone-edge-locations-pop-in-aws/
 
-
-## Need information
-
-AWs WAF
-
-AWS Well architecture
-
-aws cognito
