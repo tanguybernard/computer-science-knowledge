@@ -1,4 +1,4 @@
-# Security
+# Security 
 
 ## AWS Shared Responsability Model
 
@@ -205,3 +205,5 @@ Amazon Inspector helps to improve the security and compliance of applications by
 Amazon GuardDutyis a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
 
 
+
+# Monitoring
