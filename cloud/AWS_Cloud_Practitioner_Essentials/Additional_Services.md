@@ -22,3 +22,8 @@ Amazon QuickSight powers data-driven organizations with unified business intelli
 
 With QuickSight, all users can meet varying analytic needs from the same source of truth through modern interactive dashboards, paginated reports, embedded analytics, and natural language queries. With Amazon Q in QuickSight, business analysts and business users can use natural language to build, discover, and share meaningful insights in seconds, turning insights into impact faster. 
 
+## AWS Secrets Manager
+
+AWS Secrets Manager helps you manage, retrieve, and rotate __database credentials__, application credentials, OAuth tokens, __API keys__, and other secrets throughout their lifecycles. Many AWS services store and use secrets in Secrets Manager.
+
+
