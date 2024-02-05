@@ -194,3 +194,8 @@ AWS Marketplace is a digital catalog that includes thousands of software listing
 ## QUESTIONS:
 
 https://www.examtopics.com/discussions/amazon/view/79266-exam-aws-certified-cloud-practitioner-topic-1-question-16/
+
+
+## Cost and Usage Reports
+
+This solution consolidates the billing in a report, but it will work only for the individual accounts (without cross-account billing). 
