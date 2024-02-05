@@ -6,6 +6,10 @@
 
 Build, train, and deploy machine learning (ML) models for any use case with fully managed infrastructure, tools, and workflows
 
+## Amazon Kendra (Machine Learning)
+
+Amazon Kendra is an intelligent search service powered by machine learning (ML). 
+
 ## Amazon Macie (Security, Identity & Compliance)
 
 Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks. 
