@@ -388,6 +388,11 @@ The virtual private gateway is the component that allows protected internet traf
 
 AWS Direct Connect is a service that lets you to establish a dedicated private connection between your data center and a VPC.  
 
+
+### AWS Site-to-Site VPN
+
+AWS Site-to-Site VPN is a fully-managed service that creates a secure connection between your data center or branch office and your AWS resources using IP Security (IPSec) tunnels. 
+
 #### Internet Gateway vs NAT Gateway
 
 
