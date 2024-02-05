@@ -263,6 +263,8 @@ Trusted Advisor compares its findings to AWS best practices in five categories:
 - fault tolerance
 - service limits
 
+Trusted Advisor checks security groups for rules that allow unrestricted access to a resource. Unrestricted access increases opportunities for malicious activity, such as hacking, denial-of-service attacks, or loss of data. 
+
 
 __Cost optimization Example__: I do have some RDS instances that are idle, as well as some underutilized EC2 instances and EBS volumes. 
 
