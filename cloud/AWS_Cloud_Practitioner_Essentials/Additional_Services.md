@@ -26,4 +26,10 @@ With QuickSight, all users can meet varying analytic needs from the same source 
 
 AWS Secrets Manager helps you manage, retrieve, and rotate __database credentials__, application credentials, OAuth tokens, __API keys__, and other secrets throughout their lifecycles. Many AWS services store and use secrets in Secrets Manager.
 
+### Amazon Polly (Artificial Intelligence)
 
+Amazon Polly is a cloud service that converts text into lifelike speech. You can use Amazon Polly to develop applications that increase engagement and accessibility. 
+
+## AWS Application Discovery Service (Migration)
+
+AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. 
