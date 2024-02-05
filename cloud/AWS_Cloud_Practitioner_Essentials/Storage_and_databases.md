@@ -203,6 +203,11 @@ Use cases
 - Database consolidation: Combining several databases into a single database
 - Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration
 
+
+## AWS Application Migration Service (AWS MGN)
+
+AWS MGN is an automated lift-and-shift solution. This solution can migrate physical servers and any databases or applications that run on them to EC2 instances in AWS.
+
 ## Additional Database Services
 
 ### Amazon DocumentDB
