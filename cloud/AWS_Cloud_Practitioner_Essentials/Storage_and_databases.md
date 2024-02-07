@@ -72,15 +72,17 @@ Write Once, Read Many Technique.
 
 source: https://www.pluralsight.com/resources/blog/cloud/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me
 
+#### Amazon S3 Intelligent-Tiering storage class
+
+Automates storage cost savings by moving data when access patterns change
+
 #### Amazon S3 Standard
 - Designed for frequently accessed data
 - Stores data in a minimum of three Availability Zones
 
 #### Amazon S3 static website hosting
 
-#### Amazon S3 Intelligent-Tiering storage class
 
-Automates storage cost savings by moving data when access patterns change
 
 #### Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
 
