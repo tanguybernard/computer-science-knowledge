@@ -61,9 +61,16 @@ Main use: Storing large amounts of static data and ideal for data backups.
 
 Can be used with EC2 or Lambda.
 
+
+
 ### Amazon S3 storage classes
 
 Write Once, Read Many Technique.
+
+![Which-S3-Storage-Class-is-right-for-me-Infograhic](https://github.com/tanguybernard/computer-science-knowledge/assets/14818169/16f75a03-7ad7-4a1a-b3a4-e663770b22a1)
+
+
+https://www.pluralsight.com/resources/blog/cloud/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me
 
 #### Amazon S3 Standard
 - Designed for frequently accessed data
