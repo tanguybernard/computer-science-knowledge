@@ -70,13 +70,18 @@ Write Once, Read Many Technique.
 ![Which-S3-Storage-Class-is-right-for-me-Infograhic](https://github.com/tanguybernard/computer-science-knowledge/assets/14818169/16f75a03-7ad7-4a1a-b3a4-e663770b22a1)
 
 
-https://www.pluralsight.com/resources/blog/cloud/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me
+source: https://www.pluralsight.com/resources/blog/cloud/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me
 
 #### Amazon S3 Standard
 - Designed for frequently accessed data
 - Stores data in a minimum of three Availability Zones
 
 #### Amazon S3 static website hosting
+
+#### Amazon S3 Intelligent-Tiering storage class
+
+Automates storage cost savings by moving data when access patterns change
+
 #### Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
 
 Less frequently, long term storage like backup
@@ -95,10 +100,13 @@ Stores data in a single Availability Zone
 #### Amazon S3 Glacier Flexible Retrieval
 - Low-cost storage designed for data archiving
 - Able to retrieve objects within a few minutes to hours
+- You can choose from expedited retrievals in 1-5 minutes, standard retrievals in 3-5 hours, and free bulk retrievals in 5-12 hours. 
+
+https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-s3-glacier-storage-class-amazon-s3-glacier-flexible-retrieval/?nc1=h_ls
 
 #### S3 Glacier Deep Archive
 - Lowest-cost object storage class ideal for archiving
-- Able to retrieve objects within 12 hours
+- Able to retrieve objects within 12 hours; data retrieval from 12-48 hours.
 
 #### S3 Outposts
 – Creates S3 buckets on Amazon S3 Outposts
