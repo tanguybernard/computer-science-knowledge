@@ -19,7 +19,9 @@ source: https://kean.blog/post/phantom-types
 https://oleb.net/blog/2016/08/measurements-and-units-with-phantom-types/
 
 
-## Kotlin
+
+
+### Kotlin 1
 
 L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les opérations illégales au moment de la compilation.
 
@@ -52,7 +54,52 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     
     var failed = DoorPhantom(Open).open()//error
 
-## Typescript (should be improved)
+
+### Kotlin 2
+
+The Kotlin equivalent would be next. Let’s pretend that you have code:
+
+    data class User(val id: String)
+    data class Address(val id: String)
+    
+    val me = User(id = "test id")
+    val home = Address(id = "test id")
+    
+    if (me.id == home.id) {
+      assert("Wrong! Person can not be address")
+    }
+
+Isuru Rajapakse came with the next improvement:
+
+    @JvmInline value class UserId(val value: String)
+    @JvmInline value class AddressId(val value: String)
+    
+    data class User(val id: UserId)
+    data class Address(val id: AddressId)
+    
+    val me = User(id = UserId("test id"))
+    val home = Address(id = AddressId("test id"))
+    
+    if (me.id == home.id) {} // This will not compile
+
+That has minimum performance penalty but still require some boilerplate code writing.
+
+//
+
+Then Ivan Canet proposed an improvement that will require also minimum boilerplate and will be 100% equivalent to the swift code:
+
+    @JvmInline value class Id<out T>(val value: String)
+    
+    data class User(val id: Id<User>)
+    data class Address(val id: Id<Address>)
+    
+    val me = User(id = Id("test id"))
+    val home = Address(id = Id("test id"))
+    
+    if (me.id == home.id) {} // This will not compile also
+
+source: https://emartynov.medium.com/kotlin-ddd-phantom-type-ae5ab1da0a35
+### Typescript (should be improved)
 
 
     type Open = {_type: 'Open'};
@@ -83,7 +130,7 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     
     const closeADoorAlreadyClose = closeReally(closedDoor); //ferme une porte deja ferme BOOM ca pete, normal
 
-## Exemple 1
+### TS 2
 
     export interface Query<A> {
         sql: string;
@@ -112,7 +159,7 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     console.log(bazes);
 
 
-## Exemple 2
+### TS 3
 
 
     //Problem
@@ -214,7 +261,7 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
     
     onSubmit();
 
-## Exemple 3 
+## TS 4
 
 
 
@@ -252,7 +299,7 @@ L'idée est d'empêcher les objets d'avoir un état illégal ou d'interdire les 
 https://www.stevenleiva.com/posts/phantom_types
 
 
-## Exemple Groupe Sanguin
+## TS5: Exemple Groupe Sanguin
 
     declare const phantom: unique symbol;
     
@@ -311,7 +358,7 @@ https://www.stevenleiva.com/posts/phantom_types
     const a = GiveBlood(userOPositive, userAPositive);
     console.log(a);
 
-## Kotlin
+### Kotlin
 
     data class BloodSample<T>(val value: String) {
         
