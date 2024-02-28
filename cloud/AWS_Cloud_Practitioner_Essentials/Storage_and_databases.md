@@ -167,8 +167,19 @@ Using multiple AZ's means : high availability and disaster recovery, not increas
 
 Doing read-intensive workloads ? Solution : A read replica
 
+#### Maintaining / Patching
 
-#### Aurora
+If a maintenance update is available for a DB instance, the following column values are possible:
+
+- required – The maintenance action will be applied to the resource and **can't be deferred indefinitely.**
+- available – The maintenance action is available, but it will not be applied to the resource automatically. **You can apply it manually.**
+- next window – The maintenance action will be applied to the resource during **the next maintenance window.**
+- In progress – The maintenance action is **in the process** of being applied to the resource.
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html
+
+
+#### Aurora (RDS)
 
 Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL.
 
