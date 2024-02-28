@@ -188,7 +188,9 @@ DynamoDB supports key/value and document data models.
 
 DynamoDB is serverless, which means that you do not have to provision, patch, or manage servers. 
 
-Scaling up to 10 trillion requests per day
+Scaling up to 10 trillion requests per day.
+
+Can stores json-type documents.
 
 __Read/Write Capacity Modes:__
 
