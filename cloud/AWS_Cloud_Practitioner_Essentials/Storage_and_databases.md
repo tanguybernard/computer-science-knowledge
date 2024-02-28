@@ -265,3 +265,10 @@ It supports two types of data stores: Redis and Memcached.
 DAX is an in-memory cache for DynamoDB. 
 
 It helps improve response times from single-digit milliseconds to microseconds.
+
+
+### Microsoft SQL Server
+
+- Aurora ? No beacause only support mysql and postgres
+- Ec2 And purchase license ? Yes you could.
+- RDS ? Yes you could, but its a managed service, so it can cost more than ec2.
