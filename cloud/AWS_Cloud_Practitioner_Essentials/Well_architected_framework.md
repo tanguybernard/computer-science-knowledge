@@ -23,6 +23,7 @@ When considering the security of your architecture, apply these best practices:
 - Automate security best practices when possible.
 - Apply security at all layers.
 - Protect data in transit and at rest.
+- Maintain Traceability
 
 ## Reliability
 
