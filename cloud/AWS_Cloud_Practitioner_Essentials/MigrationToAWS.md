@@ -74,4 +74,15 @@ You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long rugg
 
 ## AWS Database Migration Service (DMS)
 
+## Q /
 
+
+A system administrator is reviewing a group of servers that were found during a portfolio discovery. All servers are migrating to aws. The servers have no current owner. There is very little trafic to the servers. Which migration stategy should be used ?
+
+
+- Rehost: [Incorrect] Move to aws cloud without making any changes to the server. Server are rarely used, so can be shutdown to save on cost.
+- Replatforming: [Incorrect] Make change to optimize the server.
+- Retain: [Incorrect] Keep Server on premises. No We want to move the server on AWS.
+- Retire: [Correct] No usage, so decomission for saving costs.
+
+Source: Exam Prep Standard Course: AWS Certified Cloud Practitioner (CLF-C02 - English)
