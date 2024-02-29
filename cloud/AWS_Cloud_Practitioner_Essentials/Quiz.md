@@ -29,3 +29,13 @@ Global tables build on the global Amazon DynamoDB footprint to provide you with 
 Purchase Convertible Reserved Instances if you need additional flexibility, such as the ability to use different instance families, operating systems, or tenancies over the Reserved Instance term. Convertible Reserved Instances provide you with a significant discount (up to 66%) compared to On-Demand Instances and can be purchased for a 1-year or 3-year term."
 
 https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-reservation-models/standard-vs.-convertible-offering-classes.html
+
+
+###  Which of the following is a way to use Amazon EC2 Auto Scaling groups to scale capacity in the AWS Cloud?
+
+    A. Scale the number of EC2 instances in or out automatically, based on demand. [Most Voted]
+    B. Use serverless EC2 instances.
+    C. Scale the size of EC2 instances up or down automatically, based on demand.
+    D. Transfer unused CPU resources between EC2 instances.
+
+
