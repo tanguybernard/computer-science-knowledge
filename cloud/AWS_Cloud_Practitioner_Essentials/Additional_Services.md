@@ -37,3 +37,7 @@ Amazon Polly is a cloud service that converts text into lifelike speech. You can
 ## AWS Application Discovery Service (Migration)
 
 AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. 
+
+## Amazon Rekognition (AMS SSPS)
+
+Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use. 
