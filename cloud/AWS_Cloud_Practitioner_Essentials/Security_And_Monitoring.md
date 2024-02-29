@@ -271,3 +271,19 @@ __Cost optimization Example__: I do have some RDS instances that are idle, as we
 __Performance__: Checks for EBS volumes whose performance might've been affected by the throughput capability of the EC2 instance that it's attached to. 
 
 __Security Example__: I have weak password policies for IAM users, multi-factor authentication is not turned on for the root user, and there are security groups allowing public access to EC2 instances.
+
+
+
+## Waf, Shield, GuardDuty
+
+**Shield** is DDoS protection and also located "at the edge".
+
+**AWS WAF** is a web application firewall which is able to be configured in front of your web application where it will monitor http requests and prevent any halmful ones. This is only for web traffic.
+
+**Amazon GuardDuty** ("neighbourhood watch") is an active intruder detection system which constantly monitors suspected configuration changes and anomalies in your AWS account and notifies relevant parties for further actions.
+
+GuardDuty is like an antivirus for the whole AWS account while WAF is a specialized firewall for web traffic for a configured web application.
+
+GuardDuty is intelligent threat detection. That means without much configuration, it reads your CloudTrail, Config and VPC FlowLogs and notifies if something unexpected happened. That is usually for infrastructure.
+
+**Amazon Inspector** ("building inspector") is more for applications. It's an automated security assessment service that helps improve the security and compliance of applications. 
