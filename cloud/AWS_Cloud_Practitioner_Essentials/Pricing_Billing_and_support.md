@@ -191,6 +191,16 @@ For example, suppose that you are interested in developing an application that u
 AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS. 
 
 
+## Savings Plans
+
+Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande en échange d'un engagement d'utilisation donné (mesuré en USD/heure) sur une période de un ou trois ans. 
+
+### AWS concierge 
+
+When you subscribe to an Enterprise plan or qualified Reseller Support plan, your Amazon Web Services Concierge will be assigned to your account. The global customer service team is available to assist you 24/7, 365 days a year.
+
+https://www.watsonmedia.net/question/what-is-aws-concierge/
+
 ## QUESTIONS:
 
 https://www.examtopics.com/discussions/amazon/view/79266-exam-aws-certified-cloud-practitioner-topic-1-question-16/
