@@ -46,3 +46,14 @@ Amazon Rekognition makes it easy to add image and video analysis to your applica
 ## Amazon Lightsail (Compute)
 
 Build applications and websites fast with low-cost, pre-configured cloud resources
+
+### Use cases
+
+Launch simple web applications; Use pre-configured development stacks like LAMP, Nginx, MEAN, and Node.js. to get online quickly and easily.
+
+Create custom websites; Build and personalize your blog, ecommerce, or personal website in just a few clicks, with pre-configured applications like WordPress, 
+Magento, Prestashop, and Joomla.
+
+Build small business applications
+
+Spin up test environments;  Easily create and delete development sandboxes and test environments where you can try out new ideas, risk free.
