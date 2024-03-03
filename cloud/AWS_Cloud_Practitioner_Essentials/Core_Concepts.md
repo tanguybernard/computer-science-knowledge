@@ -331,17 +331,7 @@ Manage access to AWS Resources
 
 Free Service
 
-## Pricing
 
-### Savings Plans
-
-Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande en échange d'un engagement d'utilisation donné (mesuré en USD/heure) sur une période de un ou trois ans. 
-
-### AWS concierge 
-
-When you subscribe to an Enterprise plan or qualified Reseller Support plan, your Amazon Web Services Concierge will be assigned to your account. The global customer service team is available to assist you 24/7, 365 days a year.
-
-https://www.watsonmedia.net/question/what-is-aws-concierge/
 
 
 
