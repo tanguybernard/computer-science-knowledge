@@ -42,3 +42,7 @@ AWS Application Discovery Service helps you plan your migration to the AWS cloud
 
 
 Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use. 
+
+## Amazon Lightsail (Compute)
+
+Build applications and websites fast with low-cost, pre-configured cloud resources
