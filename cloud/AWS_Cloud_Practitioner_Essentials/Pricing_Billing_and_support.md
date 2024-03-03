@@ -195,6 +195,15 @@ AWS Marketplace is a digital catalog that includes thousands of software listing
 
 Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande en échange d'un engagement d'utilisation donné (mesuré en USD/heure) sur une période de un ou trois ans. 
 
+
+AWS offers two types of Savings Plans:
+
+- Compute Savings Plans provide the most flexibility and help to reduce your costs by up to 66% (just like Convertible RIs). These plans automatically apply to EC2 instance usage regardless of instance family, size, AZ, Region, operating system, or tenancy, and also apply to Fargate and Lambda usage.
+
+- EC2 Instance Savings Plans provide the lowest prices, offering savings up to 72% (just like Standard RIs) in exchange for commitment to usage of individual instance families in a Region (for example, M5 usage in N. Virginia). 
+
+https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-reservation-models/savings-plans.html
+
 ### AWS concierge 
 
 When you subscribe to an Enterprise plan or qualified Reseller Support plan, your Amazon Web Services Concierge will be assigned to your account. The global customer service team is available to assist you 24/7, 365 days a year.
