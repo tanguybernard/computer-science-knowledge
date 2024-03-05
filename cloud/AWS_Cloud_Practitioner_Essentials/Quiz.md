@@ -38,4 +38,11 @@ https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-reservation-mod
     C. Scale the size of EC2 instances up or down automatically, based on demand.
     D. Transfer unused CPU resources between EC2 instances.
 
+### A company's web application requires AWS credentials and authorizations to use an AWS service. Which IAM entity should the company use as best practice?
+
+    A. IAM role [Most Voted]
+    B. IAM user
+    C. IAM group
+    D. IAM multi-factor authentication (MFA)
+
 
