@@ -202,6 +202,8 @@ AWS WAF works together with Amazon CloudFront and an Application Load Balancer. 
 
 Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions. 
 
+Amazon Inspector uses a set of predefined rules to assess the security state of your resources. It analyzes the network activity, operating system configurations, and application behavior to identify potential security issues. The assessment report provides detailed findings and recommendations for remediation.
+
 ### Amazon GuardDuty
 
 Amazon GuardDutyis a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
