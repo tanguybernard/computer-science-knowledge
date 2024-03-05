@@ -5,6 +5,8 @@
 
 https://quizlet.com/718386908/flashcards
 
+https://www.passnexam.com/amazon/clf-c02/33
+
 ## Exam Preparation:
 
 ### Whitepapers and resources
