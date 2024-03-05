@@ -412,6 +412,29 @@ VPC Peering supports peering between multiple accounts
 2. ec2 Instance DeveloperInstance > Connect > Session Manager > "ping 172.31.1.163"
 
 
+### EC2 instances access S3
+
+
+For your EC2 instance to connect to S3 endpoints, the instance must be one of the following:
+
+- EC2 instance with a public IP address and a route table entry with the default route pointing to an Internet Gateway
+- Private EC2 instance with a default route through a NAT gateway
+- Private EC2 instance with connectivity to Amazon S3 using a gateway VPC endpoint
+
+
+https://repost.aws/knowledge-center/ec2-instance-access-s3-bucket
+
+
+### VPC Endpoints: Secure and Direct Access to AWS Services
+
+
+
+![vpc_gateway_endpoint](https://github.com/tanguybernard/computer-science-knowledge/assets/14818169/b8bddef6-78e4-49d3-bfb6-2b4a8960410a)
+
+
+
+https://blog.awsfundamentals.com/vpc-endpoints
+
 
 ### Network Security
 
