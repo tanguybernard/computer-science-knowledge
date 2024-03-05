@@ -274,6 +274,9 @@ __Performance__: Checks for EBS volumes whose performance might've been affected
 
 __Security Example__: I have weak password policies for IAM users, multi-factor authentication is not turned on for the root user, and there are security groups allowing public access to EC2 instances.
 
+## AWS X-Ray
+
+AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components.
 
 
 ## Waf, Shield, GuardDuty
