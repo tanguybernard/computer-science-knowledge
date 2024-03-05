@@ -80,8 +80,6 @@ An IAM group is a collection of IAM users. When you assign an IAM policy to a gr
 
 An IAM role is an identity that you can assume to gain temporary access to permissions.  
 
-
-
 AWS IAM Roles:
 - Associated permissions
 - Allow or Deny
@@ -91,7 +89,7 @@ AWS IAM Roles:
 - For AWS ressources, users, external identities, applications, other aws services
 
 
-Example:
+Examples:
 
 1. First, the coffee shop owner grants the employee permissions to the "Cashier" and "Inventory" roles so they can switch between these two workstations.
 
@@ -99,6 +97,10 @@ Example:
 
 3. Later in the day, the employee needs to update the inventory system. They assume the “Inventory” role. 
 This grants the employee access to the inventory system and also revokes their access to the cash register system.
+
+Notes:
+
+As a best practice for granting AWS credentials and authorizations to a web application, you should use an **IAM role**. IAM roles are a secure way to grant permissions to AWS resources, such as services or applications, without the need for long-term access keys (access key ID and secret access key). Roles are typically **assumed by trusted entities**, like AWS services or EC2 instances, to securely delegate access to resources.
 
 ### Multi-factor authentication
 
