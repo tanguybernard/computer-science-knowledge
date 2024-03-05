@@ -208,7 +208,11 @@ Amazon Inspector uses a set of predefined rules to assess the security state of 
 
 Amazon GuardDutyis a service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
 
+### Amazon Macie (Security, Identity & Compliance)
 
+Amazon Macie discovers sensitive data using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks.
+
+Use Case: Discover sensitive data across your S3 environment to increase visibility and automated remediation of data security risks.
 
 # Monitoring
 
