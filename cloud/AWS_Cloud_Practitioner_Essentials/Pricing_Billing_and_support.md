@@ -125,6 +125,9 @@ A tag is a label that you or AWS assigns to an AWS resource. Each tag consists o
 
 ## AWS Support Plans
 
+![aws_support_plans](https://github.com/tanguybernard/computer-science-knowledge/assets/14818169/793bb28a-0d2f-4324-acd7-b8694c84340d)
+
+
 ### Basic
 
 Every customer automatically gets AWS Basic Support, no cost at all. Any customer can access support functions like 24/7 access to customer service, documentation, whitepapers, support forums, AWS Trusted Advisor, and the AWS Personal Health Dashboard.
