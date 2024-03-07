@@ -284,6 +284,20 @@ __Security Example__: I have weak password policies for IAM users, multi-factor 
 
 AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components.
 
+## CloudWatch vs CloudTrail vs X-Ray
+
+AWS CloudWatch
+- Metrics : collecte les métriques intégrés aux services AWS et ceux de votre application
+- Logs : collecte et stocke les fichiers journaux (logs)
+- Events : envoie de notification en réaction à certains événements
+- Alarms : définit des seuils d’activation (alarms) qui déclenche une action
+AWS X-Ray
+- Aide à l’analyse et au débogage d’applications mêmes celles distribuées
+- Produit sous forme graphique le parcours d’une requête et des composants qu’elle traverse avec les erreurs associées
+AWS CloudTrail
+- Monitoring des appels aux APIs
+- Analyse de conformité
+- Audit opérationnel
 
 ## Waf, Shield, GuardDuty
 
