@@ -117,6 +117,10 @@ A migration strategy is the approach used to migrate a workload into the AWS Clo
 
 https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html
 
+## Guest OS vs Host OS
+
+Whereas the host operating system is software installed on a computer to interact with the hardware, the guest operating system is software installed onto and running on the virtual machine.
+
 ## AWS Services
 
 
