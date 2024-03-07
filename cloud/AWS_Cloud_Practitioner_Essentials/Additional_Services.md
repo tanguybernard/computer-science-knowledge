@@ -47,6 +47,11 @@ Amazon Rekognition makes it easy to add image and video analysis to your applica
 
 Build applications and websites fast with low-cost, pre-configured cloud resources
 
+
+## AWS Glue
+
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+
 ### Use cases
 
 Launch simple web applications; Use pre-configured development stacks like LAMP, Nginx, MEAN, and Node.js. to get online quickly and easily.
