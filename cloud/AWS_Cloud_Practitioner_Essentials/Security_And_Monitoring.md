@@ -287,17 +287,24 @@ AWS X-Ray helps developers analyze and debug production, distributed application
 ## CloudWatch vs CloudTrail vs X-Ray
 
 AWS CloudWatch
+
 - Metrics : collecte les métriques intégrés aux services AWS et ceux de votre application
 - Logs : collecte et stocke les fichiers journaux (logs)
 - Events : envoie de notification en réaction à certains événements
 - Alarms : définit des seuils d’activation (alarms) qui déclenche une action
+
 AWS X-Ray
+
 - Aide à l’analyse et au débogage d’applications mêmes celles distribuées
 - Produit sous forme graphique le parcours d’une requête et des composants qu’elle traverse avec les erreurs associées
+
 AWS CloudTrail
+
 - Monitoring des appels aux APIs
 - Analyse de conformité
 - Audit opérationnel
+
+https://scalastic.io/aws-monitoring-auditing-cloudwatch-xray-cloudtrail/
 
 ## Waf, Shield, GuardDuty
 
