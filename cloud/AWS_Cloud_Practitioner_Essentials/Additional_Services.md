@@ -62,3 +62,9 @@ Magento, Prestashop, and Joomla.
 Build small business applications
 
 Spin up test environments;  Easily create and delete development sandboxes and test environments where you can try out new ideas, risk free.
+
+### AWS Global Accelerator (AMS SSPS)
+
+Global Accelerator is a network layer service in which you create accelerators to improve availability and performance for internet applications used by a global audience. 
+
+
