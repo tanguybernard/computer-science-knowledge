@@ -43,7 +43,7 @@ https://aws.amazon.com/getting-started/cloud-essentials/?nc1=h_ls
 
 __A Region__ is a geographical isolated area that contains AWS resources.
 
-An __Availability Zone__ (Logical Data center) is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. 
+An __Availability Zone__ (Logical Data center) is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other (separate facilities). 
 
 A Region consists of three or more Availability Zones.
 
