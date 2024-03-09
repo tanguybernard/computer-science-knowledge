@@ -143,8 +143,15 @@ But its main feature is its scalability. EFS can grow or shrink according to dem
 3.  Add Inbound Type NFS And Source : Security Group WebServers
 4.  ...
 
+## EBS vs EFS vs S3
 
-### Amazon Relational Database Service (RDS)
+- EBS is a high-performance per-instance block storage system designed to act as storage for a single EC2 instance (most of the time)
+- EFS is a highly scalable file storage system designed to provide flexible storage for multiple EC2 instances
+- S3 is an object storage system, designed to provide archiving and data control options and to interface with other services beyond EC2. It’s also useful for storing static html pages and shared storage for applications
+
+https://www.justaftermidnight247.com/insights/ebs-efs-and-s3-when-to-use-awss-three-storage-solutions/
+
+## Amazon Relational Database Service (RDS)
 
 Amazon RDS is a service that enables you to run relational databases in the AWS Cloud.
 
