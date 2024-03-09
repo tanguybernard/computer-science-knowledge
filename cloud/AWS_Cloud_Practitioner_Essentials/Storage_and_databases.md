@@ -280,6 +280,7 @@ DAX is an in-memory cache for DynamoDB.
 
 It helps improve response times from single-digit milliseconds to microseconds.
 
+For Eventually consitents reads: The response will not reflect the results of recently completed mutations. Instead, the result may include some stale data (FR/ données périmées). Stale data stands for data with an older version.
 
 ### Microsoft SQL Server
 
