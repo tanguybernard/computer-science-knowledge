@@ -225,6 +225,8 @@ Amazon Redshift is a data warehousing service that you can use for big data anal
 
 Power data driven decisions with the best price-performance cloud data warehouse.
 
+Use cluster architecture.
+
 ## Amazon Database Migration Service (DMS)
 
 
