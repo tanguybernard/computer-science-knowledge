@@ -146,7 +146,6 @@ Amazon RDS is a service that enables you to run relational databases in the AWS 
 
 Amazon RDS is a managed service that automates tasks such as hardware provisioning, database setup, patching, and backups. 
 
-
 Amazon RDS database engines:
 - Amazon Aurora
 - Mysql
@@ -166,6 +165,10 @@ Characteristics :
 Using multiple AZ's means : high availability and disaster recovery, not increased performance
 
 Doing read-intensive workloads ? Solution : A read replica
+
+Note: With Multi AZ, you can replicate data (Primary Instance And a Standby Instance: Synchronous).
+
+Primary with Read Replica Instance : Asynchronous replication
 
 #### Maintaining / Patching
 
