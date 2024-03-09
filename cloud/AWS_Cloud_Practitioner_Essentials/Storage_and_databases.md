@@ -131,6 +131,10 @@ On-Premises Servers can use EFS through AWS Direct Connect or AWS VPN
 - Regional resource
 - Automatically scales
 
+### EFS vs EBS
+Unlike EBS, EFS can be mounted by multiple EC2 instances, meaning many virtual machines may store files within an EFS instance. 
+
+But its main feature is its scalability. EFS can grow or shrink according to demand, with more and more files being added without disturbing your application or having to provision new infrastructure.
 
 ### Configuration EC2 <> EFS
 
