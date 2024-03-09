@@ -166,7 +166,7 @@ Using multiple AZ's means : high availability and disaster recovery, not increas
 
 Doing read-intensive workloads ? Solution : A read replica
 
-Note: With Multi AZ, you can replicate data (Primary Instance And a Standby Instance: Synchronous).
+Note: With Multi AZ's, you can replicate data (Primary Instance And a Standby Instance: Synchronous).
 
 Primary with Read Replica Instance : Asynchronous replication
 
