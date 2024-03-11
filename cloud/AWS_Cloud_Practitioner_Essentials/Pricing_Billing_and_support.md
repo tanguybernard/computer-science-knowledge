@@ -119,6 +119,14 @@ AWS Cost Explorer is a tool that lets you visualize, understand, and manage your
 
 AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services.
 
+## AWS Cost and Usage Report
+
+The AWS Cost and Usage Reports (CUR) contains the most comprehensive set of cost and usage data available. You can use Cost and Usage Reports to export your cost and usage data to an Amazon S3 bucket that you own. You can receive exports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself. 
+
+Provides the most __granular__ data.
+
+source: https://aws.amazon.com/fr/aws-cost-management/aws-cost-and-usage-reporting/faqs/
+
 ## Using AWS cost allocation tags
 
 A tag is a label that you or AWS assigns to an AWS resource. Each tag consists of a key and a value. For each resource, each tag key must be unique, and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level. After you activate cost allocation tags, AWS uses the cost allocation tags to organize your resource costs on your cost allocation report, to make it easier for you to categorize and track your AWS costs. 
