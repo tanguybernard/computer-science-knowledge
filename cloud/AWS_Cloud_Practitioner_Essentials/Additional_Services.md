@@ -16,6 +16,8 @@ Amazon Macie discovers sensitive data using machine learning and pattern matchin
 
 Use Case: *Discover sensitive data across your S3 environment to increase visibility and automated remediation of data security risks.*
 
+It's about Personally identifiable information (PII)
+
 ## Amazon Cognito (Security, Identity & Compliance)
 
 The service helps you implement customer identity and access management (CIAM) into your web and mobile applications. You can quickly add user authentication and access control to your applications in minutes.
