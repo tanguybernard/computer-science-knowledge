@@ -256,6 +256,15 @@ A web service that coordinates and manages message delivery from publishers to s
 
 Using Amazon SNS topics, a publisher publishes messages to subscribers.
 
+### EventBridge
+
+EventBridge is a fully managed event bus that makes it easy to connect applications together using data from your own applications, SaaS applications, and AWS services.
+
+### SQS, SNS & EventBridge
+
+SQS is best suited for asynchronous messaging and decoupling systems, SNS is best suited for real-time messaging and notifications, and EventBridge is best suited for real-time event-driven architectures and connecting different services.
+
+
 ### AWS Lambda (Serverless Compute)
 
 AWS Lambda is serverless compute service for running code without having to provision or manage servers.
