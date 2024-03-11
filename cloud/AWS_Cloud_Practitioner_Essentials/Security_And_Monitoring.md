@@ -284,6 +284,11 @@ __Security Example__: I have weak password policies for IAM users, multi-factor 
 
 AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components.
 
+![xray-getpost-trace-view](https://github.com/tanguybernard/computer-science-knowledge/assets/14818169/07524d1a-021f-4532-9716-f990c69b9d10)
+
+
+source: https://docs.aws.amazon.com/fr_fr/appsync/latest/devguide/x-ray-tracing.html
+
 ## CloudWatch vs CloudTrail vs X-Ray
 
 AWS CloudWatch
