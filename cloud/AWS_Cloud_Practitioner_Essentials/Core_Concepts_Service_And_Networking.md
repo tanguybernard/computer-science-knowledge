@@ -187,6 +187,12 @@ __What is the difference between EC2 Savings Plan and Reserved Instances (RIs)?_
 __Reserved instances__ provide a discount when you reserve a certain amount of __computing power__ (measured per hour) for a one- or three-year period while __Savings Plans__ provide a discount when you commit to spending a __certain amount__ (measured in dollars per hour) for a one-or three-year period.
 
 
+#### Dedicated host vs dedicated instance
+
+**Dedicated Instance** runs on some dedicated hardware. Its not lockdown to you. If you stop/start instance, you can get some other hardware somewhere else. Basically, **the hardware is "yours" (you are not sharing it with others) for the time your instance is running**. You stop/start it, you may get different physical machine later on (maybe older, maybe newer, maybe its specs will be a bit different), and so on. So your instance is moved around on different physical servers - whichever is not occupied by others at the time.
+
+With **Dedicated Host** the physical server is basically yours. It does not change, it's always the **same physical machine for as long as you are paying**.
+
 ### AWS EC2 Auto Scaling and Healing
 
 #### Scaling
