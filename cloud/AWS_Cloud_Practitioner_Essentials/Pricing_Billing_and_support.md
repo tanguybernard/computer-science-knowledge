@@ -119,6 +119,8 @@ AWS Cost Explorer is a tool that lets you visualize, understand, and manage your
 
 AWS Cost Explorer includes a default report of the costs and usage for your top five cost-accruing AWS services.
 
+Forecast future costs and usage of your AWS resources based on your past consumption.
+
 ## AWS Cost and Usage Report
 
 The AWS Cost and Usage Reports (CUR) contains the most comprehensive set of cost and usage data available. You can use Cost and Usage Reports to export your cost and usage data to an Amazon S3 bucket that you own. You can receive exports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself. 
