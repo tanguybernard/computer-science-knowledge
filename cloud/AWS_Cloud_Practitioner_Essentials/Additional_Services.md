@@ -18,10 +18,17 @@ Build, train, and deploy machine learning (ML) models for any use case with full
 
 Amazon Kendra is an intelligent search service powered by machine learning (ML). 
 
-## Amazon Rekognition (AMS SSPS)
+### Amazon Rekognition (AMS SSPS)
 
 Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use. 
 
+### Amazon Comprehend
+
+Organizations that want a powerful solution that lets them discover insights and relationships in text
+
+### Amazon Textract
+
+Companies that want to easily extract text and data from virtually any document
 
 ## Analytics
 
