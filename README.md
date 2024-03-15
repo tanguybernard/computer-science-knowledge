@@ -13,7 +13,10 @@ mindmap
       JS
       Java
     Code
+      POO  
       Clean Code
+        SOLID
+        YAGNI
       Tests
         TDD
         BDD
