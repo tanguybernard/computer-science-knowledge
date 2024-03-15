@@ -14,8 +14,9 @@ mindmap
       Java
     Code
       Clean Code
-      TDD
-      BDD
+      Tests
+        TDD
+        BDD
     Agile
       Human
       Improvement
