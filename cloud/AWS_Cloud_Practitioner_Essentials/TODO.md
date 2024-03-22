@@ -1,5 +1,6 @@
 # EXAM
 
+https://tutorialsdojo.com/aws-cloud-practitioner-clf-c02-exam-guide/
 
 ## Quiz
 
