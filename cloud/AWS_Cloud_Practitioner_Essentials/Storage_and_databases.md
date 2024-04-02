@@ -281,6 +281,8 @@ An immutable system of record where any entry can never be removed from the audi
 
 You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.
 
+https://www.silicon.fr/amazon-quantum-ledger-database-260629.html
+
 ### Amazon ElastiCache
 
 Amazon ElastiCache is a service that adds caching layers on top of your databases to help improve the read times of common requests. 
