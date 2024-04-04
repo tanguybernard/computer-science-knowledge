@@ -1,6 +1,6 @@
 # Network
 
-## App Mesh
+## App Mesh (comparable à Istio)
 
 Le service mesh d'amazon !
 
