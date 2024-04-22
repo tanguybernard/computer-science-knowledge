@@ -47,6 +47,8 @@ Le fuzz testing ou fuzzing est une méthode automatisée de test de logiciels qu
 
 Edsger W. Dijkstra: “Program testing can be used to show the presence of bugs, but never to show their absence!”
 
+## Property-based testing
+
 # WORK IN PROGRESS
 
 use case developement
