@@ -44,6 +44,9 @@ S'appuie sur l'example mapping
 
 Le fuzz testing ou fuzzing est une méthode automatisée de test de logiciels qui consiste à injecter des données invalides, malformées ou inattendues dans un système afin de révéler les défauts et les vulnérabilités du logiciel. 
 
+
+Edsger W. Dijkstra: “Program testing can be used to show the presence of bugs, but never to show their absence!”
+
 # WORK IN PROGRESS
 
 use case developement
