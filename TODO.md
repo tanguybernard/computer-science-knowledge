@@ -57,3 +57,25 @@ https://catchtheblock.com/store-tasmota-sensor-data-to-the-blockchain-ethereum/
 AWS
 
 https://www.bezkoder.com/deploy-spring-boot-aws-eb/
+
+
+Walking Skeleton
+
+C'est quoi ?
+
+“tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components. The architecture and the functionality can then evolve in parallel.” – Alistair Cockburn. 
+
+
+"La mise en œuvre minuscule du système qui exécute une petite fonction de bout en bout. Elle n'a pas besoin d'utiliser l'architecture finale, mais elle doit relier les principaux composants architecturaux. L'architecture et la fonctionnalité peuvent alors évoluer en parallèle". - Alistair Cockburn. 
+
+Donc une fonction qui va passer par un controller, un useCase, se service d'un service externe et de la BDD pour pouvoir couvrir chaque element de l'infra. Et ce n'est pas un prototype, ni un POC qu'on jette, c'est à mettre en prod le plus vite possible pour avoir des retours rapidements et voir tout de suite si une des briques echoues ! C'est ça un squelette ambulant.
+
+Ce n'est qu'une fois que vous avez votre squelette ambulant que vous devez écrire votre premier test d'acceptation et commencer le cycle TDD.
+
+
+
+https://codeclimate.com/blog/kickstart-your-next-project-with-a-walking-skeleton
+
+http://www.growing-object-oriented-software.com/
+
+https://www.artima.com/articles/tracer-bullets-and-prototypes
