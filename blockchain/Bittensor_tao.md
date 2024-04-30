@@ -25,3 +25,9 @@ Celui qui a la meilleur réponse reçoit des TAO.
 - Casser les cloisonnements entre les modèles d'apprentissage.
 - Partager la puissance de calcul qui est très couteux.
 
+
+## Applications hébergées sur BitTensor que vous pouvez utiliser
+
+Corsel, un équivalent à ChatGPT : https://app.corcel.io/chat
+
+Image: https://corcel.io/
