@@ -35,6 +35,8 @@ Le Proof of Authority (PoA) est un algorithme de consensus basé sur la réputat
 Il y a un nombre limité de validateurs de blocs.
 
 
+
+
 ### Notes
 
 Ethereum 2.0
@@ -43,7 +45,11 @@ Le changement de consensus à venir sur Ethereum va profondément modifier son m
 Actuellement en Proof-of-Work, le protocole va évoluer vers du Proof-of-Stake et ainsi envoyer au tapis les mineurs. 
 Petit coup de projecteur sur l’avenir des mineurs d’Ethereum !
 
+## Halving
 
+Un halving, également connu sous le nom de réduction de moitié, est un événement qui se produit tous les 210 000 blocs (environ tous les 4 ans) pour la blockchain Bitcoin (BTC). Lors d'un halving, la récompense en BTC décernée lors du minage de chaque bloc est divisée par 2.
+
+L'objectif principal de cette réduction de moitié est de maintenir l'inflation sous contrôle en réduisant la quantité de bitcoins qui sont créés au fil du temps. Cet événement étant périodique et connu, il ne relève en rien de l'aléatoire.
 ## Smart Contract 
 
 ## Abi
