@@ -66,6 +66,13 @@ https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
     
     asyncCompose(asyncCompose(getTitle, toJson), fetchTodo)(23).then(console.log);
 
+   //----------- NEUTRAL ELEMENT ------------
+
+   // asyncCompose() has a neutral element - the identity function
+   const neutralAsyncFunc = (x:any) => x;
+   asyncCompose((a:any) => Promise.resolve(a + 1), neutralAsyncFunc)(5) // Promise(6)
+   asyncCompose(neutralAsyncFunc, (a:any) => Promise.resolve(a + 1))(5) // Promise(6)
+
     
     //----------- BETTER ------------
     
