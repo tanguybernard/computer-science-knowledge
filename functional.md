@@ -1,5 +1,24 @@
 # Functional
 
+## Monad
+
+Monad is a pattern in functional programming !
+
+
+## Pure Functions
+
+
+En FP, les fonctions doivent être pures. Une fonction pure présente les caractéristiques suivantes :
+- Son résultat ne dépend que de son entrée
+- Elle ne mute aucune variable en dehors de son corps
+- Elle ne modifie pas ses arguments
+- Elle ne lance jamais d'erreur
+
+## Currying
+
+ Une fonction qui retourne une autre fonction, ce type de fonction est appelé fonction curry (curried function).
+
+ Avec une fonction curry, le code qui manipule d'autres fonctions sait à quoi s'attendre. Une fonction a toujours besoin d'un seul argument pour s'exécuter.
 
 ## Monoid
 
