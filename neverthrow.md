@@ -1,5 +1,7 @@
 # Neverthrow
 
+//TODO imperative way => functional way
+
 ## Exemple
 
 - parseExcel (throw if sheet missing, if columns missing, if data missing)
