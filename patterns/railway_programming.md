@@ -1,10 +1,15 @@
 # Railway (Railroad) Programming / Result operation Pattern / Either
 
 
-https://talesfrom.dev/blog/many-faces-of-ddd-aggregates-in-fsharp
 
+## Intro
 
-https://imhoff.blog/posts/using-results-in-typescript
+- Gestion structurée des erreurs
+- Réduction de l'encombrement des erreurs
+- Composition facile des fonctions
+- programmation pure
+- 
+
 
 
 
@@ -68,3 +73,11 @@ https://imhoff.blog/posts/using-results-in-typescript
         return failed('no-name')
     }
     console.log(railRoad(getUserResult()).then(formatName2).then(toUpper).get())
+
+
+## Credits
+
+    https://talesfrom.dev/blog/many-faces-of-ddd-aggregates-in-fsharp
+
+
+https://imhoff.blog/posts/using-results-in-typescript
