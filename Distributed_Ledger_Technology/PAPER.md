@@ -41,13 +41,22 @@ Transaction Bitcoin
 
 https://coinacademy.fr/cours/fonctionnement-complet-dune-transaction-bitcoin/
 
+https://www.pensezblockchain.ca/les-transactions-bitcoin-partie-1
+
 
 ## Lexique
 
-Réseau : Ensemble de noeuds
+Consensus : Le consensus est un processus qui permet aux différents noeuds du réseau de s’accorder sur l’état du registre.
+
 
 Noeuds : Ce sont eux qui vérifient et valident les transactions du réseau, et qui, par conséquent, assurent son fonctionnement et sa sécurité.
 
-Transaction :
 
-Mempool
+Réseau : Ensemble de noeuds.
+
+
+Transaction : Une transaction est une opération qui modifie l'état du registre après avoir été validée et consignée selon le mécanisme de consensus propre au réseau.
+
+
+
+Mempool : Le mempool est une structure de données en mémoire au sein d’un noeud dans un registre distribué, qui stocke les transactions candidates avant qu’elles ne soient exploitées.
