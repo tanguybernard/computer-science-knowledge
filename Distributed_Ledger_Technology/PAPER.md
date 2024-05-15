@@ -9,7 +9,23 @@ Plusieurs réseaux peuvent être impliqués, avec plusieurs noeuds qui traitent 
 
 
 
+## Implementation
 
+- Blockchain
+- Directed acyclic graph - DAG
+- Hashgraph
+
+## DAG
+
+### Definition
+
+Un DAG est une structure de données ou “graphes” qui représente en un ensemble de nœuds, également appelés “vertex“, et de “edges” (ou arêtes), qui les relient. 
+
+Ce qui distingue un DAG des autres types de graphes, c'est que les edges ont une direction définie, et qu'il n'y a pas de boucles dans la structure.
+
+### Utilisations
+
+Organigrammes, Arbres généalogiques, pyramide des besoins de Maslow, transactions sécurisées (Chaque transaction est un nœud du graphe.)
 
 
 ## Le trilemme de la blockchain 
@@ -33,6 +49,8 @@ DLT :
 
 https://www.lemagit.fr/definition/Registres-distribues-DLT
 
+https://cryptomaniaks.com/distributed-ledger-technology-for-dummies
+
 Noeud :
 
 https://cryptoast.fr/noeud-cryptomonnaies/
@@ -42,6 +60,12 @@ Transaction Bitcoin
 https://coinacademy.fr/cours/fonctionnement-complet-dune-transaction-bitcoin/
 
 https://www.pensezblockchain.ca/les-transactions-bitcoin-partie-1
+
+DAG:
+
+https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9_acyclique
+
+https://coinacademy.fr/academie/technologie-dag/
 
 
 ## Lexique
