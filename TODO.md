@@ -79,3 +79,8 @@ https://codeclimate.com/blog/kickstart-your-next-project-with-a-walking-skeleton
 http://www.growing-object-oriented-software.com/
 
 https://www.artima.com/articles/tracer-bullets-and-prototypes
+
+Functional KLEISLI
+
+https://fr.linkedin.com/advice/1/how-can-you-use-kleisli-composition-simplify-functional-vpkdc?lang=fr
+
