@@ -1,5 +1,15 @@
 # NodeJS
 
+## nvm install
+
+https://dev.to/kasuken/install-node-version-manager-nvm-without-admin-rights-194f
+
+nvm proxy http://mon-proxy:3131
+
+nvm install v18.18.0
+
+
+
 ## Event loop
 
 L’event loop permet de lire chaque ligne de code, de l’interpréter, et d’en créer un événement à faire exécuter par le thread. 
