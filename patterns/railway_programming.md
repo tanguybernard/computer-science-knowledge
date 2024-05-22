@@ -4,12 +4,18 @@
 
 ## Intro
 
+Avantages
+
 - Gestion structurée des erreurs
+- Séparation claire des chemins de réussite et d'échec, donc plus de lisibilité
 - Réduction de l'encombrement des erreurs
 - Composition facile des fonctions
 - Programmation pure
 
+Inconvéniants:
 
+- Surcharge de taches simples
+- Ajoute une complexité au code
 
 ## Différence entre Railway (paradigme) et Result (pattern)
 
