@@ -132,6 +132,10 @@ Railroad
 
 ## Credits
 
+Example
+
+https://www.c-sharpcorner.com/article/implementing-railway-oriented-programming/
+
     https://talesfrom.dev/blog/many-faces-of-ddd-aggregates-in-fsharp
 
 
