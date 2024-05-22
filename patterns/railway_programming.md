@@ -7,9 +7,56 @@
 - Gestion structurée des erreurs
 - Réduction de l'encombrement des erreurs
 - Composition facile des fonctions
-- programmation pure
-- 
+- Programmation pure
 
+
+
+## Différence entre Railway (paradigme) et Result (pattern)
+
+Result 
+
+    function rechercherObjetDansBase(cle){
+        if(cle ==='cleTrouvee') {
+            return {result: 'Objet trouvé', error: null}
+        }
+        return {result: null, error: 'Objet introuvable'}
+    }
+
+    function traitement(){
+        const {result, error} = rechercherObjetDansBase('cleInexistante')
+
+        if(error){
+             console.error(`Error: ${error}`)
+        }
+        else if (result) {
+            console.log(result)
+        }
+        else {
+            console.log("Quelque chose c'est mal passé")
+        }
+
+    }
+
+Railroad
+
+    function rechercherObjetDansBase(cle){
+        if(cle ==='cleTrouvee') {
+            return Success('Objet trouvé')
+        }
+        return Error('Objet introuvable')
+    }
+
+    function traitement(){
+        const reultat = rechercherObjetDansBase('cleInexistante')
+
+        if(resultat.isSuccess()){
+            console.log(resultat.getValue())
+        }
+        else {
+            console.error(resultat.getError())
+        }
+
+    }
 
 
 
