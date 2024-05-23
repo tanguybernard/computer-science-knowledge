@@ -136,7 +136,6 @@ Example
 
 https://www.c-sharpcorner.com/article/implementing-railway-oriented-programming/
 
-    https://talesfrom.dev/blog/many-faces-of-ddd-aggregates-in-fsharp
-
+https://talesfrom.dev/blog/many-faces-of-ddd-aggregates-in-fsharp
 
 https://imhoff.blog/posts/using-results-in-typescript
