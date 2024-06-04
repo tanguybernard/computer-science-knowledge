@@ -34,3 +34,8 @@ AWS Chalice (python), Zappa
 
 
 https://lumigo.io/wp-content/uploads/2019/04/pasted-image-0-6.png
+
+
+## Credits
+
+https://medium.com/a-man-with-no-server/running-aws-lambda-and-api-gateway-locally-serverless-offline-3c64b3e54772
