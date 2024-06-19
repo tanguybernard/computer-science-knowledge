@@ -25,3 +25,12 @@ Dans l'onglet Application Observability
                 > Actions
                   > Services Flow
   
+### Voir les erreur sql :
+
+Dans l'onglet Application Observability
+
+    Multidemensional analysis
+      > Top database statements
+        > Dans le "Filter requests" : Failed state: "only failed"
+
+On peut sauvegarder dans une vue en cliquant sur "Save view" pour y accéder facilement.
