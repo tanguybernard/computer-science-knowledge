@@ -11,9 +11,14 @@ Le plan identifie les éléments à tester, les fonctionnalités à tester, les 
 
 https://www.ministryoftesting.com/articles/the-one-page-test-plan
 
-Test unitaire: test qui a une raison d'échouer.
+Test e2e: test d'un use case depuis l'interface
+
+Test d'acceptance: test défini par les 3 amigos répondant au besoin métier défini dans l'US.
 
 Test d'intégration : des modules individuels sont combinés et testés en tant que groupe
+
+Test unitaire: test qui a une raison d'échouer.
+
 
 ## In Scope
 
