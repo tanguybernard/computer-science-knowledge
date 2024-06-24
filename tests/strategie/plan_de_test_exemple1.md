@@ -43,7 +43,7 @@ Les systèmes doivent être testés sur une machine Windows.
 Ces fonctionnalités ne sont pas testées car elles ne sont pas incluses dans les spécifications logicielles requises :
 
 - Pas de tests sur la responsivité
-- Sécurité et performances du site Web
+- Pas de tests de Sécurité et performances du site Web
 
 
 ## 7. Approche du test
