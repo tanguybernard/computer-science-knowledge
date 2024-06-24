@@ -7,7 +7,7 @@ Le plan de test est conçu pour prescrire la portée, l'approche, les ressources
 Le plan identifie les éléments à tester, les fonctionnalités à tester, les types de tests à effectuer, le personnel responsable des tests, les ressources et le calendrier requis pour réaliser les tests, ainsi que les risques associés au plan.
 
 
-## Ressource
+## Links
 
 https://www.ministryoftesting.com/articles/the-one-page-test-plan
 
@@ -57,7 +57,7 @@ Chef de Projet : Jean-Baptiste
 
 - Les tests e2e ne peuvent etre joué que sur notre poste en local.
 
-## Assumptions/ Conditions
+## Requirements 
 
 - Le service Power BI prepord doit etre up et ISO prod.
 - Le service Active Directory doit etre up.
@@ -68,8 +68,6 @@ Chef de Projet : Jean-Baptiste
 ## Testing Tasks
 
 
-_Ex:_
-
 Préparation
 - Identifier le scénario de test à executer
 - Identifier les données de tests nécessaires
@@ -78,17 +76,16 @@ Développeur
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
 - Developpement de tests d'integration front (Composant front)
+- Devloppement de tests unitaire front
+- Développment de tests d'acceptance back (useCase + ...)
 - Developpement de tests d'integrations back (controller + useCase + vrai Db)
 - Developpement de tests unitaires (useCase + In Memory Db)
 - Generation d'un rapports de couvertures
 
-Testeurs
-
-- Developpement de scénario avec Robot Framework
-- Generation d'un rapport
+Note: Stratégie de pyramide des tests, 
 
 PO
-
 - Sur la Preprod, test manuels du PO
 - Validation de l'US
+- Test sur prod
 
