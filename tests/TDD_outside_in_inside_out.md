@@ -1,5 +1,5 @@
 
-# Inside 
+# OusideIn / Inside Out
 
 - Chicago School of Thought TDD (Inside Out/Bottom Up/Classic)
 - London School of Thought TDD (Outside In /Top Down/ Mockist)
