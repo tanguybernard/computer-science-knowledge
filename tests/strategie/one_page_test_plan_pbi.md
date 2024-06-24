@@ -75,7 +75,7 @@ Préparation (3 amigos)
 
 Développeurs/ses
 
-Approche TDD: Outside In
+
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
 - Developpement de tests d'integration front (Composant front)
@@ -85,7 +85,9 @@ Approche TDD: Outside In
 - Developpement de tests unitaires (useCase + In Memory Db)
 - Generation d'un rapports de couvertures
 
-Note: Stratégie de pyramide des tests, 
+Note: 
+- Approche TDD: Outside In
+- Stratégie de pyramide des tests 
 
 PO
 - Sur la Preprod, test manuels du PO
