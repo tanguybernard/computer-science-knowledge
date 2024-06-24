@@ -46,16 +46,23 @@ Les outils utilisés sont: Cypress, Jest, Junit
 
 ## Roles and Responsabilities
 
-Description détaillée des rôles et responsabilités des différents membres de l'équipe, par exemple:
+Developpeurs, developpeuses : Tanguy et Oumaima
 
-- QA Analyst
-- Test Manager
-- Developers
+PO: Nadia
+
+Chef de Projet : Jean-Baptiste
 
 
-## Risks & Issues
+## Risks
 
-- Ressources limitées pour les tests
+- Les tests e2e ne peuvent etre joué que sur notre poste en local.
+
+## Assumptions/ Conditions
+
+- Le service Power BI prepord doit etre up et ISO prod.
+- Le service Active Directory doit etre up.
+- Le service Ldap doit etre up.
+
 
 
 ## Testing Tasks
