@@ -29,7 +29,7 @@ Le backend.
 
 ## Out of scope
 
-- Sur la partie non fonctionnel, aucun test responsive ne sera effectué.
+- Aucun test responsive ne sera effectué.
 - Aucun test d'accessibilité ne sera effectué.
 - Aucun test sur safari ne sera effectué.
 - Nous ne ferons aucun test sur une version de chrome anterieur à 120.0.6099.119
@@ -38,7 +38,7 @@ Le backend.
 
 ## Environnement 
 
-Les tests seront effectués sur les environnements de Staging et de preprod. Navigateur firefox et chrome. Environnement Windows (en local) et Linux._
+Les tests seront effectués sur les environnements de preprod. Navigateur firefox et chrome. Environnement Windows (en local) et Linux._
 
 ## Tools
 
@@ -46,16 +46,17 @@ Les outils utilisés sont: Cypress, Jest, Junit
 
 ## Roles and Responsabilities
 
-Developpeurs, developpeuses : Tanguy et Oumaima
+Developpeurs, developpeuses : Tanguy et Oumaima - Développements des tests automatisés.
 
-PO: Nadia
+PO: Nadia - Test manuels du projet sur les environnements de prod et preprod chaque US.
 
-Chef de Projet : Jean-Baptiste
+Chef de Projet : Jean-Baptiste - Test sur l'environnement de prod.
 
 
 ## Risks
 
-- Les tests e2e ne peuvent etre joué que sur notre poste en local.
+- Si la preprod power BI tombe certains tests echoueront.
+- Les utilisateurs
 
 ## Requirements 
 
@@ -68,11 +69,11 @@ Chef de Projet : Jean-Baptiste
 ## Testing Tasks
 
 
-Préparation
+Préparation (3 amigos)
 - Identifier le scénario de test à executer
 - Identifier les données de tests nécessaires
 
-Développeur
+Développeurs/ses
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
 - Developpement de tests d'integration front (Composant front)
