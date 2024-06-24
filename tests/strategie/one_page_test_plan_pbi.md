@@ -17,6 +17,8 @@ Test d'intégration : des modules individuels sont combinés et testés en tant 
 
 ## In Scope
 
+Les systemes : site web frontal, backend, base de données
+
 Le site web frontal.
 
 Ces systèmes doivent être testés dans les dernières versions stables de Chrome et FireFox (sous entendu: Pas de tests sur : Safari et Microsoft Edge. )
@@ -24,7 +26,8 @@ Ces systèmes doivent être testés dans les dernières versions stables de Chro
 Les systèmes doivent être testés sur une machine Windows.
 
 
-Le backend.
+- L'api du backend doit répondre aux exigences.
+- La logique métier doit etre testé.
 
 
 ## Out of scope
@@ -32,7 +35,7 @@ Le backend.
 - Aucun test responsive ne sera effectué.
 - Aucun test d'accessibilité ne sera effectué.
 - Aucun test sur safari ne sera effectué.
-- Nous ne ferons aucun test sur une version de chrome anterieur à 120.0.6099.119
+- Aucun test sur une version de chrome anterieur à 120.0.6099.119
 - L'application est traduite en anglais, aucun test d'internationalisation ne sera effectué.
 - Pas de tests de Sécurité et performances du site Web
 
@@ -42,7 +45,10 @@ Les tests seront effectués sur les environnements de preprod. Navigateur firefo
 
 ## Tools
 
-Les outils utilisés sont: Cypress, Jest, Junit
+Les outils utilisés sont: 
+
+- Front: Cypress, Jest
+- Back: Junit, assertJ
 
 ## Roles and Responsabilities
 
@@ -56,7 +62,7 @@ Chef de Projet : Jean-Baptiste - Test sur l'environnement de prod.
 ## Risks
 
 - Si la preprod power BI tombe certains tests echoueront.
-- Les utilisateurs
+- Certains utilisateurs utiliseront l'application sur mobile, qui n'est pas responsive.
 
 ## Requirements 
 
@@ -65,17 +71,14 @@ Chef de Projet : Jean-Baptiste - Test sur l'environnement de prod.
 - Le service Ldap doit etre up.
 
 
-
 ## Testing Tasks
 
 
 Préparation (3 amigos)
-- Identifier le scénario de test à executer
+- Identifier les scénarios de tests à executer (ex: Example mapping)
 - Identifier les données de tests nécessaires
 
 Développeurs/ses
-
-
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
 - Developpement de tests d'integration front (Composant front)
