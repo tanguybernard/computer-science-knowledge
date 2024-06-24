@@ -103,7 +103,7 @@ Préparation
 Développeur
 
 
-Approche TDD: Outside In
+
 
 - Développement d'un test e2e avec Cypress (Front + Back + Base de données)
 - Developpement de tests d'integration front (Composant front)
