@@ -1,5 +1,66 @@
 # Spring
 
+
+## rogrammation par aspects (AOP)
+
+La programmation par aspects (AOP) est un paradigme de programmation qui vise à augmenter la modularité en permettant la séparation des préoccupations transversales.
+
+
+Concepts Clés de l'AOP
+
+- Aspect : Une classe qui modularise une préoccupation transversale. Un aspect contient des conseils (advices), des points de jonction (join points) et des pointcuts.
+
+- Advice : Le code qui est exécuté à un certain point de l'exécution du programme. Il peut être exécuté avant, après ou autour d'un point de jonction spécifié.
+
+- Join Point : Un point dans l'exécution du programme où un aspect peut être appliqué. Par exemple, l'appel d'une méthode ou l'accès à un attribut.
+
+- Pointcut : Une expression qui sélectionne un ou plusieurs points de jonction où un advice doit être appliqué.
+
+- Weaving : Le processus d'intégration des aspects dans le code principal du programme. Cela peut se faire à la compilation, au chargement de classe (load-time), ou à l'exécution (runtime).
+
+
+Exemple :
+
+Aspect
+
+	import org.aspectj.lang.annotation.Aspect;
+	import org.aspectj.lang.annotation.Before;
+	import org.springframework.stereotype.Component;
+	
+	@Aspect
+	@Component
+	public class LoggingAspect {
+	
+	    @Before("execution(* com.example.service.*.*(..))")
+	    public void logBeforeMethodExecution() {
+	        System.out.println("Method execution logged before actual execution.");
+	    }
+	}
+
+Code 
+
+	package com.example.service;
+	
+	import org.springframework.stereotype.Service;
+	
+	@Service
+	public class MyService {
+	
+	    public void performTask() {
+	        System.out.println("Task performed.");
+	    }
+	}
+
+
+
+
+Explication de l'Exemple
+
+- Aspect : LoggingAspect est défini comme un aspect avec l'annotation @Aspect.
+- Advice : La méthode logBeforeMethodExecution est un advice qui utilise l'annotation @Before pour spécifier qu'il doit être exécuté avant les méthodes correspondant au pointcut défini.
+- Join Point : Les points de jonction sont toutes les méthodes dans le package com.example.service.
+- Pointcut : execution(* com.example.service.*.*(..)) sélectionne toutes les méthodes dans le package com.example.service.
+
 ## Project example
 
 https://github.com/spring-petclinic/spring-framework-petclinic
@@ -18,7 +79,7 @@ source: https://blog.pchudzik.com/201705/dynamic-beans/
 
 ## Quizz
 
-### Jour 2
+### 1
 ​
 - Citez les 4 caractéristiques de Spring
 	> open source, lightweight, DI container, Framework
@@ -33,7 +94,7 @@ source: https://blog.pchudzik.com/201705/dynamic-beans/
 - Citez toutes les annotations dont vous vous souvenez
 	> @Component et les stéréotypes @Service, @Repository, @Controller, @Configuration...
 ​
-### Jour 3
+### 2
 ​
 - Quelles sont les problématiques que l’AOP essaie de résoudre?
 	> Cross cutting concerns (problématiques transverses). Sans ça, on voit apparaitre du code tangling (code emêlé, couplé) et du code scattering (code dupliqué, éparpillé)
@@ -48,7 +109,7 @@ source: https://blog.pchudzik.com/201705/dynamic-beans/
 - Quelles sont les caractéristiques d’une transaction?
 	> ACID : Atomic, Consistent, Isolated, Durable
 ​
-### Jour 4
+### 3
 ​
 - Quelles sont les fonctionnalités majeures de Spring Boot?
 	> Dependency management, Auto configuration, packaging, test integration
