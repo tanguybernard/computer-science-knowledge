@@ -11,7 +11,7 @@ mindmap
       JS
         Front
         Back
-          NodeJS (Plateform)
+          NodeJS(Plateform)
           NestJS
       Java
         Spring
