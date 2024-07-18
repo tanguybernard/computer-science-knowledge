@@ -9,7 +9,13 @@ mindmap
     Language
       Php
       JS
+        Front
+        Back
+          NodeJS (Plateform)
+          NestJS
       Java
+        Spring
+        
     Paradigm
       POO
       Functional
