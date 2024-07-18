@@ -16,6 +16,7 @@ mindmap
             NodeJS
           Framework
             NestJS
+            Hapi
       Java
         Spring
         
