@@ -3,8 +3,6 @@
 # WORK IN PROGRESS
 
 
-Le Platform Engineering 
-
 ```mermaid
 mindmap
   root((As a Software Engineer))
@@ -12,8 +10,10 @@ mindmap
       Php
       JS
       Java
-    Code
-      POO  
+    Paradigm
+      POO
+      Functional
+    Craft
       Clean Code
         SOLID
         YAGNI
