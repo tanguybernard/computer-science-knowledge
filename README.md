@@ -11,8 +11,11 @@ mindmap
       JS
         Front
         Back
-          NodeJS(Plateform)
-          NestJS
+          Plateform
+            Deno
+            NodeJS
+          Framework
+            NestJS
       Java
         Spring
         
