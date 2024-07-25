@@ -84,3 +84,8 @@ Functional KLEISLI
 
 https://fr.linkedin.com/advice/1/how-can-you-use-kleisli-composition-simplify-functional-vpkdc?lang=fr
 
+
+Timescale DB  (time series)
+
+https://www.timescale.com/
+
