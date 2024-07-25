@@ -89,3 +89,8 @@ Timescale DB  (time series)
 
 https://www.timescale.com/
 
+
+Architecture Lambda Kapa ou Datalake: comment les exploiter ?
+
+
+https://www.cyres.fr/blog/architecture-lambda-big-data/
