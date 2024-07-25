@@ -94,3 +94,5 @@ Architecture Lambda Kapa ou Datalake: comment les exploiter ?
 
 
 https://www.cyres.fr/blog/architecture-lambda-big-data/
+
+https://www.newsletter.swirlai.com/p/sai-13-lambda-vs-kappa-architecture?ref=blog.takima.fr
