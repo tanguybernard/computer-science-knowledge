@@ -1,7 +1,63 @@
 # Spring
 
 
-## rogrammation par aspects (AOP)
+
+## Spring vs Spring Boot
+
+https://www.baeldung.com/the-persistence-layer-with-spring-and-jpa
+
+https://gist.github.com/ThomasVitale/7d127d56e3eb1a6f7b30990f1d5b7850
+
+
+Configuration JPA :
+
+__application.properties__
+
+	spring.datasource.driver-class-name=org.postgresql.Driver
+	spring.datasource.url=jdbc:postgresql://localhost:5432/mydatabase
+	spring.datasource.username=postgres
+	spring.datasource.password=12345
+
+
+_Note: With Spring boot, only need application.propoerties, config will be automatically created_
+
+__JpaConfig.java__
+	...
+	@Bean
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+
+		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+		vendorAdapter.setDatabase(Database.POSTGRESQL);
+		vendorAdapter.setGenerateDdl(true);
+
+		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
+		em.setDataSource(dataSource());
+		em.setPackagesToScan("com.thomasvitale.jpa.demo.model");
+		em.setJpaVendorAdapter(vendorAdapter);
+		em.setJpaProperties(additionalProperties());
+
+		return em;
+	}
+
+	@Bean
+	public DataSource dataSource() {
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl(env.getProperty("spring.datasource.url"));
+		dataSource.setUsername(env.getProperty("spring.datasource.username"));
+		dataSource.setPassword(env.getProperty("spring.datasource.password"));
+		return dataSource;
+	}
+ 	...
+
+
+Spring boot :
+
+
+
+
+
+## Programmation par aspects (AOP)
 
 La programmation par aspects (AOP) est un paradigme de programmation qui vise à augmenter la modularité en permettant la séparation des préoccupations transversales.
 
