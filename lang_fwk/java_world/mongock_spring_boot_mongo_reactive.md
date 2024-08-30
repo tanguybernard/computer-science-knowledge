@@ -185,30 +185,23 @@ public class Migration20240830 {
 
     @BeforeExecution
     public void beforeExecution() {
-
     }
 
 
     @RollbackBeforeExecution
     public void rollbackBeforeExecution() {
-
     }
 
     @Execution
     public void execution() {
 
 	this.updateCollectionSchema("orders").block();
-	//this.updateCollectionValidation().subscribe();
 	System.out.println("FINISH");
-
-
     }
 
     @RollbackExecution
     public void rollbackExecution() {
-
     }
-
 
     public Mono<Void> updateCollectionSchema(String collectionName) {
 	var schema = createUpdatedSchema();
