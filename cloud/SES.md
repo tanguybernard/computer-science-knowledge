@@ -45,16 +45,14 @@ aws ses update-template --cli-input-json file://path/to/update_template.json
         "Template": {
             "TemplateName": "send_contact",
             "SubjectPart": "[Contact] Vous avez reçu un nouveau message",
-            "TextPart": "Une nouvelle demande de contact par un {{type}}!\r\nNom : {{lastname}}\r\nPrénom : {{firstname}}\r\nEmail : {{email}}\r\nTéléphone : {{phone}}\r\nVille : {{city}} ({{zipcode}})\r\nMessage : {{message}}",
-            "HtmlPart": "<h1>Une nouvelle demande de contact par un {{type}}!</h1><p>Nom : {{lastname}}.</p>
-            <p>Prénom : {{firstname}}.</p><p>Email : {{email}}.</p><p>Téléphone : {{phone}}.</p><p>Ville : {{city}} ({{zipcode}}).</p>
-            <p>Newsletter :{{#if isAcceptedNewsletter}}Oui{{else}}Non{{/if}}</p>
-            <p>Message : {{message}}.</p>"
+            "TextPart": "Une nouvelle demande de contact par un {{type}}!\r\nNom : {{lastname}}\r\nPrénom : {{firstname}}\r\nEmail : {{email}}\r\nT&eacute;léphone : {{phone}}\r\nVille : {{city}} ({{zipcode}})\r\nNewsletter : {{#if isAcceptedNewsletter}}Oui{{else}}Non{{/if}}\r\nMessage : {{message}}",
+            "HtmlPart": "<h1>Une nouvelle demande de contact par un {{type}}!</h1><p>Nom : {{lastname}}.</p><p>Prénom : {{firstname}}.</p><p>Email : {{email}}.</p><p>T&eacute;l&eacute;phone : {{phone}}.</p><p>Ville : {{city}} ({{zipcode}}).</p><p>Newsletter :{{#if isAcceptedNewsletter}}Oui{{else}}Non{{/if}}</p><p>Message : {{message}}.</p>"
         }
     }
 
 
-### Envoi  (Source il faut utiliser @ une adresse qui est domaine)
+
+### Envoi  (Source il faut utiliser @ une adresse qui est domaine par exmple no-replay@compagnydomaine.fr)
 
     aws ses send-templated-email --cli-input-json file://myemail.json
 
@@ -67,5 +65,6 @@ myemail.json
         "ToAddresses": [ "tanguy@company.fr"
         ]
       },
+      "ConfigurationSetName": "",
       "TemplateData": "{ \"firstname\":\"John\", \"lastname\": \"Doe\", \"phone\": \"010203\", \"city\": \"Nanterre\",\"zipcode\": \"92000\", \"isAcceptedNewsletter\": true, \"email\": \"test\", \"type\": \"PART\", \"message\": \"Ceci est un test !!!\" }"
     }
