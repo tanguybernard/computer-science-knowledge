@@ -11,18 +11,21 @@
 
 ## Commandes
 
-List templates
+### List templates
 
      aws ses list-templates --profile defaut
 
 
-Get template
+### Get template
 
     aws ses get-template --template-name send_contact
 
+### Create
+
+    aws ses create-template --cli-input-json file://mytemplate.json
 
 
-Update 
+### Update 
 
 aws ses update-template --cli-input-json file://path/to/update_template.json
 
@@ -36,7 +39,7 @@ aws ses update-template --cli-input-json file://path/to/update_template.json
         }
     }
 
-
+### Condition
 
     {
         "Template": {
@@ -48,4 +51,21 @@ aws ses update-template --cli-input-json file://path/to/update_template.json
             <p>Newsletter :{{#if isAcceptedNewsletter}}Oui{{else}}Non{{/if}}</p>
             <p>Message : {{message}}.</p>"
         }
+    }
+
+
+### Envoi
+
+    aws ses send-templated-email --cli-input-json file://myemail.json
+
+myemail.json
+
+    {
+      "Source": "fouad...@company.fr",
+      "Template": "send_contact",
+      "Destination": {
+        "ToAddresses": [ "tanguy@company.fr"
+        ]
+      },
+      "TemplateData": "{ \"firstname\":\"John\", \"lastname\": \"Doe\", \"phone\": \"010203\", \"city\": \"Nanterre\",\"zipcode\": \"92000\", \"isAcceptedNewsletter\": true, \"email\": \"test\", \"type\": \"PART\", \"message\": \"Ceci est un test !!!\" }"
     }
