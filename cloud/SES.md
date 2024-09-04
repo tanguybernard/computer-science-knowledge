@@ -54,14 +54,14 @@ aws ses update-template --cli-input-json file://path/to/update_template.json
     }
 
 
-### Envoi
+### Envoi  (Source il faut utiliser @ une adresse qui est domaine)
 
     aws ses send-templated-email --cli-input-json file://myemail.json
 
 myemail.json
 
     {
-      "Source": "fouad...@company.fr",
+      "Source": "no-replay@emaildomain.fr",
       "Template": "send_contact",
       "Destination": {
         "ToAddresses": [ "tanguy@company.fr"
