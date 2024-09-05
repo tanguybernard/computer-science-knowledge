@@ -25,7 +25,7 @@
     aws ses create-template --cli-input-json file://mytemplate.json
 
 
-### Update 
+### Update (Le json doit etre encodé en windows-1252 - ANSI )
 
 aws ses update-template --cli-input-json file://path/to/update_template.json
 
