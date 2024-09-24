@@ -13,6 +13,11 @@ https://www.thisdot.co/blog/how-to-test-react-custom-hooks-and-components-with-v
 
 Interaction avec des composants extenes (ex: vrai base de données)
 
+## Tests de composant
+
+Du endpoint en passant par le domaine vers la base de données. Les Spi Stubbé. 
+
+Voir ici : https://www.youtube.com/watch?v=v--zkIEciq4  (33min)
 
 ## Tests d’acceptation
 
