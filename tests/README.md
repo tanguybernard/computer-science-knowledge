@@ -72,6 +72,10 @@ https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 
 https://www.softwaretestinghelp.com/system-vs-end-to-end-testing/
 
+## Acceptance vs e2e
+
+https://optivem.com/is-acceptance-testing-only-at-e2e-level/
+
 ## Credits
 
 https://blog.ippon.fr/2023/01/18/mon-apprentissage-du-tdd/
