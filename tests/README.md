@@ -1,5 +1,7 @@
 # Tests
 
+Super Article, une reference (je pense): https://martinfowler.com/articles/microservice-testing/#conclusion-summary
+
 ## Tests unitaire
 
 [Unitaire](/tests/unitaire.md)
