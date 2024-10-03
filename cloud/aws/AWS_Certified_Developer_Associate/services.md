@@ -16,3 +16,6 @@ Cloudformation setups for you :
 
 ### Web Environment vs Worker Environment
 
+Web Environment => ex: Web app
+
+Worker Environment => ex: long running jobs
