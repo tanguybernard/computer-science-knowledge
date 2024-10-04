@@ -90,3 +90,8 @@ environment, stack (ruby, nodejs)...
 
 ### CLI
 
+Manage your eb envs...
+
+### Custom image
+
+https://youtu.be/TTcyhhH2FWE?t=3714
