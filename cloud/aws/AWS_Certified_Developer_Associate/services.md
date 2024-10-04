@@ -19,3 +19,16 @@ Cloudformation setups for you :
 Web Environment => ex: Web app
 
 Worker Environment => ex: long running jobs
+
+
+#### Web environment types
+
+- Load Balanced Env  (with ELB, designed to scale)
+- Single Instance Env (without ELB to save cost, use public ip Address)
+
+
+### Deployment Policies
+
+#### All At once
+
+https://youtu.be/TTcyhhH2FWE?t=2520
