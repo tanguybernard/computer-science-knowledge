@@ -64,3 +64,12 @@ instances and then swaps all the instances when everything is healthy
 #### Blue/Green for EB
 
 - A new environment is created from scratch (so another load balancer). The switch is performed at DNS level routing the traffic from the OLD to the NEW when the new environment is ready and healthy.
+
+### Configuration files
+
+
+https://youtu.be/TTcyhhH2FWE?t=3301
+
+### EB Traffic spliting
+
+https://youtu.be/TTcyhhH2FWE?t=3340
