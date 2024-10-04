@@ -1,6 +1,11 @@
 
 # Services
 
+
+ASG : Auto Scalling group
+
+
+
 ## Elastic Beanstalk
 
 Cloudformation setups for you :
@@ -29,6 +34,24 @@ Worker Environment => ex: long running jobs
 
 ### Deployment Policies
 
-#### All At once
+#### All At once (Downtime)
 
 https://youtu.be/TTcyhhH2FWE?t=2520
+
+- Deploys the new version to all instances
+- Take all instances out of service during deployment
+
+Fast but dangerous
+
+#### Rolling
+
+- Deploys the new version to a batch of instances at a time
+- Offline during deployment
+
+#### Rolling with additional Batch
+
+#### Immutable
+
+- Spins up new instances in a new ASG, deploys versions to these
+instances and then swaps all the instances when everything is healthy
+- Like blue/green deployment
