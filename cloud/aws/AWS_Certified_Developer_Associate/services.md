@@ -65,11 +65,28 @@ instances and then swaps all the instances when everything is healthy
 
 - A new environment is created from scratch (so another load balancer). The switch is performed at DNS level routing the traffic from the OLD to the NEW when the new environment is ready and healthy.
 
-### Configuration files
+#### Configuration files
 
+Add deployment policy in it and others stuff...
 
 https://youtu.be/TTcyhhH2FWE?t=3301
 
-### EB Traffic spliting
+#### EB Traffic spliting (Deployment Policy) => it's Canary deployment
 
 https://youtu.be/TTcyhhH2FWE?t=3340
+
+Allows you to forward a portion of your traffic to the new env and after a priod a time then move the rest.
+
+### Environment Manifest (env.yml)
+
+environment, stack (ruby, nodejs)...
+
+### Linux server configuration
+
+- You can configure packages, ruby dependencies for example 
+- Create Linux users, groups, files with permissions...
+- Create services like nginx
+- Execute commands
+
+### CLI
+
