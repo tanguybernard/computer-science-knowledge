@@ -4,6 +4,8 @@
 
 ASG : Auto Scalling group
 
+Blue/Green deployment is when you run two identical production envs and shift traffic from Blue (old) to Green (new).
+
 
 
 ## Elastic Beanstalk
@@ -50,8 +52,15 @@ Fast but dangerous
 
 #### Rolling with additional Batch
 
+- Similar to rolling updates but you spin up new instances to move the
+batch (so the old application is still available)
+
 #### Immutable
 
 - Spins up new instances in a new ASG, deploys versions to these
 instances and then swaps all the instances when everything is healthy
-- Like blue/green deployment
+- Like blue/green deployment but it's under the same load balancer, a new autoscaling group is created alongside the old one.
+
+#### Blue/Green for EB
+
+- A new environment is created from scratch (so another load balancer). The switch is performed at DNS level routing the traffic from the OLD to the NEW when the new environment is ready and healthy.
