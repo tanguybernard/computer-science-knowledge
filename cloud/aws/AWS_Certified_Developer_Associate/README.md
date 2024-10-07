@@ -7,3 +7,7 @@ https://codebuckets.com/2022/12/04/aws-developer-associate-cheat-sheet/#acronymn
 A regarder cours : 4h de 2023
 
 https://www.youtube.com/watch?v=bhomsGI56Ok
+
+Exam
+
+https://www.youtube.com/watch?v=OY2GgM10b7U
