@@ -108,3 +108,8 @@ A database can be added inside ou outside your environment.
 Inside for development.
 
 Outside for production.
+
+
+## ECS
+
+...
