@@ -102,3 +102,7 @@ SDD
 
 
 Specification-Driven Development
+
+
+
+BPMN : Business process Model and notation (saga pattern alternative ?)
