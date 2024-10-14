@@ -1,4 +1,9 @@
 
+
+Tuto
+
+https://github.com/ExamProCo/TheFreeAWSDeveloperAssociate/tree/master
+
 # Services
 
 
@@ -95,3 +100,11 @@ Manage your eb envs...
 ### Custom image
 
 https://youtu.be/TTcyhhH2FWE?t=3714
+
+### Configuring RDS
+
+A database can be added inside ou outside your environment.
+
+Inside for development.
+
+Outside for production.
