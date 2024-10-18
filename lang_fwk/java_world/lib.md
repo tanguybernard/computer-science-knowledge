@@ -14,3 +14,7 @@ Elle permet, entre autres, de manipuler les collections, de jouer efficacement a
 ## Reactor
 
 https://www.invivoo.com/reactor-programmation-non-bloquante/
+
+## Spotless Maven Plugin (code style)
+
+https://www.baeldung.com/java-maven-spotless-plugin
