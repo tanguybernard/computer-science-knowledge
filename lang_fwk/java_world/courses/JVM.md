@@ -21,6 +21,6 @@ flowchart TD
     E2 --> F2[Vérification des règles de sécurité - ex: zones mémoire interdites]
     E3 --> F3[Alloue la mémoire nécessaire]
     E4 --> F4[Interprète et compile le bytecode en langage machine]
-    F4 -->|JIT Compiler| G[Langage Machine]
+    F4 --> G[Langage Machine]
     G --> H[Execution du programme]
 ```
