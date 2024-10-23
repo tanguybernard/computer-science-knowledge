@@ -2,12 +2,12 @@
 
 ## JDK (Développer avec Java)
 
-- Compiler, debugger, tester
+- Interpreter, Compiler, debugger, tester
 - Contient le JRE (env d'execution)
 
 ## JRE
 - Execute des programmes Java déja compilé
-- Contient l'interpreteur de JAva (La JVM)
+- Contient l'interpreteur de Java (La JVM)
 
 ## JVM
 
