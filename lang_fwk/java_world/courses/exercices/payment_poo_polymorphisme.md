@@ -1,4 +1,4 @@
-# Execice Payment
+# Exercice Payment
 
 ## Sujet
 
