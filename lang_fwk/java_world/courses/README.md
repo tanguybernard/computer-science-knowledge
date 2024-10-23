@@ -15,6 +15,10 @@ Solution
 
 https://elearning.industriallogic.com/gh/submit?Action=PageAction&album=kata&path=kata/videoStore/solution&devLanguage=Java
 
+Solution
+
+https://gitlab.ippon.fr/twitch/live-coding-fr/-/tree/master/movie-rental
+
 
 ## Kata Stream
 
