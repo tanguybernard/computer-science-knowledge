@@ -19,6 +19,36 @@ Solution
 
 https://gitlab.ippon.fr/twitch/live-coding-fr/-/tree/master/movie-rental
 
+On a du polymorphisme on peut avoir un HtmlRenderer
+
+```java
+public class ConsoleRenderer implements Renderer {
+
+  @Override
+  public String header(String name) {
+    return "Rental Record for " + name + "\n";
+  }
+
+  @Override
+  public String movie(Rental rental, double amount) {
+    return "\t" + rental.getMovie().getTitle() + "\t" + String.valueOf(amount) + "\n";
+  }
+
+  @Override
+  public String footer(double totalAmount, int frequentRenterPoints) {
+    return new StringBuilder()
+      .append("Amount owed is ")
+      .append(totalAmount)
+      .append("\n")
+      .append("You earned ")
+      .append(frequentRenterPoints)
+      .append(" frequent renter points")
+      .toString();
+  }
+}
+
+```
+
 
 ## Kata Stream
 
