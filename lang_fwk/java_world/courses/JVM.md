@@ -19,5 +19,6 @@ flowchart TD
     E1 --> F1[Charge les classes au runtime dans la RAM]
     E2 --> F2[Heap, Stack, Method Area, Runtime Constant Pool]
     E3 --> F3[Interprète et compile le bytecode en langage machine]
-    F3 --> G[Execution du programme]
+    F3 -->|JIT Compiler| G[Langage Machine]
+    G --> H[Execution du programme]
 ```
