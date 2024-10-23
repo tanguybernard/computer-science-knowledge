@@ -1,7 +1,19 @@
+# Execice Payment
 
+## Sujet
 
-Créer une interface de paiement.
+Créer un système de paiement.
 
+Notre système sere composé de 3 types de paiements :
+- Carte de crédit avec un numéro
+- Paypal avec un mail
+- Virement banquaire à l'aide d'un iban
+
+Pour chacun de ses moyens une méthode "pay" loggera un message.
+
+Par exemple pour la carte bancaire : "Paiement de {amount} € par Carte de Crédit. Numéro {cardNumber}.
+
+## Code
 
 ```java
 public interface Payment {
@@ -82,4 +94,12 @@ public class Main {
 }
 ```
 
+
+## Explication
+
+1. Encapsulation : Chaque méthode de paiement a ses propres données encapsulées (comme cardNumber, email, ou iban).
+
+2. Polymorphisme : La méthode processPayment accepte n'importe quel objet qui implémente l'interface Payment, sans se soucier du type spécifique (carte de crédit, PayPal, etc.).
+
+3. Héritage : Ici, les classes de paiement spécifiques n'héritent pas directement d'une classe, mais elles respectent le contrat défini par l'interface Payment, ce qui permet d'illustrer le polymorphisme.
 
