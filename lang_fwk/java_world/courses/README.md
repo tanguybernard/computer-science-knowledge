@@ -10,3 +10,7 @@ https://codingdojo.org/kata/movie-rental/
 https://martinfowler.com/articles/refactoring-video-store-js/
 
 https://gitlab.com/azae/craft/movie-rental
+
+Solution
+
+https://elearning.industriallogic.com/gh/submit?Action=PageAction&album=kata&path=kata/videoStore/solution&devLanguage=Java
