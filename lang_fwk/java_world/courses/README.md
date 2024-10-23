@@ -14,3 +14,10 @@ https://gitlab.com/azae/craft/movie-rental
 Solution
 
 https://elearning.industriallogic.com/gh/submit?Action=PageAction&album=kata&path=kata/videoStore/solution&devLanguage=Java
+
+
+## Kata Stream
+
+Employee Report
+
+https://blog.ippon.fr/2021/04/12/mon-catalogue-de-katas/
