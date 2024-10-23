@@ -14,3 +14,9 @@
 - Le bytecode est interprété par la JVM pour etre executé sur la machine
 - Langage portable à condition d'avoir une JVM
 
+
+
+
+Credits: 
+
+https://www.youtube.com/watch?v=aqSrZSAsAyc
