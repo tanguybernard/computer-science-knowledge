@@ -17,7 +17,7 @@ flowchart TD
     D -->|2| E2[Bytecode Verifier]
     D -->|3| E3[Execution Engine]
     E1 --> F1[Charge les classes au runtime dans la RAM]
-    E2 --> F2[Vérification des failles de sécurité]
+    E2 --> F2[Vérification des règles de sécurité - ex: zones mémoire interdites]
     E3 --> F3[Interprète et compile le bytecode en langage machine]
     F3 -->|JIT Compiler| G[Langage Machine]
     G --> H[Execution du programme]
