@@ -111,3 +111,8 @@ BPMN : Business process Model and notation (saga pattern alternative ?)
 NextJS Best Practice
 
 https://iqbalpa.medium.com/mastering-next-js-best-practices-for-clean-scalable-and-type-safe-development-2ee5693e73a9
+
+
+A étudier :
+
+https://docs.spring.io/spring-statemachine/docs/4.0.0/reference/index.html
