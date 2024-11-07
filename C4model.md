@@ -11,6 +11,25 @@ The distinction between modeling and diagramming becomes powerful when we can cr
 source: https://sheldonrcohen.medium.com/understanding-the-c4-model-for-software-architecture-documentation-e59c4edd0d56
 
 
+
+## 1. Context Diagram
+
+## 2. Container Diagram
+
+### Container
+
+- Web Application
+- API Server
+- Database
+- Message Broker
+- Admin Console (ex: Dedicated interface for administrators to manage inventory and orders)
+
+## 3. Composant Diagram
+
+OrderController, OrderService, OrderRepository...
+
+## 4. Code Diagram
+
 ## Sources
 
 E-commerce example
@@ -18,3 +37,9 @@ E-commerce example
 https://mattjhayes.com/2020/05/10/diagrams-with-c4-model/
 
 https://github.com/mattjhayes/PlantUML-Examples/tree/master/docs/Misc/BlogSource/C4Model
+
+
+
+https://medium.com/@shubhadeepchat/the-c4-model-for-software-architecture-visualization-explained-93b85ea3e2e3
+
+https://sheldonrcohen.medium.com/understanding-the-c4-model-for-software-architecture-documentation-e59c4edd0d56
