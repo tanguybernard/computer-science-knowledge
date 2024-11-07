@@ -112,4 +112,45 @@ Outside for production.
 
 ## ECS
 
-...
+### Intro 
+
+Container Orchestration Service
+
+Run container accross multiple EC2 Machines managed in a cluster
+
+### Components
+
+- Cluster: Multiple ec2 instance which house the docker containers
+- Task Definitions: Json configuration files of container you want to run.
+- Task: Launch container defined in task definition.
+- Service: Ensure tasks remain running eg. web app
+- Container Agent: Binary on each ec2 instance which monitor, start and stop tasks.
+- ECS Controller/Scheduler: Responsible for scheduling deployment and placement of your containers
+
+
+### ECS Fargate
+
+Serverless orchestration container service. You dont have to scale or upgrade EC2 server
+
+### Execution Role
+
+Used to prepare or manage container.
+
+- Access to secrets manager
+- Access to download private image from ECR
+- Access cloudwatch fullaccess
+
+### Task Role
+
+is a role that is used by the running compute of the container
+
+- Access to ssm messages for ecs exec
+- CloudWath fullaccess so container can log
+- ...
+
+Note : ECS Exec permet d'exécuter des commandes directement dans les conteneurs en utilisant AWS Systems Manager (SSM). 
+
+
+### ECS Capacity Providers
+
+https://youtu.be/TTcyhhH2FWE?t=29501
