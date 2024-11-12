@@ -159,3 +159,11 @@ https://www.une-blockchain.fr/retrouver-labi-dun-contrat-ethereum/
  ### Hyperledger
  
 Hyperledger est une blockchain privée (ou de consortium) open source soutenue par la Fondation Linux.
+
+
+
+## Info
+
+Bitcoin peut-il être à la fois sécurisé et scalable ? Le CTO de Ledger nous réponds !
+
+https://www.youtube.com/watch?v=uZpsX3LCRi8&t=1583s
