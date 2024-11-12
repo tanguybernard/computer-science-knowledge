@@ -167,3 +167,8 @@ Hyperledger est une blockchain privée (ou de consortium) open source soutenue p
 Bitcoin peut-il être à la fois sécurisé et scalable ? Le CTO de Ledger nous réponds !
 
 https://www.youtube.com/watch?v=uZpsX3LCRi8&t=1583s
+
+
+Layer 2
+
+https://ethereum.org/fr/layer-2/
