@@ -22,3 +22,10 @@ There are three common types of transactions on the Ethereum network:
 - A transaction invoking a contract, this transaction is sent with some data and is used to query/interact with a previously deployed smart-contract.
 
 https://www.quicknode.com/guides/ethereum-development/transactions/how-to-re-send-a-transaction-with-higher-gas-price-using-ethersjs
+
+
+## Client
+
+### Hyperledger Besu
+
+Hyperledger Besu est un client Ethereum open source conçu pour les entreprises. Besu est compatible avec les réseaux Ethereum publics, privés et de consortium, ce qui le rend polyvalent pour différents cas d'utilisation.
