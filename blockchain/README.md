@@ -172,3 +172,9 @@ https://www.youtube.com/watch?v=uZpsX3LCRi8&t=1583s
 Layer 2
 
 https://ethereum.org/fr/layer-2/
+
+
+
+Protocole
+
+https://www.quantmetry.com/blog/blockchain-fonctionnement-du-protocole/
