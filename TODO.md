@@ -116,3 +116,7 @@ https://iqbalpa.medium.com/mastering-next-js-best-practices-for-clean-scalable-a
 A étudier, Machine à état:
 
 https://docs.spring.io/spring-statemachine/docs/4.0.0/reference/index.html
+
+
+
+Orchestration vs Choregraphy => Not Communication -  It's coordination !
