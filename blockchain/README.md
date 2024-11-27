@@ -178,3 +178,13 @@ https://ethereum.org/fr/layer-2/
 Protocole
 
 https://www.quantmetry.com/blog/blockchain-fonctionnement-du-protocole/
+
+
+Nonce :
+
+https://www.investopedia.com/terms/n/nonce.asp
+
+
+Proof of work
+
+https://coincentral.com/what-is-a-nonce-proof-of-work/
