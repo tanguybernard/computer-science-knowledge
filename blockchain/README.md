@@ -188,3 +188,8 @@ https://www.investopedia.com/terms/n/nonce.asp
 Proof of work
 
 https://coincentral.com/what-is-a-nonce-proof-of-work/
+
+
+Arbre de merkle
+
+https://cryptoast.fr/arbres-merkle-bitcoin/
