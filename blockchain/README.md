@@ -193,3 +193,5 @@ https://coincentral.com/what-is-a-nonce-proof-of-work/
 Arbre de merkle
 
 https://cryptoast.fr/arbres-merkle-bitcoin/
+
+https://www.blockchains-expert.com/larbre-de-merkle-colonne-vertebrale-de-blockchain/
