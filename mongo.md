@@ -81,3 +81,6 @@ Reponse :
     
     db.documentDocument.update({"organizationCode" : "TEST", "code": "93896"},{$set: { "effectiveDate" : new ISODate("2020-09-08T00:00:00Z")}})
     
+### Delete 
+
+    db.orders.deleteOne({ _id: UUID("a2816acb-7635-4129-b17d-96fa0aa3eab8") })
