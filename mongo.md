@@ -66,6 +66,10 @@ Reponse :
     ]
 
 
+### Give me all "num" of orders if offers.excludingTaxPriceByTiwatt exists
+
+    db.orders.find( { "offers.excludingTaxPriceByTiwatt": { $exists: false }}, {num: 1} )
+
 ### Insert
 
     db.samlDocument.insertOne({active: true,organizationCode: "TEST", registrationId: "test", metadataLocation:"url", entityId:"test", idpWebSsoUrl:null});
