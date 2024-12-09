@@ -11,4 +11,6 @@ Payment, stocker un transacionId, paymentId dans order peut etre ?
 
 Puis vient le payment en 3 fois, ou en 8 fois... Comment faire ? Une liste d'objet payment ???
 
+Salle d'attente doctolib, un seul medecin => Plusieurs medecins...
+
 
