@@ -19,6 +19,7 @@ public class SimpleRestApiWithObjects {
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
         // Ajoute un endpoint pour "/api/users"
+        server.createContext("/hello", new HelloHandler());
         server.createContext("/api/users", new UserHandler());
 
         // Démarre le serveur
@@ -29,7 +30,27 @@ public class SimpleRestApiWithObjects {
 }
 ```
 
-## Handler
+## Hello Handler
+
+```java
+// Endpoint pour "/hello"
+class HelloHandler implements HttpHandler {
+    @Override
+    public void handle(HttpExchange exchange) throws IOException {
+        if ("GET".equals(exchange.getRequestMethod())) {
+            String response = "Hello, World!";
+            exchange.sendResponseHeaders(200, response.getBytes().length);
+            try (OutputStream os = exchange.getResponseBody()) {
+                os.write(response.getBytes());
+            }
+        } else {
+            exchange.sendResponseHeaders(405, -1); // 405 Method Not Allowed
+        }
+    }
+}
+```
+
+## User Handler
 
 ```java
 class UserHandler implements HttpHandler {
