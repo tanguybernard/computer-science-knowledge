@@ -6,6 +6,7 @@ From known to unknown.
 
 https://www.youtube.com/watch?v=C5IH0ABmyc0
 
+Dans la vidéo : "TDD is it's exploratory intuition-based Discovery Process plus safety knowing you're on this path and cannot go backwards"
 
 ## OusideIn / Inside Out
 
