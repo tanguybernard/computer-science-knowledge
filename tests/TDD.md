@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=C5IH0ABmyc0
 
 Dans la vidéo : "TDD is it's exploratory intuition-based Discovery Process plus safety knowing you're on this path and cannot go backwards"
 
+https://testdesiderata.com/
+
 ## OusideIn / Inside Out
 
 - Chicago School of Thought TDD (Inside Out/Bottom Up/Classic)
