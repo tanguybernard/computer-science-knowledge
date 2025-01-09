@@ -1,7 +1,9 @@
 # Effect
 
 
-## Example - Get orders from order-service with http call, manage injection dependencies and errors with Effect-ts
+## Example 
+
+__Get orders from order-service with http call, manage injection dependencies and errors with Effect-ts__
 
 Controller 
 
