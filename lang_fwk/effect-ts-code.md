@@ -127,9 +127,9 @@ const orderController = new OrderController(new HttpClientImplementation(process
 __Get orders from order-service with http call, for each command get user info from aws lambda__
 
 
-order-live-service.ts
+order-live-service.ts  (Le coeur de l'implementation)
 
-```javascript
+```typescript
 import { Effect, pipe } from 'effect';
 import { HttpClient } from './../http-client.mjs';
 import { OrderResponse } from './OrderResponse.mjs';
@@ -181,9 +181,9 @@ export const getAllEffect = Effect.gen(function* () {
 ```
 
 
-user-api.ts
+user-api.mts
 
-```
+```typescript
 import { Context } from 'effect';
 import { UUID } from 'node:crypto';
 
@@ -206,7 +206,7 @@ export const UserApi = Context.GenericTag<UserApi>('UserApi'); //Important for E
 user.service.mts  (Implement user-api)
 
 
-```
+```typescript
 import { User, UserApi } from 'ports/user.api.mjs';
 import { invokeUserService } from './../lambda-client.mjs';
 import { convertToCSV } from './../utils/csv-utils.js';
@@ -239,7 +239,7 @@ export class UserService implements UserApi {
 
 Controller
 
-```
+```typescript
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
 import { Effect, pipe } from 'effect';
@@ -282,7 +282,7 @@ export class OrderController {
 }
 ```
 
-app.mts
+app.mts (Instance du controller)
 
 ```typescript
 const userApi = new UserService();
