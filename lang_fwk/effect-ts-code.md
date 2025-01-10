@@ -124,7 +124,7 @@ const orderController = new OrderController(new HttpClientImplementation(process
 
 ## Example With Multiple dependency injection, use Effect.gen and Effect.foreach
 
-__Get orders from order-service with http call, manage injection dependencies and errors with Effect-ts__
+__Get orders from order-service with http call, for each command get user info from aws lambda__
 
 
 order-live-service.ts
