@@ -116,14 +116,14 @@ src/http-client.mts
 
 src/index.mts
 
-
-    import {Context, Effect, flow, Layer, pipe, Runtime} from "effect";
+    import {Context, Effect, Layer} from "effect";
     import { Data } from "effect"
     import {HttpClient, HttpClientImplementation} from "./http-client.mjs";
     
     const myClient = new HttpClientImplementation('https://jsonplaceholder.typicode.com')
     
-     myClient.get('/posts', {})
+    
+     myClient.get('/posts/1', {})
          .then((r) => r.json())
          .then(r => console.log(r))
          .catch(e => console.log(e));
@@ -191,17 +191,20 @@ src/index.mts
                         body: '',
                     });
                 },
-                onSuccess: (orders) => {
+                onSuccess: (user) => {
                     return Effect.succeed({
                         statusCode: 200,
                         body: {
                             message: 'Orders fetched successfully',
-                            orders,
+                            user,
                         },
                     });
                 },
             })
         );
     
-    //Effect.runPromise(response);
+    const user = Effect.runPromise(response);
+    
+    user.then(console.log)
+
 
