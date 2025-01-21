@@ -290,4 +290,24 @@ const orderController = new OrderController(
   new HttpClientImplementation(process.env.ORDER_SERVICE_URL as string),
   userApi
 );
+
+tsconfig.json
+
+    {
+      "compilerOptions": {
+        "outDir": "dist",
+        "target": "ESNext",
+        "module": "NodeNext",
+        "strict": true,
+        "preserveConstEnums": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "NodeNext",
+        "paths": {
+          "*": ["./src/*"]
+        }
+      },
+      "include": ["src/**/*"]
+    }
+
 ```
