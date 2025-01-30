@@ -1,3 +1,7 @@
+PHIND Prompt:
+
+_Invent a kata to introduce java oriented object_
+
 Here's a Java-oriented object introduction kata that I've invented:
 
 ### The Coffee Shop Kata
