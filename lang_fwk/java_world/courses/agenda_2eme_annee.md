@@ -18,21 +18,32 @@
 1. Les bases de Java
 2. Java Notions Intermédiaire
 
+Kata Fizz Buzz
+
 Coffee Shop Kata
 
 3. Intro OOP
 4. OOP Pour Java
 
+Kata Mars Rover
 
 ## 20 mars (9h45 - 13h & 14h - 17h15)
 
 5. Abstraction
 
+Mars Rover
+
 ## 28 mars (9h45 - 13h & 14h - 17h15)
 
-6. Encapsulation + exam (2h)
+6. Encapsulation
+
+   + exam (KAta ou question ?)
+
+Exercice : KAta Wallet
 
 ## 11 avril (9h45 - 13h & 14h - 17h15)
+
+SOLID
 
 7. Composition Héritage Polymorphisme
 
