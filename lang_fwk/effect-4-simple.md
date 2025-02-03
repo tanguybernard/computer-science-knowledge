@@ -1,3 +1,38 @@
+v0
+```typescript
+   const program = async (id: number) => {
+        try {
+          const res =await  myfetch(id)
+          if(res.status === 404) {
+            throw new PostNotFoundError("Post not found with id")
+          }
+          if(!res.ok) {
+            throw new HttpError("HttpError")
+          }
+          try {
+            let json = await res.json();
+            return json.name
+          }
+          catch (e) {
+            throw new JsonParseError("JSON parsing error")
+          }
+        }
+        catch (error) {
+          if(error instanceof JsonParseError) {
+            console.log(`Error`)
+          }
+          else if(error instanceof PostNotFoundError){
+            console.log(`Post missing. Falling back to a default.`)
+            return "Default name"
+          }
+          else {
+            return "Default name"
+          }
+
+        }
+
+      }
+```
 
 V1 
 
