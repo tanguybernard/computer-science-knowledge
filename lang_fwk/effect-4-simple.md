@@ -221,3 +221,86 @@ V3
       expect(true).toEqual(true);
     });
 ```
+
+
+V2 Bis
+
+
+```typescript
+
+ const myfetch = (id: number) => {
+   return Promise.resolve({
+     ok: true,
+     status: 404,
+     json: () => Promise.resolve({ id: 34, name: "Test" }),
+   });
+ };
+
+ class HttpError extends Error {
+   readonly _tag = "HttpError";
+   constructor(readonly message: string) {
+     super(message);
+   }
+ }
+
+ class PostNotFoundError extends Error {
+   readonly _tag = "PostNotFoundError";
+   constructor(readonly message: string) {
+     super(message);
+   }
+ }
+
+ class JsonParseError extends Error {
+   readonly _tag = "JsonParseError"; // Correction ici
+   constructor(readonly message: string) {
+     super(message);
+   }
+ }
+
+      const fetchEffect = (id: number): Effect.Effect<any, HttpError, any> =>
+        Effect.tryPromise({
+          try: () => myfetch(id),
+          catch: (error) => new HttpError("HttpError"),
+        });
+
+      const manageError = (res: any): Effect.Effect<{name: string}, HttpError | PostNotFoundError | JsonParseError, never> =>
+        res.status === 404
+          ? Effect.fail(new PostNotFoundError("Post not found with id"))
+          : res.ok
+            ? Effect.tryPromise({
+              try: () => res.json(),
+              catch: (error) => new JsonParseError("JSON parsing error"),
+            })
+            : Effect.fail(new HttpError("Post not found"));
+
+      const getPost = (id: number): Effect.Effect<string, Error, any> =>
+        pipe(
+          fetchEffect(id),
+          Effect.flatMap(manageError),
+          Effect.catchTags({
+            HttpError: (error) =>
+              Effect.logError(`Exiting.`).pipe(
+                Effect.flatMap(() => Effect.fail(error))
+              ),
+            PostNotFoundError: (error) =>
+              Effect.log(`Post missing. Falling back to a default.`).pipe(
+                Effect.map(() => ({name: "default post"}))
+              ),
+          }),
+          Effect.flatMap((post: any) => Effect.succeed(post.name)),
+          Effect.orElseFail(() => new Error("Request failed and no fallback available"))
+        );
+
+      pipe(
+        getPost(1),
+        Effect.match({
+          onFailure: (error: Error) => {
+            console.error("Erreur:", error.message);
+          },
+          onSuccess: (name) => {
+            console.log("Nom du post:", name);
+          },
+        }),
+        Effect.runPromise
+      );
+```
