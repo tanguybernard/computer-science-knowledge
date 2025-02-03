@@ -304,3 +304,6 @@ V3 Bis
         Effect.runPromise
       );
 ```
+
+
+Notes: https://www.aleksandra.codes/effect-intro#summary
