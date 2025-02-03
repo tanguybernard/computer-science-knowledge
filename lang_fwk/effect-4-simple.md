@@ -165,6 +165,10 @@ V3
           //Effect.scoped
         );
 
+
+//Avec un orElseFail a la place du succès changer signature : Effect.Effect<string, Error, any> =>
+//Effect.orElseFail(() => new Error("Request failed and no fallback available"))
+
       pipe(
         getPost2(1),
         Effect.match({
