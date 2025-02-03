@@ -93,3 +93,92 @@ V2
 // Exécuter le programme
       Effect.runPromise(program)
 ```
+
+
+V3
+
+```typescript
+    it('should lalal', async () => {
+
+      const myfetch = (id: number) => {
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          json: () => Promise.resolve({ id: 34, name: "Test" }),
+        });
+      };
+
+      class HttpError extends Error {
+        readonly _tag = "HttpError";
+        constructor(readonly message: string) {
+          super(message);
+        }
+      }
+
+      class PostNotFoundError extends Error {
+        readonly _tag = "PostNotFoundError";
+        constructor(readonly message: string) {
+          super(message);
+        }
+      }
+
+      class JsonParseError extends Error {
+        readonly _tag = "JsonParseError"; // Correction ici
+        constructor(readonly message: string) {
+          super(message);
+        }
+      }
+
+      const myRealfetch = (id: number): Effect.Effect<any, HttpError, any> =>
+        Effect.tryPromise({
+          try: () => myfetch(id),
+          catch: (error) => new HttpError("HttpError"),
+        });
+
+      const manageError = (res: any): Effect.Effect<{name: string}, HttpError | PostNotFoundError | JsonParseError, never> =>
+        res.status === 404
+          ? Effect.fail(new PostNotFoundError("Post not found with id"))
+          : res.ok
+            ? Effect.tryPromise({
+              try: () => res.json(),
+              catch: (error) => new JsonParseError("JSON parsing error"),
+            })
+            : Effect.fail(new HttpError("Post not found"));
+
+      const getPost2 = (id: number): Effect.Effect<string, never, any> =>
+        pipe(
+          myRealfetch(id),
+          Effect.flatMap(manageError),
+          Effect.catchTags({
+            HttpError: (error) =>
+              Effect.logError(`Exiting.`).pipe(
+                Effect.flatMap(() => Effect.fail(error))
+              ),
+            PostNotFoundError: (error) =>
+              Effect.log(`Post missing. Falling back to a default.`).pipe(
+                Effect.flatMap(() => Effect.fail(error))
+                //Effect.map(() => "Default post")
+              ),
+          }),
+          Effect.flatMap((post: any) => Effect.succeed(post.name)),
+          Effect.orElseSucceed(() => "Default name"),
+          //Effect.scoped
+        );
+
+      pipe(
+        getPost2(1),
+        Effect.match({
+          onFailure: (error: Error) => {
+            console.error("Erreur:", error.message);
+          },
+          onSuccess: (name) => {
+            console.log("Nom du post:", name);
+          },
+        }),
+        Effect.runPromise
+
+      );
+
+      expect(true).toEqual(true);
+    });
+```
