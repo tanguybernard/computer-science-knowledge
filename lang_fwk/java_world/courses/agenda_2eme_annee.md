@@ -56,6 +56,12 @@ Kata avec une base de données (Emprunter livres)
 https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/emprunter_livres_2.md
 ## 22 mai (14h - 17h15)
 
+Cours SOLID
+
+Kata Refacto
+
+https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/kata_refacto_invoice_solid.md
+
 Kata - Préparation Exam
 
 ## 5 juin (14h - 17h15)
