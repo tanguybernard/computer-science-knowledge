@@ -1,6 +1,12 @@
 # Course
 
 
+Template :
+
+https://github.com/tanguybernard/java-templates
+
+
+
 ## Kata Java POO
 
 Video Store Kata
