@@ -41,7 +41,7 @@ Mars Rover
 
 Exercice : KAta Wallet : https://codingdojo.org/kata/Wallet/
 
-Taux de change exemple :
+Taux de change exemple : https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/exchange_rate_util.md
 
 ## 11 avril (9h45 - 13h & 14h - 17h15)
 
