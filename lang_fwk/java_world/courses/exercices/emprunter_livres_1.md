@@ -27,227 +27,202 @@ Une bibliothèque municipale souhaite développer un système de gestion informa
 
 
 
-### Structure des Classes
+Voici une implémentation complète d'un système de gestion de bibliothèque en Java utilisant la Programmation Orientée Objet (POO). Le système permet de gérer les livres et les utilisateurs, ainsi que leurs interactions.
 
-Voici le diagramme de classes qui illustre la structure du système :
-
+Commençons par examiner la structure du système :
 ```mermaid
 classDiagram
     class Livre {
+        -String isbn
         -String titre
         -String auteur
         -boolean estEmprunte
+        -String emprunteurId
+        +getIsbn() String
         +getTitre() String
         +getAuteur() String
         +estEmprunte() boolean
-        +setEstEmprunte(boolean)
+        +getEmprunteurId() String
+        +setEmprunteurId(String id)
     }
     
     class Utilisateur {
+        -String id
         -String nom
-        -String identifiant
         -List~Livre~ livresEmpruntes
+        +getId() String
         +getNom() String
-        +getIdentifiant() String
-        +getLivresEmpruntes() List
-        +emprunterLivre(Livre)
-        +rendreLivre(Livre)
+        +getLivresEmpruntes() List~Livre~
+        +emprunterLivre(Livre livre)
+        +rendreLivre(Livre livre)
     }
     
     class Bibliotheque {
-        -List~Livre~ catalogues
-        -Map~String,Utilisateur~ membres
-        +ajouterLivre(Livre)
-        +inscrireMembre(Utilisateur)
-        +emprunterLivre(String identifiant, String titre)
-        +rendreLivre(String identifiant, String titre)
+        -Map~String,Livre~ livres
+        -Map~String,Utilisateur~ utilisateurs
+        +ajouterLivre(Livre livre)
+        +ajouterUtilisateur(Utilisateur utilisateur)
+        +emprunterLivre(String isbn, String userId)
+        +rendreLivre(String isbn)
     }
 
-    Bibliotheque "1" *-- "*" Livre : contient
-    Bibliotheque "1" *-- "*" Utilisateur : gere
-    Utilisateur "1" -- "*" Livre : emprunte
+    Bibliotheque "1" --* "*" Livre : contient
+    Bibliotheque "1" --* "*" Utilisateur : gère
+    Utilisateur "1" --o "*" Livre : emprunte
 ```
 
-Dans ce diagramme UML :
-
-- Les lignes pleines avec losange noir (♦) représentent une relation de composition forte ("contient" et "gere")
-- La ligne simple entre Utilisateur et Livre représente une relation d'association ("emprunte")
-- Les nombres "1" et "*" indiquent la cardinalité :
-  - "1" signifie une instance unique
-  - "*" signifie plusieurs instances possibles
 
 
 
-### Implémentation des Classes
+Dans ce diagramme :
 
-Voici l'implémentation détaillée de chaque classe :
+- Les lignes avec le losange plein (--*) représentent une relation de composition : la Bibliothèque possède et contrôle le cycle de vie des Livres et des Utilisateurs
+- La ligne avec le losange vide (--o) représente une relation d'agrégation : un Utilisateur peut emprunter plusieurs Livres, mais les Livres peuvent exister sans être empruntés
+- La notation "1" -- "*" indique qu'une Bibliothèque peut contenir plusieurs (*) Livres et Utilisateurs, et qu'un Utilisateur peut emprunter plusieurs (*) Livres
+- Les types génériques comme `List<Livre>` et `Map<String,Livre>` indiquent que ces collections contiennent respectivement des Livres et utilisent des Strings comme clés
+
+Voici maintenant l'implémentation complète du système :
 
 ```java
 public class Livre {
+    private String isbn;
     private String titre;
     private String auteur;
     private boolean estEmprunte;
-    
-    public Livre(String titre, String auteur) {
+    private String emprunteurId;
+
+    public Livre(String isbn, String titre, String auteur) {
+        this.isbn = isbn;
         this.titre = titre;
         this.auteur = auteur;
         this.estEmprunte = false;
+        this.emprunteurId = null;
     }
-    
-    // Accesseurs
+
+    public String getIsbn() { return isbn; }
     public String getTitre() { return titre; }
     public String getAuteur() { return auteur; }
     public boolean estEmprunte() { return estEmprunte; }
+    public String getEmprunteurId() { return emprunteurId; }
     
-    // Mutateurs
-    public void setEstEmprunte(boolean estEmprunte) {
-        this.estEmprunte = estEmprunte;
+    public void setEmprunteurId(String id) {
+        this.emprunteurId = id;
+        this.estEmprunte = (id != null);
     }
 }
-```
 
-```java
 public class Utilisateur {
+    private String id;
     private String nom;
-    private String identifiant;
     private List<Livre> livresEmpruntes;
-    
-    public Utilisateur(String nom, String identifiant) {
+
+    public Utilisateur(String id, String nom) {
+        this.id = id;
         this.nom = nom;
-        this.identifiant = identifiant;
         this.livresEmpruntes = new ArrayList<>();
     }
-    
-    // Accesseurs
+
+    public String getId() { return id; }
     public String getNom() { return nom; }
-    public String getIdentifiant() { return identifiant; }
     public List<Livre> getLivresEmpruntes() { return livresEmpruntes; }
-    
-    // Méthodes pour la gestion des emprunts
+
     public void emprunterLivre(Livre livre) {
-        livresEmpruntes.add(livre);
+        if (!livre.estEmprunte()) {
+            livre.setEmprunteurId(this.id);
+            this.livresEmpruntes.add(livre);
+        }
     }
-    
+
     public void rendreLivre(Livre livre) {
-        livresEmpruntes.remove(livre);
+        if (livre.getEmprunteurId().equals(this.id)) {
+            livre.setEmprunteurId(null);
+            this.livresEmpruntes.remove(livre);
+        }
     }
 }
-```
-
-```java
-import java.util.ArrayList;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Bibliotheque {
-    private List<Livre> catalogues;
-    private Map<String, Utilisateur> membres;
-    
+    private Map<String, Livre> livres;
+    private Map<String, Utilisateur> utilisateurs;
+
     public Bibliotheque() {
-        this.catalogues = new ArrayList<>();
-        this.membres = new HashMap<>();
+        this.livres = new HashMap<>();
+        this.utilisateurs = new HashMap<>();
     }
-    
-    // Gestion des livres
+
     public void ajouterLivre(Livre livre) {
-        catalogues.add(livre);
+        this.livres.put(livre.getIsbn(), livre);
     }
-    
-    // Gestion des membres
-    public void inscrireMembre(Utilisateur membre) {
-        membres.put(membre.getIdentifiant(), membre);
+
+    public void ajouterUtilisateur(Utilisateur utilisateur) {
+        this.utilisateurs.put(utilisateur.getId(), utilisateur);
     }
-    
-    // Gestion des emprunts
-    public boolean emprunterLivre(String identifiantMembre, String titreLivre) {
-        Utilisateur membre = membres.get(identifiantMembre);
-        Livre livre = trouverLivre(titreLivre);
+
+    public void emprunterLivre(String isbn, String userId) {
+        Livre livre = livres.get(isbn);
+        Utilisateur utilisateur = utilisateurs.get(userId);
         
-        if (membre != null && livre != null && !livre.estEmprunte()) {
-            livre.setEstEmprunte(true);
-            membre.emprunterLivre(livre);
-            return true;
+        if (livre != null && utilisateur != null && !livre.estEmprunte()) {
+            utilisateur.emprunterLivre(livre);
         }
-        return false;
     }
-    
-    public boolean rendreLivre(String identifiantMembre, String titreLivre) {
-        Utilisateur membre = membres.get(identifiantMembre);
-        Livre livre = trouverLivre(titreLivre);
-        
-        if (membre != null && livre != null && livre.estEmprunte()) {
-            livre.setEstEmprunte(false);
-            membre.rendreLivre(livre);
-            return true;
-        }
-        return false;
-    }
-    
-    private Livre trouverLivre(String titre) {
-        for (Livre livre : catalogues) {
-            if (livre.getTitre().equals(titre)) {
-                return livre;
+
+    public void rendreLivre(String isbn) {
+        Livre livre = livres.get(isbn);
+        if (livre != null && livre.estEmprunte()) {
+            Utilisateur emprunteur = utilisateurs.get(livre.getEmprunteurId());
+            if (emprunteur != null) {
+                emprunteur.rendreLivre(livre);
             }
         }
-        return null;
     }
 }
 ```
 
-### Exemple d'Utilisation
+Exemple d'utilisation :
 
 ```java
 public class Main {
     public static void main(String[] args) {
+        // Création de la bibliothèque
         Bibliotheque bibliotheque = new Bibliotheque();
+
+        // Création de livres
+        Livre livre1 = new Livre("978-123456789", "Le Petit Prince", "Antoine de Saint-Exupéry");
+        Livre livre2 = new Livre("978-987654321", "Les Misérables", "Victor Hugo");
         
-        // Ajout de livres
-        bibliotheque.ajouterLivre(new Livre("Le Petit Prince", "Antoine de Saint-Exupéry"));
-        bibliotheque.ajouterLivre(new Livre("Les Misérables", "Victor Hugo"));
-        
-        // Inscription d'utilisateurs
-        bibliotheque.inscrireMembre(new Utilisateur("Jean Dupont", "JD001"));
-        bibliotheque.inscrireMembre(new Utilisateur("Marie Martin", "MM002"));
-        
-        // Emprunt de livre
-        boolean empruntReussi = bibliotheque.emprunterLivre("JD001", "Le Petit Prince");
-        System.out.println(empruntReussi ? "Emprunt réussi" : "Emprunt échoué");
-        
-        // Retour de livre
-        boolean retourReussi = bibliotheque.rendreLivre("JD001", "Le Petit Prince");
-        System.out.println(retourReussi ? "Retour réussi" : "Retour échoué");
+        // Ajout des livres à la bibliothèque
+        bibliotheque.ajouterLivre(livre1);
+        bibliotheque.ajouterLivre(livre2);
+
+        // Création d'utilisateurs
+        Utilisateur utilisateur1 = new Utilisateur("U001", "Jean Dupont");
+        Utilisateur utilisateur2 = new Utilisateur("U002", "Marie Martin");
+
+        // Ajout des utilisateurs à la bibliothèque
+        bibliotheque.ajouterUtilisateur(utilisateur1);
+        bibliotheque.ajouterUtilisateur(utilisateur2);
+
+        // Emprunt d'un livre
+        bibliotheque.emprunterLivre("978-123456789", "U001");
+
+        // Retour d'un livre
+        bibliotheque.rendreLivre("978-123456789");
     }
 }
 ```
 
-### Points Clés à Retenir
+Cette implémentation offre les fonctionnalités suivantes :
 
-1. Encapsulation :
-  - Les attributs sont privés (`private`)
-  - Accès contrôlé via les accesseurs/mutateurs
+- Création et gestion des livres avec leur ISBN unique
+- Création et gestion des utilisateurs avec un ID unique
+- Système d'emprunt qui vérifie si le livre est disponible
+- Gestion du retour des livres
+- Suivi des emprunts par utilisateur
 
+Le système utilise les principes fondamentaux de la POO :
 
-2. Héritage :
-  - Non utilisé directement dans cet exemple
-  - Mais la structure permet facilement d'ajouter des classes dérivées
-
-
-3. Polymorphisme :
-  - Utilisation de méthodes redéfinies
-  - Interface commune pour les opérations sur les livres
-
-
-4. Abstraction :
-  - Masquage des détails d'implémentation
-  - Interfaces simples et cohérentes
-
-
-
-### Extensions Possibles
-
-1. Ajouter une date limite pour les emprunts
-2. Implémenter un système de réservation
-3. Ajouter une catégorie pour les livres
-4. Créer un système de recherche avancé
-5. Ajouter un historique des emprunts
+- Encapsulation : chaque classe encapsule ses données et son comportement
+- Abstraction : les classes représentent des concepts réels de manière simplifiée
+- Composition : la Bibliothèque contient des Livres et des Utilisateurs
+- Association : les relations entre les classes sont clairement définies
