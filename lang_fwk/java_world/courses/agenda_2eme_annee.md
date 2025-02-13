@@ -39,7 +39,7 @@ Mars Rover
 
    + exam (KAta ou question ?)
 
-Exercice : KAta Wallet
+Exercice : KAta Wallet : https://codingdojo.org/kata/Wallet/
 
 ## 11 avril (9h45 - 13h & 14h - 17h15)
 
