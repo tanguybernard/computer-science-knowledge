@@ -47,6 +47,13 @@ Taux de change exemple :
 
 https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/exchange_rate_util.md
 
+
+Kata Video Store
+
+//TODO Donner les instructions
+
+https://github.com/tanguybernard/katas/blob/main/video-store/INFO.md
+
 ## 11 avril (9h45 - 13h & 14h - 17h15)
 
 SOLID
