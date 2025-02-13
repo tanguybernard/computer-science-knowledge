@@ -41,6 +41,8 @@ Mars Rover
 
 Exercice : KAta Wallet : https://codingdojo.org/kata/Wallet/
 
+Taux de change exemple :
+
 ## 11 avril (9h45 - 13h & 14h - 17h15)
 
 SOLID
