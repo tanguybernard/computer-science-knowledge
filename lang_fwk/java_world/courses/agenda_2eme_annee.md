@@ -47,8 +47,13 @@ SOLID
 
 7. Composition Héritage Polymorphisme
 
-KATA AVEC BASE DE DONN2ES A INVENTER
+Kata sans la base de données (Emprunter livres)
 
+https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/emprunter_livres_1.md
+
+Kata avec une base de données (Emprunter livres)
+
+https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/emprunter_livres_2.md
 ## 22 mai (14h - 17h15)
 
 Kata - Préparation Exam
