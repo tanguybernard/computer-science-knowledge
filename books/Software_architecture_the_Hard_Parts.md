@@ -22,7 +22,15 @@ Et chacun de ces services peut avoir des caractéristiques d'architecture diffé
 
 ## Chapitre 3 - Architectural Modularity
 
-La maintenabilité concerne la facilité d'ajouter, de modifier ou de supprimer des fonctionnalités, ainsi que d'appliquer des changements internes tels que des correctifs de maintenance, des mises à niveau du framework, des mises à niveau de tiers, etc.
+- La maintenabilité concerne la facilité d'ajouter, de modifier ou de supprimer des fonctionnalités, ainsi que d'appliquer des changements internes tels que des correctifs de maintenance, des mises à niveau du framework, des mises à niveau de tiers, etc.
+- La testabilité est définie comme la facilité des tests (généralement mis en œuvre par le biais de tests automatisés) ainsi que l'exhaustivité des tests.
+- La déployabilité n'est pas seulement une question de facilité de déploiement, mais aussi de fréquence de déploiement et de risque global de déploiement.
 
 
+Scalabilité et élasticité :
+
+Bien que la scalabilité et l'élasticité s'améliorent toutes deux avec des services plus fins, l'élasticité est davantage fonction de la granularité (la taille d'une unité de déploiement), tandis que la scalabilité est davantage fonction de la modularité (la décomposition des applications en unités de déploiement distinctes).
+
+
+L'élasticité repose sur le fait que les services ont un temps moyen de démarrage (mean time to startup - MTTS) très court, ce qui est possible d'un point de vue architectural grâce à des services très petits et à granularité fine.
 
