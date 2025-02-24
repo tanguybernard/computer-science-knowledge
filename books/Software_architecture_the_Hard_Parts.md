@@ -22,7 +22,7 @@ Et chacun de ces services peut avoir des caractéristiques d'architecture diffé
 
 ## Chapitre 3 - Architectural Modularity
 
-
+La maintenabilité concerne la facilité d'ajouter, de modifier ou de supprimer des fonctionnalités, ainsi que d'appliquer des changements internes tels que des correctifs de maintenance, des mises à niveau du framework, des mises à niveau de tiers, etc.
 
 
 
