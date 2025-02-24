@@ -8,6 +8,14 @@ Dans une Service-based architecture il n'y a qu'un quantum, car meme il existe p
 
 Meme si on deploie le front à part, la base et les services à part, ils ont besoin les uns des autres pour fonctionner.
 
+Pour qu'une architecture possède 2 quanta par exemple. Il faut que les 2 quantas et leur propres bases et que leurs services communiques de manières asynchrone.
+
+Dans une archi microservices, si une interface call une APi Gateway par exemple en synchrone qui call les microservices derrières alors cela ce réduit à un quantum, donc encore une fois une seule unité déployable car ils dépendent du frontend pour fonctionner.
+
+
+Pour répondre à cette problématique on peut utiliser des microfrontend, une interface qui call un service liés à une seule base de données. 
+Dans le bouquin on voit 4 de services ayant cette disposition (un front, un service, un db) qui forment des quanta d'architecture.
+Et chacun de ces services peut avoir des caractéristiques d'architecture différentes.
 
 
 
