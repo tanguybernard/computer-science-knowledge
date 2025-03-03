@@ -37,8 +37,12 @@ L'élasticité repose sur le fait que les services ont un temps moyen de démarr
 
 Si vous devez les déployer sequentiellement apres avoir passé en microservices, retourner faire du monolithe.
 
-## Chapitre 4 
+## Chapitre 4 - Architectural Decomposition
 
+Si vous pouvez "Component-based decomposition" sinon "Fork"
 
+Le couplage afférent (Ac) représente le nombre de composants qui dépendent d'un composant donné.
+
+Le couplage efférent (Ec) compte le nombre de dépendances qu'un composant a vers d'autres composants.
 
 
