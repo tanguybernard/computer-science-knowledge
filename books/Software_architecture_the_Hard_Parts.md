@@ -34,3 +34,11 @@ Bien que la scalabilité et l'élasticité s'améliorent toutes deux avec des se
 
 L'élasticité repose sur le fait que les services ont un temps moyen de démarrage (mean time to startup - MTTS) très court, ce qui est possible d'un point de vue architectural grâce à des services très petits et à granularité fine.
 
+
+Si vous devez les déployer sequentiellement apres avoir passé en microservices, retourner faire du monolithe.
+
+## Chapitre 4 
+
+
+
+
