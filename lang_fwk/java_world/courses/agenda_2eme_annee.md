@@ -22,6 +22,8 @@ Kata Fizz Buzz
 
 https://codingdojo.org/fr/kata/FizzBuzz/
 
+https://codingdojo.org/kata/FizzBuzz/
+
 Coffee Shop Kata
 
 https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/Introduce_Object_with_coffee_shop_kata.md
