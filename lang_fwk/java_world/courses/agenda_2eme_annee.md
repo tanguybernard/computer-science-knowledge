@@ -41,6 +41,10 @@ https://codingdojo.org/kata/mars-rover/
 
 Mars Rover
 
+Solution : 
+
+https://github.com/elie29/mars-rover-kata/tree/master/src/main/java/elie29/spring/kata/domain
+
 ## 28 mars (9h45 - 13h & 14h - 17h15)
 
 6. Encapsulation
