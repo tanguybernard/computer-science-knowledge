@@ -20,6 +20,8 @@
 
 Kata Fizz Buzz
 
+https://codingdojo.org/fr/kata/FizzBuzz/
+
 Coffee Shop Kata
 
 3. Intro OOP
