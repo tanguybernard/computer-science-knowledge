@@ -33,7 +33,7 @@ https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/j
 
 Kata Mars Rover
 
-
+https://codingdojo.org/kata/mars-rover/
 
 ## 20 mars (9h45 - 13h & 14h - 17h15)
 
