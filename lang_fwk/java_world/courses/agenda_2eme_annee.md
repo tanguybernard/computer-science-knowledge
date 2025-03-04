@@ -24,10 +24,14 @@ https://codingdojo.org/fr/kata/FizzBuzz/
 
 Coffee Shop Kata
 
+https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/Introduce_Object_with_coffee_shop_kata.md
+
 3. Intro OOP
 4. OOP Pour Java
 
 Kata Mars Rover
+
+
 
 ## 20 mars (9h45 - 13h & 14h - 17h15)
 
