@@ -11,12 +11,13 @@
 7. Composition /héritage / Polymorphisme
 8. Derniere journée, prez sur les tests (ouverture)
 
-| Aligné à gauche  | Centré          | 
-| :--------------- |:---------------|
-| Test Positionnement  |  https://docs.google.com/forms/d/e/1FAIpQLSdB6kbKJjpn6-bOF0BNVclIfpTulL0jYdmDhL6ZQKf4F54hEA/viewform?usp=dialog      | 
-| Kata Fizz BUzz  | en : https://codingdojo.org/kata/FizzBuzz/  fr : https://codingdojo.org/fr/kata/FizzBuzz/           |   
-| Coffee Shop Kata  | centré          |    
-
+| Exercice               | Lien                                                                                                     | Solution|
+| :--------------------- |:---------------------------------------------------------------------------------------------------------|:----------------------------|
+| Test Positionnement  |  https://docs.google.com/forms/d/e/1FAIpQLSdB6kbKJjpn6-bOF0BNVclIfpTulL0jYdmDhL6ZQKf4F54hEA/viewform?usp=dialog      | |
+| Kata Fizz BUzz  | en : https://codingdojo.org/kata/FizzBuzz/  fr : https://codingdojo.org/fr/kata/FizzBuzz/                       |   |
+| Kata Employee Report | https://codingdojo.org/kata/Employee-Report/                                                               |    |
+| Kata Mars Rover | https://codingdojo.org/kata/mars-rover/        |  https://github.com/tanguybernard/katas/tree/main/mars-rover-kata-java|
+| Kata Wallet |https://codingdojo.org/kata/Wallet/  | | 
 
 
 ## 14 mars (9h45 - 13h & 14h - 17h15)
@@ -30,9 +31,10 @@ https://codingdojo.org/fr/kata/FizzBuzz/
 
 https://codingdojo.org/kata/FizzBuzz/
 
-Coffee Shop Kata
+Kata Employee Report
 
-https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/Introduce_Object_with_coffee_shop_kata.md
+https://codingdojo.org/kata/Employee-Report/
+
 
 3. Intro OOP
 4. OOP Pour Java
@@ -64,6 +66,10 @@ https://codingdojo.org/kata/Wallet/
 Taux de change exemple : 
 
 https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/exchange_rate_util.md
+
+Coffee Shop Kata
+
+https://github.com/tanguybernard/computer-science-knowledge/blob/main/lang_fwk/java_world/courses/exercices/Introduce_Object_with_coffee_shop_kata.md
 
 
 Kata Video Store
