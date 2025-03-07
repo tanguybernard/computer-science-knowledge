@@ -11,6 +11,12 @@
 7. Composition /héritage / Polymorphisme
 8. Derniere journée, prez sur les tests (ouverture)
 
+| Aligné à gauche  | Centré          | 
+| :--------------- |:---------------|
+| Test Positionnement  |  https://docs.google.com/forms/d/e/1FAIpQLSdB6kbKJjpn6-bOF0BNVclIfpTulL0jYdmDhL6ZQKf4F54hEA/viewform?usp=dialog      | 
+| Kata Fizz BUzz  | en : https://codingdojo.org/kata/FizzBuzz/  fr : https://codingdojo.org/fr/kata/FizzBuzz/           |   
+| Coffee Shop Kata  | centré          |    
+
 
 
 ## 14 mars (9h45 - 13h & 14h - 17h15)
