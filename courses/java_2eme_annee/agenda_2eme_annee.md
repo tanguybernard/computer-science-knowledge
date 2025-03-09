@@ -11,13 +11,21 @@
 7. Composition /héritage / Polymorphisme
 8. Derniere journée, prez sur les tests (ouverture)
 
-| Exercice               | Lien                                                                                                     | Solution|
-| :--------------------- |:---------------------------------------------------------------------------------------------------------|:----------------------------|
-| Test Positionnement  |  https://docs.google.com/forms/d/e/1FAIpQLSdB6kbKJjpn6-bOF0BNVclIfpTulL0jYdmDhL6ZQKf4F54hEA/viewform?usp=dialog      | |
-| Kata Fizz BUzz  | en : https://codingdojo.org/kata/FizzBuzz/  fr : https://codingdojo.org/fr/kata/FizzBuzz/                       |   |
-| Kata Employee Report | https://codingdojo.org/kata/Employee-Report/                                                               |    |
-| Kata Mars Rover | https://codingdojo.org/kata/mars-rover/        |  https://github.com/tanguybernard/katas/tree/main/mars-rover-kata-java|
-| Kata Wallet |https://codingdojo.org/kata/Wallet/  | | 
+| Cours/Exercice                                 | Lien                                                                                                           | Solution|
+|:-----------------------------------------------|:---------------------------------------------------------------------------------------------------------------|:----------------------------|
+| Test Positionnement                            | https://docs.google.com/forms/d/e/1FAIpQLSdB6kbKJjpn6-bOF0BNVclIfpTulL0jYdmDhL6ZQKf4F54hEA/viewform?usp=dialog | |
+| COURS 1 - JAVA BASICS                          | https://crazy-crafters.gitlab.io/red-maple/development/java/basics/#/                                          | |
+| COURS 2 - JAVA INTERM                          | https://github.com/tanguybernard/prez/tree/main/java_intermediate                                              | |
+| Kata Fizz BUzz                                 | en : https://codingdojo.org/kata/FizzBuzz/  fr : https://codingdojo.org/fr/kata/FizzBuzz/                      |   |
+| Kata Employee Report                           | https://codingdojo.org/kata/Employee-Report/                                                                   |    |
+| COURS - Intro OOP                              | https://crazy-crafters.gitlab.io/red-maple/development/oop/basics/#/                                           |    |
+| COURS - OOP JAVA                               | https://crazy-crafters.gitlab.io/red-maple/development/java/oop/#/                                             |    |
+| Kata Mars Rover v1 (simple carte)              | https://codingdojo.org/kata/mars-rover/                                                                        |  https://github.com/tanguybernard/katas/tree/main/mars-rover-kata-java|
+| COURS - Abstraction                            | https://crazy-crafters.gitlab.io/red-maple/development/oop/abstraction/#/                                      |  |
+| Kata Mars Rover v2 (sphere _ ajout d'un drone) | https://codingdojo.org/kata/mars-rover/                                                                        |  https://github.com/tanguybernard/katas/tree/main/mars-rover-kata-java|
+| COURS - Encapsulation                          | https://crazy-crafters.gitlab.io/red-maple/development/oop/encapsulation/#/                                    |  |
+| Kata Wallet                                    | https://codingdojo.org/kata/Wallet/                                                                            | | 
+| Examen                                         | courses/java_2eme_annee/examens/exam1_abstraction_encapsulation.md                                             | | 
 
 
 ## 14 mars (9h45 - 13h & 14h - 17h15)
