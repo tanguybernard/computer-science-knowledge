@@ -9,14 +9,11 @@ Chapitre à introduire:
 
 https://www.codecademy.com/learn/learn-intermediate-java
 
-input/output, serialization, generics, collection, threading, regex
 
 
 ## 1. Intro 
 
-https://crazy-crafters.gitlab.io/red-maple/development/java/basics/#/
 
-Kata Fizz Buzz (Solo)
 
 ### Notes
 
