@@ -50,6 +50,13 @@ https://www.codecademy.com/learn/learn-intermediate-java
 
 En Java, une classe est une structure conceptuelle utilisée pour créer des objets, mais elle n'est pas elle-même un objet.
 
+#### Integer vs int
+
+    Integer nombre = 10; // Classe wrapper
+    System.out.println(nombre.toString()); // Accès à des méthodes d'objet
+
+Integer c'est un wrapper, on accède à des méthode comme parseInt(), plus couteux en mémoire.
+
 #### Passage par valeur
 
 ```java
