@@ -45,6 +45,11 @@ https://www.codecademy.com/learn/learn-intermediate-java
       
       Utilisé pour : petits entiers, économie de mémoire
 
+
+#### Class
+
+En Java, une classe est une structure conceptuelle utilisée pour créer des objets, mais elle n'est pas elle-même un objet.
+
 #### Passage par valeur
 
 ```java
