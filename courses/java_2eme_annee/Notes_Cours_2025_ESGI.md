@@ -19,6 +19,31 @@ https://www.codecademy.com/learn/learn-intermediate-java
 
  - int: 4 octets (32 bits)
 
+////////////////////////////
+
+  Byte (1 octet)
+  Taille : 1 octet (8 bits)1
+  
+  Plage de valeurs :
+  
+  Signé : -128 à 127
+  
+  Non signé : 0 à 2555
+  
+  Utilisé pour : caractères ASCII, petites valeurs numériques5
+
+////////////////
+
+  Short (2 octets)
+  Taille : 2 octets (16 bits)5
+  
+  Plage de valeurs :
+  
+  Signé : -32 768 à 32 767
+  
+  Non signé : 0 à 65 5355
+  
+  Utilisé pour : petits entiers, économie de mémoire2
 
 #### Passage par valeur
 
