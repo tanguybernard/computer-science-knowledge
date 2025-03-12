@@ -76,6 +76,9 @@ public class Exemple {
 
 #### Passage par reference 
 
+Note Slide (a parameter with a non-primitive type is passed by reference) : 
+_Cette affirmation n'est pas tout à fait exacte. En Java, tous les paramètres sont passés par valeur, y compris les types non primitifs (objets). Cependant, pour les objets, la valeur passée est une référence à l'objet, ce qui peut donner l'impression d'un passage par référence._
+
 
 Pour les objets, la référence (adresse en mémoire) de l'objet est passée par valeur. Cela signifie que la méthode reçoit une copie de la référence, mais les deux références (l'originale et la copie) pointent vers le même objet.
 
