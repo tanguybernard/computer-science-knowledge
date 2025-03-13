@@ -36,7 +36,7 @@ Le système doit inclure au moins deux types de livrets spécifiques.
 
 1. Composition d'un livret :
     - Attributs privés : numéro de compte, solde, taux d'intérêt
-    - Méthodes abstraites/ concrètes à vous de réfléchir :`deposer()`, `retirer()`, `calculerInterets()`, `appliquerInterets()`, `afficherSolde()`
+    - Méthodes abstraites / concrètes à vous de réfléchir :`deposer()`, `retirer()`, `calculerInterets()`, `appliquerInterets()`, `afficherSolde()`
 
 2. Implémentez deux classes :
     - `LivretA` : taux d'intérêt fixe de 3%
