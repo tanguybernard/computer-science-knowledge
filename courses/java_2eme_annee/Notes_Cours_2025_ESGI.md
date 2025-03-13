@@ -138,8 +138,48 @@ public class Exemple {
 https://crazy-crafters.gitlab.io/red-maple/development/oop/basics/#/
 
 
-Mars Rover Kata
+### Example du Gateau
 
+La programmation orientée objet (POO) peut être expliquée en utilisant l'exemple d'un gâteau. Voici comment les concepts clés de la POO s'appliquent :
+
+### Classe et Objet
+
+Une classe "Gateau" serait comme une recette, définissant les attributs (ingrédients) et les méthodes (étapes de préparation) pour créer un gâteau. Chaque gâteau que vous faites en suivant cette recette est un objet, ou une instance, de la classe Gateau.
+
+### Attributs et Méthodes
+
+Les attributs d'un gâteau pourraient être son poids, son diamètre, sa saveur, etc. Les méthodes seraient des actions comme "cuire()", "glacer()", ou "getPoids()".
+
+### Encapsulation
+
+L'encapsulation permet de cacher certains détails internes du gâteau. Par exemple, la recette exacte (attributs privés) pourrait être cachée, mais le goût ou l'apparence (attributs publics) seraient accessibles à tous.
+
+### Héritage
+
+On pourrait avoir une classe de base "Gateau" et des sous-classes comme "GateauChocolat" ou "GateauFruits" qui hériteraient des propriétés de base mais ajouteraient leurs propres spécificités[2].
+
+### Polymorphisme
+
+Le polymorphisme permettrait à différents types de gâteaux d'avoir une méthode "preparer()" qui s'exécuterait différemment selon le type de gâteau.
+
+Voici un exemple simplifié en Python :
+
+```python
+class Gateau:
+    def __init__(self, poids, diametre):
+        self.poids = poids
+        self.diametre = diametre
+
+    def getPoids(self):
+        return self.poids
+
+monGateau = Gateau(500, 20)
+poids = monGateau.getPoids()
+```
+
+Dans cet exemple, nous avons créé une classe Gateau, instancié un objet monGateau, et utilisé une méthode pour obtenir son poids.
+
+### Exercice
 
 Kata Video Store à la toute fin ?
 
