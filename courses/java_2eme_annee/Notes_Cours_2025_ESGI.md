@@ -204,6 +204,10 @@ Se concentrer sur ce que fait un objet plutôt que sur comment il le fait.
 
 Par exemple, une méthode ajouter() peut être définie pour une liste, mais l’utilisateur n’a pas besoin de savoir si cette liste est implémentée comme un tableau ou une structure chaînée.
 
+
+Derniere slide : Ma pizza pourrait etre un gateau (juste parce que j'ai rajouté de l'ananas dessus) -> NON
+
+
 ### Encapsulation
 
 Cache les données pour protéger leur intégrité.
