@@ -9,19 +9,53 @@ Chapitre à introduire:
 
 https://www.codecademy.com/learn/learn-intermediate-java
 
-input/output, serialization, generics, collection, threading, regex
 
 
 ## 1. Intro 
 
-https://crazy-crafters.gitlab.io/red-maple/development/java/basics/#/
 
-Kata Fizz Buzz (Solo)
 
 ### Notes
 
  - int: 4 octets (32 bits)
 
+////////////////////////////
+
+      Byte (1 octet)
+      Taille : 1 octet (8 bits)1
+      
+      Plage de valeurs :
+      
+      Signé : -128 à 127
+      
+      Non signé : 0 à 2555
+      
+      Utilisé pour : caractères ASCII, petites valeurs numériques
+
+////////////////
+
+      Short (2 octets)
+      Taille : 2 octets (16 bits)5
+      
+      Plage de valeurs :
+      
+      Signé : -32 768 à 32 767
+      
+      Non signé : 0 à 65 5355
+      
+      Utilisé pour : petits entiers, économie de mémoire
+
+
+#### Class
+
+En Java, une classe est une structure conceptuelle utilisée pour créer des objets, mais elle n'est pas elle-même un objet.
+
+#### Integer vs int
+
+    Integer nombre = 10; // Classe wrapper
+    System.out.println(nombre.toString()); // Accès à des méthodes d'objet
+
+Integer c'est un wrapper, on accède à des méthode comme parseInt(), plus couteux en mémoire.
 
 #### Passage par valeur
 
@@ -42,6 +76,14 @@ public class Exemple {
 
 #### Passage par reference 
 
+Note Slide (a parameter with a non-primitive type is passed by reference) : 
+
+_Cette affirmation n'est pas tout à fait exacte. En Java, tous les paramètres sont passés par valeur, y compris les types non primitifs (objets). Cependant, pour les objets, la valeur passée est une référence à l'objet, ce qui peut donner l'impression d'un passage par référence._
+
+_Lorsqu'un objet est passé à une méthode, Java crée une copie de la référence à cet objet, pas une référence directe à la variable originale13. Cette copie pointe vers le même objet en mémoire, mais reste une valeur distincte._
+
+
+_Le & en PHP offre un véritable passage par référence, permettant une manipulation directe des variables passées en argument_
 
 Pour les objets, la référence (adresse en mémoire) de l'objet est passée par valeur. Cela signifie que la méthode reçoit une copie de la référence, mais les deux références (l'originale et la copie) pointent vers le même objet.
 
@@ -96,8 +138,48 @@ public class Exemple {
 https://crazy-crafters.gitlab.io/red-maple/development/oop/basics/#/
 
 
-Mars Rover Kata
+### Example du Gateau
 
+La programmation orientée objet (POO) peut être expliquée en utilisant l'exemple d'un gâteau. Voici comment les concepts clés de la POO s'appliquent :
+
+### Classe et Objet
+
+Une classe "Gateau" serait comme une recette, définissant les attributs (ingrédients) et les méthodes (étapes de préparation) pour créer un gâteau. Chaque gâteau que vous faites en suivant cette recette est un objet, ou une instance, de la classe Gateau.
+
+### Attributs et Méthodes
+
+Les attributs d'un gâteau pourraient être son poids, son diamètre, sa saveur, etc. Les méthodes seraient des actions comme "cuire()", "glacer()", ou "getPoids()".
+
+### Encapsulation
+
+L'encapsulation permet de cacher certains détails internes du gâteau. Par exemple, la recette exacte (attributs privés) pourrait être cachée, mais le goût ou l'apparence (attributs publics) seraient accessibles à tous.
+
+### Héritage
+
+On pourrait avoir une classe de base "Gateau" et des sous-classes comme "GateauChocolat" ou "GateauFruits" qui hériteraient des propriétés de base mais ajouteraient leurs propres spécificités[2].
+
+### Polymorphisme
+
+Le polymorphisme permettrait à différents types de gâteaux d'avoir une méthode "preparer()" qui s'exécuterait différemment selon le type de gâteau.
+
+Voici un exemple simplifié en Python :
+
+```python
+class Gateau:
+    def __init__(self, poids, diametre):
+        self.poids = poids
+        self.diametre = diametre
+
+    def getPoids(self):
+        return self.poids
+
+monGateau = Gateau(500, 20)
+poids = monGateau.getPoids()
+```
+
+Dans cet exemple, nous avons créé une classe Gateau, instancié un objet monGateau, et utilisé une méthode pour obtenir son poids.
+
+### Exercice
 
 Kata Video Store à la toute fin ?
 
