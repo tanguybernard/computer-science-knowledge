@@ -115,15 +115,28 @@ La méthode remplacerReference crée un nouvel objet et modifie la copie de la r
 ```java
 public class Exemple {
     static class Personne {
-        String nom;
+        private String nom;
         Personne(String nom) {
             this.nom = nom;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return this.name;
         }
     }
 
     public static void remplacerReference(Personne personne) {
         personne = new Personne("Charlie");
     }
+
+    public static void modifyPerson(Personne p) {
+        p.setName("Alice");
+    }
+    
 
     public static void main(String[] args) {
         Personne p = new Personne("Bob");
