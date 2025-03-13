@@ -192,6 +192,24 @@ poids = monGateau.getPoids()
 
 Dans cet exemple, nous avons créé une classe Gateau, instancié un objet monGateau, et utilisé une méthode pour obtenir son poids.
 
+
+### Copy constructor
+
+```java
+public class Rectangle {
+private double hauteur;
+private double largeur;
+
+    // Constructeur de copie
+    public Rectangle(Rectangle autreRectangle) {
+        this.hauteur = autreRectangle.hauteur;
+        this.largeur = autreRectangle.largeur;
+    }
+}
+```
+
+
+
 ### Exercice
 
 Kata Video Store à la toute fin ?
