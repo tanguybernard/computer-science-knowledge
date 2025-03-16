@@ -35,7 +35,8 @@ B) Une méthode appelée lors de la création d'un objet pour initialiser ses va
 
 ---
 ### *7. Quel est le modificateur d'accès le plus restrictif permettant d'encapsuler les attributs d'une classe ?*
-A) private
+
+A) Une classe privée
 
 ---
 ### *8. Quelle est la bonne syntaxe pour hériter d'une classe en Java ?*
