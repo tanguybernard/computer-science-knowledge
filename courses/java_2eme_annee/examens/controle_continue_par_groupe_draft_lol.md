@@ -2,7 +2,7 @@
 ## Objectif du controle
 
 Créer un programme Java qui :
-1. Lit un fichier CSV (qui vous sera fourni) contenant l'historique des matchs.
+1. Lit un fichier CSV (fourni en annexe) contenant l'historique des matchs.
 2. Analyse les taux de victoire des compositions d'équipe.
 3. Propose la meilleure composition d'équipe pour contrer une composition adverse donnée (dans la console et dans un fichier .txt)
 
@@ -93,3 +93,8 @@ public class Main {
 4. Sortie des résultats (2 points)
 5. Qualité du code (4 points)
 6. Bonus présentation (2 points)
+
+
+## Annexe 
+
+https://github.com/chouhbik/Data-Analysis-League-of-Legends-Study/blob/master/matchinfo.csv
