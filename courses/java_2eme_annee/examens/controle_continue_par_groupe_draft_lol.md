@@ -90,5 +90,6 @@ public class Main {
 1. Lecture/écriture de fichiers (4 points)
 2. Structure des données (4 points)
 3. Algorithme de contre-composition (6 points)
-4. Sortie des résultats (3 points)
-5. Qualité du code (3 points)
+4. Sortie des résultats (2 points)
+5. Qualité du code (4 points)
+6. Bonus présentation (2 points)
