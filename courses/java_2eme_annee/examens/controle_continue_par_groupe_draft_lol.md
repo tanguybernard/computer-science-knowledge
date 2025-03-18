@@ -92,7 +92,6 @@ public class Main {
 3. Algorithme de contre-composition (6 points)
 4. Sortie des résultats (2 points)
 5. Qualité du code (4 points)
-6. Bonus présentation (2 points)
 
 
 ## Annexe 
