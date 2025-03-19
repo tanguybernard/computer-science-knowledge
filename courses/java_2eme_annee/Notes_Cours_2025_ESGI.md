@@ -218,6 +218,8 @@ https://github.com/cleancode-katas/cleancode-kata-videostore
 
 ## Abstraction
 
+https://crazy-crafters.gitlab.io/red-maple/development/oop/abstraction/#/
+
 Se concentrer sur ce que fait un objet plutôt que sur comment il le fait.
 
 Par exemple, une méthode ajouter() peut être définie pour une liste, mais l’utilisateur n’a pas besoin de savoir si cette liste est implémentée comme un tableau ou une structure chaînée.
@@ -226,16 +228,72 @@ Par exemple, une méthode ajouter() peut être définie pour une liste, mais l�
 Derniere slide : Ma pizza pourrait etre un gateau (juste parce que j'ai rajouté de l'ananas dessus) -> NON
 
 
-### Encapsulation
+### Composition vs Héritage
 
-Cache les données pour protéger leur intégrité.
+```java
+class Engine {
+    public void start() {
+        System.out.println("Engine starting...");
+    }
+}
 
+class Car extends Engine {
+    public void drive() {
+        System.out.println("Car is driving...");
+    }
+}
 
-## 3. Abstraction
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.start();  // Inherited method
+        car.drive();  // Car-specific method
+    }
+}
+```
 
-https://crazy-crafters.gitlab.io/red-maple/development/oop/abstraction/#/
+```java
+class Engine {
+    public void start() {
+        System.out.println("Engine starting...");
+    }
+}
+
+class Car {
+    private Engine engine; // Composition: Car has an Engine
+
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    public void drive() {
+        System.out.println("Car is driving...");
+    }
+
+    public void startEngine() {
+        engine.start(); // Delegates the starting to Engine class
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Engine engine = new Engine();
+        Car car = new Car(engine);
+
+        car.startEngine();  // Starts the engine through composition
+        car.drive();        // Car-specific method
+    }
+}
+
+```
+
+Don’t use inheritance for particular state / Use property instead
+
+-> Exemple contrat en cours de signature, ensuite signé. Ne pas hérité pour juste un état, mettre la propriété état à la place
 
 ## Encapsulation
+
+Cache les données pour protéger leur intégrité.
 
 https://crazy-crafters.gitlab.io/red-maple/development/oop/encapsulation/#/
 

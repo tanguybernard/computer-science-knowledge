@@ -20,6 +20,7 @@
 
 2. **Questions ouvertes**
     - Expliquez la différence entre l'abstraction et l'encapsulation en donnant un exemple concret pour chaque concept.
+   
     - Pourquoi l'encapsulation est-elle essentielle pour la sécurité des données dans un programme orienté objet ?
 
 3. **Vrai ou Faux (justifiez vos réponses)**
