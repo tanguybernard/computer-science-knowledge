@@ -44,7 +44,11 @@ abstract class Personnage {
 
     public void recevoirDegats(int degats) {
         pointsDeVie -= degats;
-        if (pointsDeVie  0;
+        
+    }
+    
+    public boolean estVivant(){
+       return pointsDeVie  > 0;
     }
 }
 

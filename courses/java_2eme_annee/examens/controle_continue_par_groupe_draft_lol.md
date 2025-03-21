@@ -4,7 +4,7 @@
 Créer un programme Java qui :
 1. Lit un fichier CSV (fourni en annexe) contenant l'historique des matchs.
 2. Analyse les taux de victoire des compositions d'équipe.
-3. Propose la meilleure composition d'équipe pour contrer une composition adverse donnée (dans la console et dans un fichier .txt)
+3. Propose la meilleure composition d'équipe pour contrer une composition adverse donnée (dans la console et dans un fichier)
 
 ---
 
@@ -60,29 +60,6 @@ public class CsvReader {
     }
 }
 ```
-
-## Ecrire dans un fichier
-
-```java
-import java.io.FileWriter;
-import java.io.IOException;
-
-public class Main {
-
-    public static void main(String[] args) {
-
-        try (FileWriter writer = new FileWriter("example.txt")) {
-            writer.write("Hello, World!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-}
-```
-
----
 
 
 ## Barème (20 points)
