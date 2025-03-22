@@ -1,4 +1,4 @@
-### Examen de Java - Programmation Orientée Objet  
+### Controle continue de Java - Programmation Orientée Objet  
 **Sujet : Analyse de matchs de League of Legends à partir d'un fichier CSV**
 
 ---
