@@ -1,0 +1,63 @@
+### Examen de Java - Programmation Orientée Objet  
+**Sujet : Analyse de matchs de League of Legends à partir d'un fichier CSV**
+
+---
+
+#### **Contexte :**
+Tu dois créer une application Java orientée objet qui analyse les résultats de matchs de League of Legends à partir d'un fichier CSV. Le fichier contient des informations sur les matchs joués, les champions sélectionnés par chaque équipe et le gagnant du match.
+
+---
+
+
+## **Travail à réaliser :**
+1. **Modélisation des classes :**
+   - Crée une classe `Champion` avec les attributs nécessaires (nom, rôle possible si pertinent).
+   - Crée une classe `Team` qui contient une liste de 5 champions.
+   - Crée une classe `Match` avec les équipes 1 et 2 et l'information sur le gagnant.
+   - Crée une classe `MatchService` pour lire et analyser les données du fichier CSV.
+
+2. **Lecture du fichier CSV :**
+   - Lis le fichier `matchs.csv` et crée les objets correspondants.
+   - Assure une gestion des exceptions si le fichier est manquant ou mal formaté.
+
+3. **Fonctionnalités à implémenter :**
+   - Dans la console, afficher le nombre total de matchs joués.
+   - Sachant qu'une équipe peut etre blueTeamTag ou redTeamTag, calculer et afficher le pourcentage de victoire pour l'équipe "G2".
+   - Permettre à l'utilisateur de rechercher les matchs où un champion spécifique a été joué.
+   - Implémente une fonctionnalité permettant de rechercher le meilleur champion top pour contrer un autre champion top.
+
+---
+
+### **Contraintes :**
+- Respecter les principes de la programmation orientée objet : encapsulation, héritage (si pertinent), abstraction.
+- Utilisation des collections appropriées pour stocker les données.
+- Gérer les exceptions pour les accès aux fichiers et les erreurs d'entrée utilisateur.
+- Organiser le code proprement en utilisant des packages (`model`, `service`).
+
+---
+
+### **Exemple de scénario attendu :**
+```
+
+> Recherche de matchs avec le champion "Gnar"
+CST [Gnar, Rengar, Ahri, Caitlyn, Leona] vs DIG [Irelia, JarvanIV, Azir, Corki, Annie] - Gagnant : DIG
+...
+
+> Rechercher le meilleur contre pour "Darius" en top lane
+Le meilleur contre pour Darius est : Teemo (taux de victoire : 65%)
+```
+
+---
+
+### **Barème :**
+- Modélisation des classes et respect des principes POO : **6 points**
+- Lecture et gestion du fichier CSV : **4 points**
+- Fonctionnalités demandées correctement implémentées : **6 points**
+- Gestion des exceptions et robustesse du code : **2 points**
+- Lisibilité et propreté du code : **2 points**
+
+**Note maximale : 20 points**
+
+---
+
+Bon courage à tous !
