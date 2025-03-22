@@ -25,7 +25,7 @@ Tu dois créer une application Java orientée objet qui analyse les résultats d
    - Sachant qu'une équipe peut etre blueTeamTag ou redTeamTag, calculer et afficher le pourcentage de victoire pour l'équipe "G2".
    - Permettre à l'utilisateur de rechercher les matchs où un champion spécifique a été joué.
    - Implémente une fonctionnalité permettant de rechercher le meilleur champion top pour contrer un autre champion top.
-      -> Conseil: Utilise des Map<Champion, Map<ContreChampion, Statistiques>> pour calculer les taux de victoire.
+      => Conseil: Utilise des Map<Champion, Map<ContreChampion, Statistiques>> pour calculer les taux de victoire.
 
 ---
 
