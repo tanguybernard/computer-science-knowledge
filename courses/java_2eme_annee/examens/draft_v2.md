@@ -3,6 +3,26 @@
 
 ---
 
+#### Objectifs du contrôle continu :
+
+Maîtrise de la Programmation Orientée Objet (POO) en Java :
+- Créer et manipuler des classes, des objets et des relations (composition).
+- Appliquer les principes d'encapsulation et de modélisation efficace des données.
+- Utiliser les collections Java (List, Map, etc.) de manière appropriée.
+
+Gestion des fichiers :
+- Lire un fichier CSV et extraire les informations pour créer des objets Java.
+
+Traitement et analyse de données :
+
+- Manipuler les données pour effectuer des analyses (recherche, calculs de statistiques).
+- Filtrer et rechercher des informations précises dans une liste d'objets.
+
+
+Structuration et organisation du code :
+- Structurer le code en packages (model, service).
+- Organiser les classes de manière claire et cohérente.
+
 #### **Contexte :**
 Tu dois créer une application Java orientée objet qui analyse les résultats de matchs de League of Legends à partir d'un fichier CSV. Le fichier contient des informations sur les matchs joués, les champions sélectionnés par chaque équipe et le gagnant du match.
 
