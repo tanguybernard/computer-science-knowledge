@@ -75,8 +75,7 @@ Le meilleur contre pour Darius est : Teemo (taux de victoire : 65%)
 - Modélisation des classes et respect des principes POO : **6 points**
 - Lecture et gestion du fichier CSV : **4 points**
 - Fonctionnalités demandées correctement implémentées : **6 points**
-- Gestion des exceptions et robustesse du code : **2 points**
-- Lisibilité et propreté du code : **2 points**
+- Structuration, lisibilité et propreté du code : **4 points**
 
 **Note maximale : 20 points**
 
