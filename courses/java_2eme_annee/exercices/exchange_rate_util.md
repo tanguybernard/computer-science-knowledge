@@ -1,4 +1,5 @@
-Voici la version modifiée du simulateur avec une méthode flexible qui accepte deux devises comme arguments :
+
+## Exchange rate
 
 ```java
 import java.util.Random;
@@ -72,25 +73,3 @@ public class SimulateurTauxDeChange {
 }
 ```
 
-Les principales améliorations sont :
-
-1. **Nouvelle méthode flexible** :
-          - Accepte deux paramètres : `source` et `cible`
-  - Gère toutes les combinaisons possibles de devises
-  - Maintient la même logique de variation aléatoire
-
-
-2. **Validation des entrées** :
-          - Vérification automatique des devises supportées
-  - Exception si une devise n'est pas reconnue
-  - Insensibilité à la casse (USD/usd/UsD fonctionne)
-
-
-3. **Utilisation simplifiée** :
-          - Une seule méthode à appeler au lieu de plusieurs
-  - Syntaxe plus intuitive : `getTaux("USD", "EUR")`
-  - Compatible avec le code précédent mais plus flexible
-
-
-
-Cette version est plus élégante et plus facile à utiliser tout en conservant exactement le même comportement que la version précédente.
