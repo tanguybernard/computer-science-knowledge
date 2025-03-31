@@ -7,7 +7,10 @@
 
 
 ```kotlin
-fun createDateParser(zoneId: ZoneId): (String, (String) -> Unit) -> LocalDate? {
+
+typealias DateParser = (String, (String) -> Unit) -> LocalDate?
+
+fun createDateParser(zoneId: ZoneId): DateParser {
     return { text, onError ->
         try {
             when {
