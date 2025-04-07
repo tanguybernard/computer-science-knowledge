@@ -73,20 +73,35 @@ Voici un QCM sur la programmation orientée objet en Java :
 
 
 
-###### Quand utilise-t-on le mot-clé "super" en Java ?
+###### Question 5 : Quand utilise-t-on le mot-clé "super" en Java ?
 
 - A) Pour appeler un constructeur de la classe parente
 - B) Pour créer une instance d'une sous-classe
 - C) Pour accéder aux méthodes privées d'une classe parente
 - D) Pour appeler des méthodes statiques dans une classe parent
 
-###### Qu'est ce que l'encapsulation ?
+###### Question 6 :  Qu'est ce que l'encapsulation ?
 
 - A) Le fait de cacher les détails d'implémentation
 - B) Le fait de ne pas définir ce que fait une fonction ou une classe
 - C) Le fait de réduire la taille des objets pour les transporter
 - D) Le fait d'échanger du code contre des capsules
 
+
+###### Question 7 :  Que signifie le mot-clé extends en Java ?
+
+- A) Il permet à une classe de hériter d'une autre classe.
+- B) Il permet de déclarer une méthode abstraite.
+- C) Il permet d'implémenter une interface.
+- D) Il est utilisé pour instancier un objet.
+
+
+###### Question 8 :  Qu'est-ce que la composition en Java ?
+
+- A) Une relation entre classes où une classe contient une instance d'une autre classe
+- B) Une relation d'héritage entre classes
+- C) Une méthode qui modifie les variables d'instance
+- D) Une interface avec des méthodes concrètes
 
 ---
 
