@@ -103,6 +103,21 @@ Voici un QCM sur la programmation orientée objet en Java :
 - C) Une méthode qui modifie les variables d'instance
 - D) Une interface avec des méthodes concrètes
 
+
+###### Question 9 :  Quel est le rôle du mot-clé `protected` en Java ?
+
+- A) Restriction d'accès aux membres de la classe
+- B) Permet l'accès uniquement à la classe elle-même
+- C) Permet d'accéder aux membres d'une classe depuis les sous-classes et les classes dans le même paquet
+- D) Rend les membres accessibles à tout le monde
+
+###### Question 11 : Quand devriez-vous utiliser une interface plutôt qu'une classe abstraite ?
+
+- A) Lorsque vous voulez définir un comportement commun sans état partagé.
+- B) Lorsque vous avez besoin de fournir une implémentation de base pour les sous-classes.
+- C) Lorsque vous voulez hériter d'une seule classe parent.
+- D) Lorsque vous voulez utiliser des variables d'instance.
+
 ---
 
 #### **Exercice 2 : Gestion des employés dans une entreprise (15 points)**
