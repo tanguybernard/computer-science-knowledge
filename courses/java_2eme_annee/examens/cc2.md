@@ -38,6 +38,56 @@ Voici un examen avec deux exercices de même complexité, incluant un barème d�
 - Déposez et retirez de l'argent sur différents comptes.
 - Affichez les détails de tous les comptes dans la banque pour vérifier que tout fonctionne correctement.
 
+
+##### QCM
+
+Voici un QCM sur la programmation orientée objet en Java :
+
+###### Question 1 : Quel est l'objectif principal de la programmation orientée objet (POO) ?
+
+- A) Simplifier les applications en supprimant la nécessité de méthodes.
+- B) Organiser le code sous forme de classes et d'objets pour améliorer la réutilisabilité et la maintenance.
+- C) Utiliser uniquement des fonctions globales pour le code.
+- D) Réduire la taille du code en le rendant plus compact.
+
+###### Question 2 : Qu'est-ce qu'une classe en Java ?
+
+- A) Un objet qui contient des données et des méthodes.
+- B) Une sorte de modèle à partir duquel des objets peuvent être créés.
+- C) Un type de donnée primitif.
+- D) Une méthode utilisée pour manipuler des données.
+
+###### Question 3 : Quel est l'effet de la déclaration `private` sur une variable dans une classe ?
+
+- A) La variable peut être accédée uniquement dans la classe elle-même.
+- B) La variable est accessible dans toutes les autres classes du même package.
+- C) La variable est accessible à toutes les classes sans restriction.
+- D) La variable peut être modifiée directement sans restriction.
+
+###### Question 4 : Qu'est-ce que l'héritage en Java ?
+
+- A) Un mécanisme permettant à une classe de hériter des méthodes et propriétés d'une autre classe.
+- B) Un processus de duplication de code dans plusieurs classes.
+- C) Un type de données utilisé pour stocker des objets.
+- D) Un type de méthode qui n'accepte pas d'arguments.
+
+
+
+###### Quand utilise-t-on le mot-clé "super" en Java ?
+
+- A) Pour appeler un constructeur de la classe parente
+- B) Pour créer une instance d'une sous-classe
+- C) Pour accéder aux méthodes privées d'une classe parente
+- D) Pour appeler des méthodes statiques dans une classe parent
+
+###### Qu'est ce que l'encapsulation ?
+
+- A) Le fait de cacher les détails d'implémentation
+- B) Le fait de ne pas définir ce que fait une fonction ou une classe
+- C) Le fait de réduire la taille des objets pour les transporter
+- D) Le fait d'échanger du code contre des capsules
+
+
 ---
 
 #### **Exercice 2 : Gestion des employés dans une entreprise (15 points)**
