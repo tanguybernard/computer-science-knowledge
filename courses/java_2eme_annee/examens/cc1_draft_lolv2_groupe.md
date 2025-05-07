@@ -82,3 +82,8 @@ Le meilleur contre pour Darius est : Teemo (taux de victoire : 65%)
 ---
 
 Bon courage à tous !
+
+
+## Annexe
+
+https://github.com/chouhbik/Data-Analysis-League-of-Legends-Study/blob/master/matchinfo.csv

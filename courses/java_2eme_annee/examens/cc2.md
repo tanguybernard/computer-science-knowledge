@@ -111,7 +111,7 @@ Voici un QCM sur la programmation orientée objet en Java :
 - C) Permet d'accéder aux membres d'une classe depuis les sous-classes et les classes dans le même paquet
 - D) Rend les membres accessibles à tout le monde
 
-###### Question 11 : Quand devriez-vous utiliser une interface plutôt qu'une classe abstraite ?
+###### Question 10 : Quand devriez-vous utiliser une interface plutôt qu'une classe abstraite ?
 
 - A) Lorsque vous voulez définir un comportement commun sans état partagé.
 - B) Lorsque vous avez besoin de fournir une implémentation de base pour les sous-classes.
