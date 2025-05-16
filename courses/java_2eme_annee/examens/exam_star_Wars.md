@@ -56,7 +56,3 @@ La fonction retournera une structure qui associe à chaque nom de planète la li
 * Clarté et organisation du code : 3 points
 * Tests unitaires : 2 points (+1 bonus si JUnit bien utilisé)
 
----
-
-Si tu veux, je peux aussi te préparer un PDF ou un template Maven pour lancer les étudiants.
-Veux-tu que je te prépare ça ?
