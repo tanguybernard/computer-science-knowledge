@@ -1,5 +1,3 @@
-Voici un exercice qui intègre les trois types de polymorphisme que tu souhaites travailler : **polymorphisme ad hoc (surcharge)**, **polymorphisme paramétrique (généricité)**, et **polymorphisme d'héritage (redéfinition)**.
-
 ### Contexte : Gestion d'une bibliothèque
 
 Tu vas implémenter un système simple de gestion de bibliothèque où plusieurs types d'articles sont gérés. Chaque type d'article peut être emprunté et retourné, mais ils auront des comportements légèrement différents.

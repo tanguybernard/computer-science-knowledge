@@ -37,6 +37,5 @@ Développer une API REST en **Spring Boot** permettant de gérer une liste d’u
 
 **Bonus** ✨ : Ajouter la validation des entrées avec `@Valid` et `@NotBlank`.  
 
-💡 **Remarque** : Cette API ne doit pas utiliser de base de données, mais stocker les données en mémoire dans une `List`.  
+**Remarque** : Cette API ne doit pas utiliser de base de données, mais stocker les données en mémoire dans une `List`.  
 
-Bonne chance ! 🚀
