@@ -44,7 +44,7 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
 
 ### 2. Récupération des données
 
-* Récupérez les 12 premiers personnages depuis l'une des API :
+* Récupérez les 15 premiers personnages depuis l'une des API :
 
 - https://swapi.info/api
 - https://www.swapi.tech/api
@@ -58,6 +58,12 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
 * Instanciez les objets de votre modèle avec ces données.
 
 ### 3. Traitement métier
+
+#### 🧩 Présentation des personnages
+
+Ajoutez une méthode presentation() dans la classe de base ou une interface, puis redéfinissez-la dans chaque sous-classe pour personnaliser le message.
+Écrivez un traitement qui parcourt la liste de tous les personnages et appelle cette méthode sur chacun d’eux, 
+afin d’afficher leur présentation adaptée (par exemple pour différencier un humain d'un droide).
 
 #### 🪐 Nombre de personnages par planète
 
