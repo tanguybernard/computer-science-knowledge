@@ -15,6 +15,25 @@ Vous devez développer une application capable d’analyser les personnages de l
 
 ## 📌 Travail demandé
 
+
+### 0. Structure
+
+Vous devez rendre un projet avec cette structure (format zip)
+
+nom-prenom-examen-java/
+│
+├── src/
+│   ├── main/
+│   │   └── java/        # Code source Java principal
+│   └── test/
+│       └── java/        # Code source des tests unitaires
+│
+├── pom.xml              # Fichier de configuration Maven (si Maven)
+├── build.gradle         # Fichier de configuration Gradle (si Gradle)
+└── README.md            # Documentation du projet
+
+
+
 ### 1. Modélisation orientée objet
 
 Concevez un modèle Java pour représenter les personnages de Star Wars.
@@ -25,7 +44,11 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
 
 ### 2. Récupération des données
 
-* Récupérez les 10 premiers personnages depuis l’API [https://swapi.dev/api/people](https://swapi.dev/api/people).
+* Récupérez les 12 premiers personnages depuis l'une des API :
+
+- https://swapi.info/api
+- https://www.swapi.tech/api
+
 * Pour chaque personnage, récupérez au minimum :
 
   * Le nom
@@ -36,14 +59,30 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
 
 ### 3. Traitement métier
 
+#### 🪐 Nombre de personnages par planète
+
 Écrivez une fonction qui regroupe ces personnages par planète d’origine.
 La fonction retournera une structure qui associe à chaque nom de planète la liste des personnages qui en sont originaires.
+
+#### ➕ Calcul de moyenne de taille par planète 
+Pour chaque planète d’origine, calculez la taille moyenne des personnages originaires de cette planète.
+
+Affichez un message clair du type :
+
+    Planète : Tatooine – Taille moyenne des personnages : 175 cm
+
+#### 📏 Personnages les plus grands
+Identifiez le ou les personnages les plus grands parmi les 12 récupérés.
+
+Affichez un message clair du type :
+
+    Personnage le plus grand : Chewbacca (228 cm)
 
 ---
 
 ### 4. Tests unitaires (Bonus)
 
-* Écrivez au moins deux tests unitaires validant votre regroupement.
+* Écrivez au moins deux tests unitaires validant vos traitements métiers.
 * L’utilisation de JUnit est un plus.
 
 ---
