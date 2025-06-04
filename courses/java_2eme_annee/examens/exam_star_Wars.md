@@ -16,10 +16,11 @@ Vous devez développer une application capable d’analyser les personnages de l
 ## 📌 Travail demandé
 
 
-### 0. Structure
+### 1. Structure
 
 Vous devez rendre un projet avec cette structure (format zip)
 
+```
 nom-prenom-examen-java/
 │
 ├── src/
@@ -31,10 +32,10 @@ nom-prenom-examen-java/
 ├── pom.xml              # Fichier de configuration Maven (si Maven)
 ├── build.gradle         # Fichier de configuration Gradle (si Gradle)
 └── README.md            # Documentation du projet
+```
 
 
-
-### 1. Modélisation orientée objet
+### 2. Modélisation orientée objet
 
 Concevez un modèle Java pour représenter les personnages de Star Wars.
 
@@ -42,7 +43,7 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
 * Vous devrez utiliser au moins un mécanisme d’héritage (classe abstraite, interface, etc.) pour structurer votre modèle.
 * Pensez à exploiter le polymorphisme pour les comportements communs ou spécifiques.
 
-### 2. Récupération des données
+### 3. Récupération des données
 
 * Récupérez les 15 premiers personnages depuis l'une des API :
 
@@ -57,7 +58,7 @@ Concevez un modèle Java pour représenter les personnages de Star Wars.
   * La planète d’origine (en effectuant la requête sur le lien `homeworld` fourni)
 * Instanciez les objets de votre modèle avec ces données.
 
-### 3. Traitement métier
+### 4. Traitement métier
 
 #### 🧩 Présentation des personnages
 
@@ -86,7 +87,7 @@ Affichez un message clair du type :
 
 ---
 
-### 4. Tests unitaires (Bonus)
+### 5. Tests unitaires (Bonus)
 
 * Écrivez au moins deux tests unitaires validant vos traitements métiers.
 * L’utilisation de JUnit est un plus.
