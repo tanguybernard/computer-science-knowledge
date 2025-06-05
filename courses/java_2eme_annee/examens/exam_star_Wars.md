@@ -3,6 +3,7 @@
 # 📝 Examen – Java Avancé : Programmation Orientée Objet & Intégration API
 
 **Thème : Star Wars**
+
 **Durée : 1h30**
 
 ---
@@ -76,7 +77,7 @@ Pour chaque planète d’origine, calculez la taille moyenne des personnages ori
 
 Affichez un message clair du type :
 
-    Planète : Tatooine – Taille moyenne des personnages : 175 cm
+    Planète : Tatooine – Taille moyenne des habitants : 175 cm
 
 #### 📏 Personnages les plus grands
 Identifiez le ou les personnages les plus grands parmi les 12 récupérés.
