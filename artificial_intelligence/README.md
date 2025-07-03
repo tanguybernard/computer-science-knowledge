@@ -25,6 +25,9 @@ Permet à l'IA d'éxecuter du code avec un requete JSON.
 
 Cela lui permet d'agir.
 
+
+## MCP = Model Context Protocol
+
 ## Sources
 
 
