@@ -18,6 +18,13 @@ Donner du contexte à votre LLM.
 
 Donne un schéma au LLM pour qu'il réponde en utilisant cette structure (ex: JSON Schema)
 
+
+## Function Calling (Tools Calling)
+
+Permet à l'IA d'éxecuter du code avec un requete JSON.
+
+Cela lui permet d'agir.
+
 ## Sources
 
 
