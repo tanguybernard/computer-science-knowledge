@@ -28,6 +28,8 @@ Cela lui permet d'agir.
 
 ## MCP = Model Context Protocol
 
+...
+
 ## Sources
 
 
