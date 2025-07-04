@@ -28,7 +28,9 @@ Cela lui permet d'agir.
 
 ## MCP = Model Context Protocol
 
-...
+Protocol standardisé qui permet aux LLM's d'utiliser des outils (Pour échanger des infos entre des LLMs et des serveurs)
+
+
 
 ## Sources
 
