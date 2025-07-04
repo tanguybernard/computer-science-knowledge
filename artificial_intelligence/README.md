@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-## LLM (Large Lnaguage Model)
+## LLM (Large Language Model)
 
 ...
 
