@@ -2,9 +2,35 @@
 
 ## LLM (Large Language Model)
 
-...
+### Base
 
-C'est un réseau de neurones...
+C'est un réseau de neurones.
+
+Les mots dans un réseau de neurones, graçe aux vecteurs. Les LLM's font parties des NLP (Natural Language Processing).
+
+Les LLM's permettent de générer du langage naturel.
+
+"Large" car par ex GPT-3 pour s'entrainer à lu 250 milliards de mots.
+
+Prédiction du mot suivant.
+
+
+Ils sont tous basés sur __l'architecture Transformer.__
+
+### En profondeur
+
+On a une phrase qu'on coupe en __token.__
+
+
+Le modèle a besoin de comprendre le sens des mots. 
+
+A ce moment la interviens le __Token Embedding__ qui est le  processus de représentation des jetons sous forme de vecteurs continus dans un espace à haute dimension, où les jetons similaires ont des représentations vectorielles similaires. Par exemple Chaise et pouf sont proches, table n'est pas très loin de chaise car 4 pieds...
+
+Ensuite on cherche à positionner le mot dans la phrase, c'est le __Positional embedding__ dans l'architecture Transformer.
+
+
+
+
 
 ## Agent
 
@@ -45,3 +71,7 @@ Protocol standardisé qui permet aux LLM's d'utiliser des outils (Pour échanger
 
 
 https://www.youtube.com/watch?v=sZOFEEhR4QY
+
+Comment ça fonctionne ?
+
+https://www.youtube.com/watch?v=47BlShlc4E8
