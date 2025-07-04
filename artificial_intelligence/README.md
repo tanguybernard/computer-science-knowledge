@@ -4,12 +4,16 @@
 
 ...
 
+C'est un réseau de neurones...
+
 ## Agent
 
 Un logiciel capable d'agir de manière autonome.
 
 Ex: (L'agence de voyage) Toutes les heures un agent s'execute, il va regarder les différents vols et il vous achète le vol adapter en fonction de vos besoins.
 
+
+__Un agent IA = LLM + mémoire + objectifs + outils__
 
 ## RAG
 
