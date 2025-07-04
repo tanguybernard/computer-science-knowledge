@@ -29,6 +29,27 @@ A ce moment la interviens le __Token Embedding__ qui est le  processus de repré
 Ensuite on cherche à positionner le mot dans la phrase, c'est le __Positional embedding__ dans l'architecture Transformer.
 
 
+__Next Step : Le decodeur__
+
+Attention du transformateur
+
+Le mécanisme d'attention du transformateur est un élément fondamental de l'architecture du transformateur, qui permet aux modèles de se concentrer dynamiquement sur les parties pertinentes des données d'entrée. Ce mécanisme permet au modèle d'évaluer l'influence des différents éléments d'entrée lors de la production d'un résultat, ce qui le rend très efficace pour les tâches qui nécessitent une compréhension du contexte, telles que la modélisation linguistique et la traduction.
+
+__L'entrainement__
+
+Pré-entrainement (avec une base comme wikipedia, stackoverflow...). C'est très bien pour compléter des phrases.
+
+Pour répondre aux questions, il faut passer un à du fine-tuning. (On ajoute des questions et des réponses)
+
+Apprentissage renforcé (Des propositions de réponses, les humains mal payés choisissent pour renforcer le modèle.)
+
+
+
+
+
+
+
+
 
 
 
