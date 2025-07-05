@@ -45,13 +45,29 @@ Apprentissage renforcé (Des propositions de réponses, les humains mal payés c
 
 
 
+Problème des LLMs : ils peuvent halluciner.
+
+## RAG
+
+Donner du contexte à votre LLM.
+
+Retrieval : Aller chercher dans une base de connaissance.
+Augmented : Ajouter la base de connaissance au LLM (donner du contexte)
+Generation : Le LLM se sert de cette base pour donner une meilleure réponse.
 
 
 
+Cas d'usage, besoin de conaissance externe qui ne soit pas public.
 
 
+## Multi Modal RAG
+
+Cherche à inclure d'autres type de données, par exemple une grande quantité d'images.
 
 
+## GAN
+
+...
 
 ## Agent
 
@@ -61,10 +77,6 @@ Ex: (L'agence de voyage) Toutes les heures un agent s'execute, il va regarder le
 
 
 __Un agent IA = LLM + mémoire + objectifs + outils__
-
-## RAG
-
-Donner du contexte à votre LLM.
 
 
 ## Les Structured Outputs
@@ -93,6 +105,7 @@ Protocol standardisé qui permet aux LLM's d'utiliser des outils (Pour échanger
 
 https://www.youtube.com/watch?v=sZOFEEhR4QY
 
-Comment ça fonctionne ?
+### Comment ça marche l'IA Generative ? LLM, RAG sous le capot. ++++ (Très instructif)
+
 
 https://www.youtube.com/watch?v=47BlShlc4E8
