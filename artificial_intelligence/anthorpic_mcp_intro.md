@@ -19,11 +19,7 @@ MCP Server act as interface for outside service. MCP Servers provide access to d
 
 ### MCP server VS Api directly ?
 
-Sure! Here's the summarized GitHub example in English:
-
----
-
-### ✅ **GitHub Example – Summary (With vs Without MCP):**
+✅ **GitHub Example – Summary (With vs Without MCP):**
 
 #### 🔧 **Without MCP**:
 
@@ -40,7 +36,5 @@ You have to:
 * The schema is **predefined**
 * The MCP server **handles the API call automatically**
 * The model can **use it directly** without extra setup
-
----
 
 👉 **Bottom line**: MCP saves you from coding and configuring the GitHub API access — everything is ready to use.
