@@ -10,7 +10,7 @@
 
 https://modelcontextprotocol.io/introduction
 
-## Introducing MCP
+## Introducing MCP Server
 
 MCP is **communication Layer**
 
@@ -38,3 +38,21 @@ You have to:
 * The model can **use it directly** without extra setup
 
 👉 **Bottom line**: MCP saves you from coding and configuring the GitHub API access — everything is ready to use.
+
+
+## MCP Client
+
+The MCP client serves as the communication bridge between your server and MCP servers. It's your access point to all the tools that an MCP server provides, handling the message exchange and protocol details so your application doesn't have to.
+
+### How It Works
+
+
+<img width="1920" height="1080" alt="instructor_a46l9irobhg0f5webscixp0bs_public_1749849232_09_-_002_-_MCP_Clients_19 1749849231568" src="https://github.com/user-attachments/assets/7e81837f-6760-4f3d-aa5b-a29e06486034" />
+
+
+*source: https://anthropic.skilljar.com/introduction-to-model-context-protocol/296690*
+
+
+
+
+
