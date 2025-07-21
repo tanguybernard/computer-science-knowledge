@@ -55,6 +55,8 @@ The MCP client serves as the communication bridge between your server and MCP se
 
 ## Hands-on with MCP servers
 
+### Code Tools
+
 Execute code : uv run main.py
 
 ```python
@@ -71,5 +73,51 @@ Execute code : uv run main.py
 Note : Tool registration happens automatically through decorators
 
 
+### The server inspector
 
+
+Node 20 nécessaire
+
+Run :
+
+    uv run -- mcp dev mcp_server.py
+
+On Graphical Interface :
+
+Connect > Tools > List Tools
+
+## Connectinf with MCP clients
+
+### Execute code
+
+uv run main.py
+
+Try asking: "What is the contents of the report.pdf document?"
+
+Here's what happens behind the scenes:
+
+- Your application uses the client to get available tools
+- These tools are sent to Claude along with your question
+- Claude decides to use the read_doc_contents tool
+- Your application uses the client to execute that tool
+- The result is returned to Claude, who then responds to you
+
+The client acts as the bridge between your application logic and the MCP server's functionality, making it easy to integrate powerful tools into your AI workflows.
+
+### Resources
+
+Resources in MCP servers __allow you to expose data to clients__, similar to GET request handlers in a typical HTTP server. They're perfect for scenarios where you need to fetch information rather than perform actions.
+
+There are two types of resources:
+
+#### Direct Resources
+
+Direct resources have static URIs that never change. They're perfect for operations that don't need parameters.
+
+#### Templated Resources
+
+Templated resources include parameters in their URIs. The Python SDK automatically parses these parameters and passes them as keyword arguments to your function.
+
+
+Resources provide a clean way to expose read-only data from your MCP server, making it easy for clients to fetch information without the complexity of tool calls.
 
