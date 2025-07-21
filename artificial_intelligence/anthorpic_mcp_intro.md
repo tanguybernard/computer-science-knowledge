@@ -53,6 +53,23 @@ The MCP client serves as the communication bridge between your server and MCP se
 *source: https://anthropic.skilljar.com/introduction-to-model-context-protocol/296690*
 
 
+## Hands-on with MCP servers
+
+Execute code : uv run main.py
+
+```python
+@mcp.tool(
+    name="read_doc_contents",
+    description="Read the contents of a document and return it as a string.", # Clear parameter descriptions help Claude understand tool usage
+)
+    if doc_id not in docs:
+        raise ValueError(f"Doc with id {doc_id} not found")
+
+    return docs[doc_id]
+```
+
+Note : Tool registration happens automatically through decorators
+
 
 
 
