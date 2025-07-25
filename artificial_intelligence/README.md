@@ -96,6 +96,21 @@ Cela lui permet d'agir.
 Protocol standardisé qui permet aux LLM's d'utiliser des outils (Pour échanger des infos entre des LLMs et des serveurs)
 
 
+## Lexique
+
+
+| **Acronyme** | **Signification**              | **Rôle principal**                                                           |
+| ------------ | ------------------------------ | ---------------------------------------------------------------------------- |
+| **RAG**      | Retrieval-Augmented Generation | Génération de texte enrichie par des documents externes                      |
+| **Codex**    | OpenAI Codex                   | Génération et compréhension de code                                          |
+| **MCP**      | Model Context Protocol         | Protocole pour définir **le contexte partagé entre agents et modèles IA**    |
+| **ADK**      | Agent Development Kit          | Kit de développement pour créer des agents IA autonomes                      |
+| **A2A**      | Agent-to-Agent                 | Communication entre agents IA pour collaboration ou délégation               |
+| **MA‑RAG**   | Multi-Agent RAG                | Variante de RAG où plusieurs agents collaborent pour une génération enrichie |
+| **MoK‑RAG**  | Model-of-Knowledge RAG         | RAG avec un modèle spécialisé dans la gestion structurée des connaissances   |
+
+
+
 
 ## Sources
 
