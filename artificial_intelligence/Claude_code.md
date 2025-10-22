@@ -78,6 +78,59 @@ You can combine both modes for tasks that require both breadth and depth. Just k
 
 ## Controlling context
 
-//TO CONTINUE
+The /compact command summarizes your entire conversation history
+
+The /clear command completely removes the conversation history, giving you a fresh start
+
+## Custom commands
+
+Create .claude directory inside project. A folder commands and a a file like audit.md
+
+.claude/commands/audit.md
+
+You can prompt :
+
+```
+Your goal is to update any vulnerable dependencies.
+
+Do the following :
+
+1. Run `npm audit` to find vulnerable installed packages in this project
+2. Run `npm audit fix` to apply updates
+3. Run tests and verify the updates didn't break anything
+```
+
+Restart claude code
+
+And tap : /audit
 
 
+Another exemple :
+
+```
+Write comprehensive tests for: $ARGUMENTS
+
+Testing conventions:
+* Use Vitests with React Testing Library
+* Place test files in a __tests__ directory in the same folder as the source file
+* Name test files as [filename].test.ts(x)
+* Use @/ prefix for imports
+
+Coverage:
+* Test happy paths
+* Test edge cases
+* Test error states
+```
+
+
+> /writes_tests for use-auth.ts file in the hooks dir
+
+
+## MCP servers with claude code
+
+Claude Code have:
+- Default set of tools
+- Tools provided by MCP servers (like Playwright MCP Server (open browser, click on the screen, navigate to an address))
+
+
+## Hooks
