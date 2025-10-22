@@ -4,7 +4,7 @@
 ## Coding Assistant
 
 
-<img width="1920" height="1080" alt="instructor_a46l9irobhg0f5webscixp0bs_public_1750967940_002_-_What_is_a_Coding_Assistant__02 1750967940100" src="https://github.com/user-attachments/assets/c526f10e-9696-4f14-b5af-a170bbbeda70" />
+<img width="1280" height="720" alt="instructor_a46l9irobhg0f5webscixp0bs_public_1750967940_002_-_What_is_a_Coding_Assistant__02 1750967940100" src="https://github.com/user-attachments/assets/c526f10e-9696-4f14-b5af-a170bbbeda70" />
 
 
 - Gather Context : For example Read an external File
