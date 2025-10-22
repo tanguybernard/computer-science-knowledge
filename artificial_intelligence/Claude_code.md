@@ -134,3 +134,5 @@ Claude Code have:
 
 
 ## Hooks
+
+Hooks allow you to run commands before or after Claude attempts to run a tool.
