@@ -15,7 +15,7 @@ LLM is simple : You send Text, you receive text.
 
 The coding assistant adds instructions to your message that teach the language model how to request actions. 
 
-## Tools with Claude Code
+## Tools with Claude Code (Integration)
 
 - Playwright MCP Server : Set of tools that allow Claude to control a browser (Open browser, take screenshot)
 - Github MCP Server: Set of tools that allow Claude to interact with Github (Write summary report, read the changes in the pull request)
