@@ -69,12 +69,18 @@ Cherche à inclure d'autres type de données, par exemple une grande quantité d
 
 ...
 
-## Agent
+## Agent IA
 
-Un logiciel capable d'agir de manière autonome.
+Son role est de transformer une intention complexe en une série d'action concrète. 
+
+Ex: Organiser un voyage à Berlin de 3 jours pour le mois prochain avec un budjet de 300 euros.
+
+L'Agent IA est un logiciel capable d'agir de manière autonome.
 
 Ex: (L'agence de voyage) Toutes les heures un agent s'execute, il va regarder les différents vols et il vous achète le vol adapter en fonction de vos besoins.
 
+
+https://www.youtube.com/watch?v=kISRpDfbS4Y
 
 __Un agent IA = LLM + mémoire + objectifs + outils__
 
@@ -95,6 +101,21 @@ Cela lui permet d'agir.
 
 Protocol standardisé qui permet aux LLM's d'utiliser des outils (Pour échanger des infos entre des LLMs et des serveurs)
 
+
+## IA Agentic
+
+L’Agentic AI crée des systèmes autonomes capables de prendre des décisions et d’utiliser un raisonnement dynamique grâce aux Large Language Models (LLMs).
+
+## Agent IA vs IA Agentic
+
+La distinction majeure réside dans le **degré d’autonomie** :
+
+
+
+- Les AI Agents traditionnels nécessitent des entrées utilisateur définies et suivent des parcours conversationnels prédéterminés.
+- L’Agentic AI agit de manière autonome dans les limites fixées, menant les conversations et prenant des décisions de manière proactive.
+
+https://palmer-consulting.com/ai-agents-vs-agentic-ai/
 
 ## Lexique
 
