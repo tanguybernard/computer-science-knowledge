@@ -147,6 +147,84 @@ We can ask specific questions at any time after the model has already shown us a
 
 ## Module 4: Advanced Techniques
 
+### Lab 7: The Tree-of-Thought Approach in Prompt Engineering
+
+<img width="840" height="550" alt="tree-of-thought" src="https://github.com/user-attachments/assets/2068e060-627a-4e9b-8f4a-68282623aeb9" />
+
+For example, in the Game of 24, GPT-4 with Chain-of-Thought prompting solved only 4% of tasks. In comparison, their ToT approach achieved a success rate of 74%.
+
+The researchers remarked that the CoT didn't perform as well as it “lacks mechanisms to try different clues, make changes to decisions, or backtrack.”
+
+And that's the main limitation of CoT. When considering a complex problem, humans (well, systematic and logical ones, at least) tend to explore a tree of thoughts, evaluating what works and what doesn't, backtracking if needed, jumping back to a previous “node” in the tree if it was more beneficial or promising for the resolution of the problem.
+
+#### Example of Tree-of-Thought
+
+Tree-of-thought prompting uses a similar approach that not only invites the AI to consider a step-by-step process and to think logically but also makes it consider intermediate thoughts, building upon them and exploring branches that may or may not lead somewhere. This exploration maximizes the use of LLM and its capabilities, leading to drastically more useful results.
+
+Tree-of-Thought (ToT) Prompting is an innovative method that expands upon and refines the existing Chain-of-Thought prompting approach. By incorporating ToT Prompting, LLMs can demonstrate enhanced reasoning skills. Moreover, this technique allows these models to correct their mistakes autonomously and continually build upon their knowledge.
+
+Dave Hulbert suggested a few rather convincing prompts that leverage this approach and yield, anedotically, great results. I particularly like how he incorporates the Persona pattern and recommend you approach ToT prompting using his prompts or similar variations you might develop yourself.
 
 
+Prompt
+
+    Bob is in the living room.
+    He walks to the kitchen, carrying a cup.
+    He puts a ball in the cup and carries the cup to the bedroom.
+    He turns the cup upside down, then walks to the garden.
+    He puts the cup down in the garden, then walks to the garage.
+    Where is the ball?
+
+
+Naive Answer (GPT-4o mini 7 Jan. 2026) :
+
+    The ball is in the garden. When Bob turned the cup upside down in the bedroom, the ball would have fallen out of the cup. Since he then walked to the garden and put the cup down there, the ball would be on the ground in the garden.
+
+
+
+
+
+Prompt Instructions V1
+
+    Imagine three different experts are answering this question. 
+    All experts will write down 1 step of their thinking, then share it 
+    with the group. Then all experts will go on to the next step, etc. 
+    If any expert realises they're wrong at any point then they leave. 
+    Answer the question based on experts' opinion. The question is...
+
+
+
+Prompt Instructions V2 :
+
+    Simulate three brilliant, logical experts collaboratively answering a question. Each one verbosely explains their thought process in real-time, considering the prior explanations of others and openly acknowledging mistakes. At each step, whenever possible, each expert refines and builds upon the thoughts of others, acknowledging their contributions. They continue until there is a definitive answer to the question.The question is...
+
+
+Prompt Instructions V3 :
+
+    Identify and behave as three different experts that are appropriate to answering this question.
+    All experts will write down the step and their thinking about the step, then share it with the group.
+    Then, all experts will go on to the next step, etc.
+    At each step all experts will score their peers response between 1 and 5, 1 meaning it is highly unlikely, and 5 meaning it is highly likely.
+    If any expert is judged to be wrong at any point then they leave.
+    After all experts have provided their analysis, you then analyze all 3 analyses and provide either the consensus solution or your best guess solution.
+    The question is...
+
+
+Answer with Prompt Instructions V3:
+
+    All experts agree that the ball is not in the cup after Bob turns it upside down in the bedroom. Therefore, the final answer is:
+
+    The ball is in the bedroom (on the floor, as it fell out of the cup).
+
+#### Applying ToT to something more useful
+
+Prompt Instructions :
     
+    Imagine three different experts are answering this question.
+    All experts will write down 1 step of their thinking,
+    then share it with the group.
+    Then all experts will go on to the next step, etc.
+    If any expert realizes they're wrong at any point then they leave.
+
+
+### Lab 8: Controlling Verbosity and the Nova System
