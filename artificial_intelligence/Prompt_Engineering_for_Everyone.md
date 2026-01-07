@@ -228,3 +228,35 @@ Prompt Instructions :
 
 
 ### Lab 8: Controlling Verbosity and the Nova System
+
+#### Controlling Verbosity
+
+#### The Nova System: An Advanced Problem-Solving Tool
+
+The Nova System (or Nova Process) is an intelligent way to solve problems using a team of virtual experts powered by an LLM such as GPT-4o.
+
+##### What’s Special About Nova?
+
+Nova uses ChatGPT to create a “team” of experts that discuss and find solutions to tricky problems.
+It has a Discussion Continuity Expert (DCE) who keeps the conversation on track.
+There’s also a Critical Evaluation Expert (CAE) who checks solutions to make sure they’re good and safe.
+
+##### How Does Nova Work?
+
+Problem Unpacking: It breaks the problem down to understand it fully.
+Expertise Assembly: It picks the right experts for the job and gets their initial thoughts.
+Collaborative Ideation: The experts brainstorm together. The DCE leads the talk, and the CAE ensures the ideas are good and safe.
+
+##### Key Roles:
+
+- DCE: Keeps the discussion clear and on track.
+- CAE: Reviews the ideas and discusses any issues using facts and evidence.
+
+#### The Prompt Index
+
+The Prompt Index is a site boasting a huge AI prompt database. The site doesn’t simply specialize in conversational AI but also includes prompts for other forms of generative AI, such as Midjourney and DALL-E, which enable the generation of images.
+
+### Lab 9: Getting to Know watsonx Prompt Lab
+
+IBM Prompt
+
