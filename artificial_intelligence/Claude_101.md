@@ -13,3 +13,9 @@
 
 
 ## Introduction to projects
+
+Projects are self-contained workspaces with their own memory, chat histories, knowledge bases, and customized instructions. Think of them as dedicated environments for specific work streams.
+
+- Project Knowledge
+- Project instructions
+
