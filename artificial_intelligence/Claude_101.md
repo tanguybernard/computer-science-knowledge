@@ -64,3 +64,17 @@ There are two categories of Skills you'll encounter:
 
 Projects store knowledge, skills perform tasks.
 
+## Expanding Claude's reach
+
+### Connectors
+
+Connector Example : Figma, Snowflake, Canva, Notion...
+
+Connectors transform Claude from an assistant into an informed collaborator by giving Claude access to the same tools, data, and context that you use every day. Instead of starting every conversation from scratch, Claude can work directly with your actual information.
+
+###  Enterprise Search
+
+Enterprise Search adds a dedicated "Ask {Your Org Name}" option to your sidebar. This is designed specifically for finding and synthesizing knowledge buried across your company's tools and data sources.
+
+
+
