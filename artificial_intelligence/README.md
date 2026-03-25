@@ -132,6 +132,20 @@ https://palmer-consulting.com/ai-agents-vs-agentic-ai/
 
 
 
+## "Harness Engineering" (l'ingénierie du "harnais") 
+
+C'est la manière dont nous devons structurer l'environnement de travail des agents IA pour les rendre réellement efficaces et fiables dans le développement logiciel.
+
+### Les trois piliers de l'ingénierie du harnais
+
+Pour qu'un agent soit efficace, le harnais doit gérer trois aspects critiques :
+
+- Ingénierie du contexte : L'agent doit avoir accès à la "source unique de vérité". Si une information n'est pas dans le dépôt de code (documentation d'architecture, règles de style, schémas), elle n'existe pas pour l'IA.
+
+- Boucles de rétroaction (Feedback Loops) : Le système doit être "anti-fragile". Quand l'IA échoue, on ne corrige pas le code manuellement ; on améliore le harnais (ajout d'un linter, d'un test ou d'une doc) pour que l'IA puisse corriger l'erreur elle-même et ne plus la reproduire.
+
+- Outils et Capacités : Plutôt que de donner des outils trop spécifiques, on donne à l'IA des capacités générales (accès au shell, lecture de fichiers) tout en encadrant ses actions par des vérifications automatiques.
+
 
 ## Sources
 
