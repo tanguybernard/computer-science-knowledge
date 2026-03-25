@@ -65,9 +65,10 @@ Cas d'usage, besoin de conaissance externe qui ne soit pas public.
 Cherche à inclure d'autres type de données, par exemple une grande quantité d'images.
 
 
-## GAN
+## Les Generative Adversarial Networks (GAN), ou Réseaux Antagonistes Génératifs en français
 
-...
+C'est une architecture où deux intelligences artificielles s'affrontent pour apprendre à créer des choses (images, musique, texte) qui ont l'air incroyablement réelles.
+
 
 ## Agent IA
 
