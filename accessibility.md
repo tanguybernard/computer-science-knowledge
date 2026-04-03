@@ -11,3 +11,11 @@ L’**UI**, c’est le **costume** (l’apparence) ; la **Structure**, c’est l
 **L'erreur classique :** Utiliser un composant `Subtitle` (UI) codé avec une simple balise `<div>`. Visuellement, c'est joli, mais pour un aveugle, ce titre n'existe pas.
 
 **La règle d'or :** Un élément peut avoir l'apparence d'un "Subtitle" (UI) tout en étant techniquement un `<h2>`, `<h3>` ou même un `<p>` (Structure), selon l'endroit où il se trouve dans la page.
+
+
+
+## Extension Navigateur
+
+- HeadingsMap
+- Measure Everything
+
