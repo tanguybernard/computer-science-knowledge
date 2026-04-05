@@ -1,4 +1,12 @@
 
+Tu cherchais un agent de coding comparable à Claude Code, gratuit et qui fonctionne à la fois sur VS Code (React/TS) et IntelliJ (Kotlin).
+Le cheminement :
+
+- LLM local → trop lourd pour ton M1 Max 32Go, tool calling qui ne marche pas vraiment
+- OpenCode + MiniMax M2.5 gratuit → bon mais limité sur l'agentique local
+- Cline + OpenCode Zen → agent qui appelle vraiment les outils, même config sur les deux IDEs, gratuit pour l'instant
+
+
 
 ## Cline
 
