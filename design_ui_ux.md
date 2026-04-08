@@ -17,3 +17,9 @@ Un atelier de Content Inventory consiste à recenser, analyser et évaluer tout 
 Son but est d’obtenir une vue d’ensemble précise du contenu pour prendre des décisions : conserver, modifier, simplifier, fusionner ou supprimer certains éléments.
 
 https://blog.logrocket.com/ux-design/how-to-perform-ux-content-inventory/
+
+
+
+## Loi de Gestalt
+
+https://www.bluedrop.fr/content/les-lois-de-la-gestalt-appliqu%C3%A9es-au-design
