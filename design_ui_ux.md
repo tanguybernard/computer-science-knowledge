@@ -23,3 +23,15 @@ https://blog.logrocket.com/ux-design/how-to-perform-ux-content-inventory/
 ## Loi de Gestalt
 
 https://www.bluedrop.fr/content/les-lois-de-la-gestalt-appliqu%C3%A9es-au-design
+
+
+
+## Figma
+
+Shift + G = Voir la grille  
+
+Sélectionne un composant A, puis tu survoles un composant B en maintenant option (sur macOs) -> ça te donne l'écart entre les deux
+
+
+
+
